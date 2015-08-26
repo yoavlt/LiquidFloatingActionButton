@@ -1,0 +1,14 @@
+PODS:
+  - LiquidFloatingActionButton (0.1.0)
+
+DEPENDENCIES:
+  - LiquidFloatingActionButton (from `../`)
+
+EXTERNAL SOURCES:
+  LiquidFloatingActionButton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LiquidFloatingActionButton: 9adf4fd3e37fb3a1148a3ab8a3fc3bb8dae47521
+
+COCOAPODS: 0.38.2

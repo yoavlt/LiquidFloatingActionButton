@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15D04F5FE15F946E884D49478F94C669 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CEF979B44996C9EAB2BDF13ED156E6 /* Foundation.framework */; };
+		1C2D993376073527FD246F1088AF4E1E /* Pods-LiquidFloatingActionButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41701A3078F24067307605B779D934B7 /* Pods-LiquidFloatingActionButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D56C07ED2BA8F14A6A68D2F0E276BE0 /* Pods-LiquidFloatingActionButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9077E4927E9695422A79FEB4EF8C602 /* Pods-LiquidFloatingActionButton_Tests-dummy.m */; };
+		2E3CDA4A2AD6793E68281F2CE4EE20E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CEF979B44996C9EAB2BDF13ED156E6 /* Foundation.framework */; };
+		3A2AB24B1859502FC4B3FAB340C5F938 /* Pods-LiquidFloatingActionButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CB81E45CE784A0CD510C822D68AC14D /* Pods-LiquidFloatingActionButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4133980BB879D7EC0D8D43BD4F102FBE /* LiquidFloatingActionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3DCF4215E3A7EED11B4EB5D1AA0BF8 /* LiquidFloatingActionButton-dummy.m */; };
+		8334A8F70D76D901EAE526ED55E13085 /* LiquidFloatingActionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A92AC707105D582D82407F375CFC917F /* LiquidFloatingActionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A33604F863089E4618497F1B701F2F1E /* Pods-LiquidFloatingActionButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C263860CAD5EA0C20020CFB66689AC /* Pods-LiquidFloatingActionButton_Example-dummy.m */; };
+		AE2FC46B013703B174D95B6883ABF919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CEF979B44996C9EAB2BDF13ED156E6 /* Foundation.framework */; };
+		D9670DA51B8C516D00EA7E16 /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670D9E1B8C516D00EA7E16 /* ArrayEx.swift */; };
+		D9670DA61B8C516D00EA7E16 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670D9F1B8C516D00EA7E16 /* CGPointEx.swift */; };
+		D9670DA71B8C516D00EA7E16 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670DA01B8C516D00EA7E16 /* CGRectEx.swift */; };
+		D9670DA81B8C516D00EA7E16 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670DA11B8C516D00EA7E16 /* UIColorEx.swift */; };
+		D9670DAA1B8C516D00EA7E16 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670DA31B8C516D00EA7E16 /* LiquidUtil.swift */; };
+		D9670DAB1B8C516D00EA7E16 /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670DA41B8C516D00EA7E16 /* SimpleCircleLiquidEngine.swift */; };
+		D9670DAD1B8C51A300EA7E16 /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670DAC1B8C51A300EA7E16 /* LiquittableCircle.swift */; };
+		D9670DB11B8C560800EA7E16 /* LiquidFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9670DB01B8C560800EA7E16 /* LiquidFloatingActionButton.swift */; };
+		E74EEA613A0098149BD31299096D3A4A /* LiquidFloatingActionButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4F46FB797D0E795903302BBDDC49B508 /* LiquidFloatingActionButton.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1942740D93EEB855323B3F68CFABBE38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E6416E0D82224310C976D0058CC87D8;
+			remoteInfo = LiquidFloatingActionButton;
+		};
+		2C74327C5F228EF25444620B95321115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E38DABEFC4A1E69E9577FF424907C98;
+			remoteInfo = "LiquidFloatingActionButton-LiquidFloatingActionButton";
+		};
+		4D6A022D755DF05B3635915F4084AE7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E6416E0D82224310C976D0058CC87D8;
+			remoteInfo = LiquidFloatingActionButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0870801A4696ED1AA5FA6C54E780C599 /* LiquidFloatingActionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-prefix.pch"; sourceTree = "<group>"; };
+		32A2AF2E2F4B1499E450931CC0CAD202 /* Pods-LiquidFloatingActionButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LiquidFloatingActionButton_Example.modulemap"; sourceTree = "<group>"; };
+		339F90D5E79204E8BDC21F3AF4C0325F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34A4795691704A615AA138BF95042DC5 /* Pods-LiquidFloatingActionButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiquidFloatingActionButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		37A83F173235565EDE9A076A15250F07 /* Pods-LiquidFloatingActionButton_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidFloatingActionButton_Example-resources.sh"; sourceTree = "<group>"; };
+		41701A3078F24067307605B779D934B7 /* Pods-LiquidFloatingActionButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiquidFloatingActionButton_Example-umbrella.h"; sourceTree = "<group>"; };
+		47F87CE2A01F9B7A4D21963480312C7B /* LiquidFloatingActionButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LiquidFloatingActionButton-Private.xcconfig"; sourceTree = "<group>"; };
+		4F3DCF4215E3A7EED11B4EB5D1AA0BF8 /* LiquidFloatingActionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidFloatingActionButton-dummy.m"; sourceTree = "<group>"; };
+		4F46FB797D0E795903302BBDDC49B508 /* LiquidFloatingActionButton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidFloatingActionButton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5326C5CA8426C0CF6D677E91BF2A2C52 /* Pods_LiquidFloatingActionButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidFloatingActionButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63AA079CA68C8594DE2EFCEECD70391B /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidFloatingActionButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		79C263860CAD5EA0C20020CFB66689AC /* Pods-LiquidFloatingActionButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiquidFloatingActionButton_Example-dummy.m"; sourceTree = "<group>"; };
+		7BD5E598A90E9B5D7F5BE26DD5C7B6D6 /* Pods-LiquidFloatingActionButton_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidFloatingActionButton_Tests-resources.sh"; sourceTree = "<group>"; };
+		873AFE486B10F729482FC627D4865F8E /* Pods-LiquidFloatingActionButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidFloatingActionButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CB81E45CE784A0CD510C822D68AC14D /* Pods-LiquidFloatingActionButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiquidFloatingActionButton_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8DB80E76EE113421A98CB8EE23DE90D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EF67744D713AB87F9A34356FCB4C593 /* Pods-LiquidFloatingActionButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LiquidFloatingActionButton_Tests.modulemap"; sourceTree = "<group>"; };
+		90CEF979B44996C9EAB2BDF13ED156E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		96F405472686341EFEEAB4A3B7E44B87 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A206D3FB01DAFF8C15F21FB01DFFCE5C /* Pods-LiquidFloatingActionButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidFloatingActionButton_Example-frameworks.sh"; sourceTree = "<group>"; };
+		A92AC707105D582D82407F375CFC917F /* LiquidFloatingActionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-umbrella.h"; sourceTree = "<group>"; };
+		ABA02E81D896C5C32929FE69E9A8CDEE /* Pods-LiquidFloatingActionButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidFloatingActionButton_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AC0E0D813B48263918505658676B0E85 /* Pods-LiquidFloatingActionButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidFloatingActionButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B80DBE465AE8ED339A23BA7027E83E9C /* Pods-LiquidFloatingActionButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidFloatingActionButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D2E296184E24EBA83C604214BE7B30AF /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiquidFloatingActionButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D32DD17D1BA46C6311DE0766A1FABAAE /* Pods-LiquidFloatingActionButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidFloatingActionButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D9077E4927E9695422A79FEB4EF8C602 /* Pods-LiquidFloatingActionButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiquidFloatingActionButton_Tests-dummy.m"; sourceTree = "<group>"; };
+		D9670D9E1B8C516D00EA7E16 /* ArrayEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayEx.swift; sourceTree = "<group>"; };
+		D9670D9F1B8C516D00EA7E16 /* CGPointEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointEx.swift; sourceTree = "<group>"; };
+		D9670DA01B8C516D00EA7E16 /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
+		D9670DA11B8C516D00EA7E16 /* UIColorEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
+		D9670DA31B8C516D00EA7E16 /* LiquidUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidUtil.swift; sourceTree = "<group>"; };
+		D9670DA41B8C516D00EA7E16 /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
+		D9670DAC1B8C51A300EA7E16 /* LiquittableCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquittableCircle.swift; sourceTree = "<group>"; };
+		D9670DB01B8C560800EA7E16 /* LiquidFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiquidFloatingActionButton.swift; sourceTree = "<group>"; };
+		E365F5D85C8B589E45B7CA5165A49929 /* Pods-LiquidFloatingActionButton_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidFloatingActionButton_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E730081BFB9584844927E481454C4FE6 /* LiquidFloatingActionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiquidFloatingActionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0689E2454E7805611C945C7839241C /* LiquidFloatingActionButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidFloatingActionButton.xcconfig; sourceTree = "<group>"; };
+		EF975982DD1096120E110F80991633B4 /* LiquidFloatingActionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LiquidFloatingActionButton.modulemap; sourceTree = "<group>"; };
+		FB636B7F6C23BB05B0708C64E64D2387 /* Pods_LiquidFloatingActionButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidFloatingActionButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27A08932DD2FACB967E4FFB535D35AD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E3CDA4A2AD6793E68281F2CE4EE20E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F0218E3C956C79C7BA26354AED022E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2FC46B013703B174D95B6883ABF919 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F90960BAF0E0A8ED5A77D1AEAD6DF84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332CB3A9EA0895B7D4C664EE1983ECD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15D04F5FE15F946E884D49478F94C669 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14DB5A48698101126F92439C8D5718BC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				339F90D5E79204E8BDC21F3AF4C0325F /* Info.plist */,
+				EF975982DD1096120E110F80991633B4 /* LiquidFloatingActionButton.modulemap */,
+				EC0689E2454E7805611C945C7839241C /* LiquidFloatingActionButton.xcconfig */,
+				47F87CE2A01F9B7A4D21963480312C7B /* LiquidFloatingActionButton-Private.xcconfig */,
+				4F3DCF4215E3A7EED11B4EB5D1AA0BF8 /* LiquidFloatingActionButton-dummy.m */,
+				0870801A4696ED1AA5FA6C54E780C599 /* LiquidFloatingActionButton-prefix.pch */,
+				A92AC707105D582D82407F375CFC917F /* LiquidFloatingActionButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LiquidFloatingActionButton";
+			sourceTree = "<group>";
+		};
+		1DEF8DBF0CBF733AA5B4D6C8C82ADEB9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				975F1D2D9D10BCFA828D82795CA8879C /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		2B483F03EA79C3C9DDEEF7DB0181AFC0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				685DC04CDF65DA44D0A982081D5C4623 /* LiquidFloatingActionButton */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				90CEF979B44996C9EAB2BDF13ED156E6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		685DC04CDF65DA44D0A982081D5C4623 /* LiquidFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF8DBF0CBF733AA5B4D6C8C82ADEB9 /* Pod */,
+				14DB5A48698101126F92439C8D5718BC /* Support Files */,
+			);
+			name = LiquidFloatingActionButton;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				2B483F03EA79C3C9DDEEF7DB0181AFC0 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				F4BDFB4BCFC42C98938E70B06FC40921 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		975F1D2D9D10BCFA828D82795CA8879C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D9670D9E1B8C516D00EA7E16 /* ArrayEx.swift */,
+				D9670D9F1B8C516D00EA7E16 /* CGPointEx.swift */,
+				D9670DA01B8C516D00EA7E16 /* CGRectEx.swift */,
+				D9670DA11B8C516D00EA7E16 /* UIColorEx.swift */,
+				D9670DA31B8C516D00EA7E16 /* LiquidUtil.swift */,
+				D9670DA41B8C516D00EA7E16 /* SimpleCircleLiquidEngine.swift */,
+				D9670DAC1B8C51A300EA7E16 /* LiquittableCircle.swift */,
+				D9670DB01B8C560800EA7E16 /* LiquidFloatingActionButton.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F46FB797D0E795903302BBDDC49B508 /* LiquidFloatingActionButton.bundle */,
+				E730081BFB9584844927E481454C4FE6 /* LiquidFloatingActionButton.framework */,
+				5326C5CA8426C0CF6D677E91BF2A2C52 /* Pods_LiquidFloatingActionButton_Example.framework */,
+				FB636B7F6C23BB05B0708C64E64D2387 /* Pods_LiquidFloatingActionButton_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6E0DF24DD4243EB00821C0996A56027 /* Pods-LiquidFloatingActionButton_Example */ = {
+			isa = PBXGroup;
+			children = (
+				96F405472686341EFEEAB4A3B7E44B87 /* Info.plist */,
+				32A2AF2E2F4B1499E450931CC0CAD202 /* Pods-LiquidFloatingActionButton_Example.modulemap */,
+				34A4795691704A615AA138BF95042DC5 /* Pods-LiquidFloatingActionButton_Example-acknowledgements.markdown */,
+				B80DBE465AE8ED339A23BA7027E83E9C /* Pods-LiquidFloatingActionButton_Example-acknowledgements.plist */,
+				79C263860CAD5EA0C20020CFB66689AC /* Pods-LiquidFloatingActionButton_Example-dummy.m */,
+				A206D3FB01DAFF8C15F21FB01DFFCE5C /* Pods-LiquidFloatingActionButton_Example-frameworks.sh */,
+				37A83F173235565EDE9A076A15250F07 /* Pods-LiquidFloatingActionButton_Example-resources.sh */,
+				41701A3078F24067307605B779D934B7 /* Pods-LiquidFloatingActionButton_Example-umbrella.h */,
+				D32DD17D1BA46C6311DE0766A1FABAAE /* Pods-LiquidFloatingActionButton_Example.debug.xcconfig */,
+				ABA02E81D896C5C32929FE69E9A8CDEE /* Pods-LiquidFloatingActionButton_Example.release.xcconfig */,
+			);
+			name = "Pods-LiquidFloatingActionButton_Example";
+			path = "Target Support Files/Pods-LiquidFloatingActionButton_Example";
+			sourceTree = "<group>";
+		};
+		E05C697D61064335D42A08CC9BD13553 /* Pods-LiquidFloatingActionButton_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8DB80E76EE113421A98CB8EE23DE90D4 /* Info.plist */,
+				8EF67744D713AB87F9A34356FCB4C593 /* Pods-LiquidFloatingActionButton_Tests.modulemap */,
+				D2E296184E24EBA83C604214BE7B30AF /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.markdown */,
+				63AA079CA68C8594DE2EFCEECD70391B /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.plist */,
+				D9077E4927E9695422A79FEB4EF8C602 /* Pods-LiquidFloatingActionButton_Tests-dummy.m */,
+				E365F5D85C8B589E45B7CA5165A49929 /* Pods-LiquidFloatingActionButton_Tests-frameworks.sh */,
+				7BD5E598A90E9B5D7F5BE26DD5C7B6D6 /* Pods-LiquidFloatingActionButton_Tests-resources.sh */,
+				8CB81E45CE784A0CD510C822D68AC14D /* Pods-LiquidFloatingActionButton_Tests-umbrella.h */,
+				873AFE486B10F729482FC627D4865F8E /* Pods-LiquidFloatingActionButton_Tests.debug.xcconfig */,
+				AC0E0D813B48263918505658676B0E85 /* Pods-LiquidFloatingActionButton_Tests.release.xcconfig */,
+			);
+			name = "Pods-LiquidFloatingActionButton_Tests";
+			path = "Target Support Files/Pods-LiquidFloatingActionButton_Tests";
+			sourceTree = "<group>";
+		};
+		F4BDFB4BCFC42C98938E70B06FC40921 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6E0DF24DD4243EB00821C0996A56027 /* Pods-LiquidFloatingActionButton_Example */,
+				E05C697D61064335D42A08CC9BD13553 /* Pods-LiquidFloatingActionButton_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09575F48B7786BD966F1E73D86CC7922 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2AB24B1859502FC4B3FAB340C5F938 /* Pods-LiquidFloatingActionButton_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44AA9E5B6C0EB618E84CFEE63F95BD43 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8334A8F70D76D901EAE526ED55E13085 /* LiquidFloatingActionButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6603C3E0EEAD076EDDFBB82ED39B10E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C2D993376073527FD246F1088AF4E1E /* Pods-LiquidFloatingActionButton_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1E38DABEFC4A1E69E9577FF424907C98 /* LiquidFloatingActionButton-LiquidFloatingActionButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F226A8488A1C9AF2526CBDE053F3F6 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton-LiquidFloatingActionButton" */;
+			buildPhases = (
+				9356251B5A829D8B9ACFEB0850496EEC /* Sources */,
+				2F90960BAF0E0A8ED5A77D1AEAD6DF84 /* Frameworks */,
+				DDB2D3C11E1C1E5EFE3CEE2C87CB2DB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LiquidFloatingActionButton-LiquidFloatingActionButton";
+			productName = "LiquidFloatingActionButton-LiquidFloatingActionButton";
+			productReference = 4F46FB797D0E795903302BBDDC49B508 /* LiquidFloatingActionButton.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		1E6416E0D82224310C976D0058CC87D8 /* LiquidFloatingActionButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9D99E09F6B7A95AB0FBE3E9AE97A243 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton" */;
+			buildPhases = (
+				A305B37C606838507A779FADE7D86039 /* Sources */,
+				332CB3A9EA0895B7D4C664EE1983ECD4 /* Frameworks */,
+				9CA55216EF490B268E613A58614AE451 /* Resources */,
+				44AA9E5B6C0EB618E84CFEE63F95BD43 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF829A3EF9D84CCE3F3388144E13C2AD /* PBXTargetDependency */,
+			);
+			name = LiquidFloatingActionButton;
+			productName = LiquidFloatingActionButton;
+			productReference = E730081BFB9584844927E481454C4FE6 /* LiquidFloatingActionButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43800D6302E8EC6CA16A563D575B6A60 /* Pods-LiquidFloatingActionButton_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0050E4B9EBBDE44370D24C9E316A70BD /* Build configuration list for PBXNativeTarget "Pods-LiquidFloatingActionButton_Example" */;
+			buildPhases = (
+				31A557A1BF26AB18648988FD4AA328B2 /* Sources */,
+				27A08932DD2FACB967E4FFB535D35AD9 /* Frameworks */,
+				6603C3E0EEAD076EDDFBB82ED39B10E9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				353748F941E6FA3E4CC9CE376891078D /* PBXTargetDependency */,
+			);
+			name = "Pods-LiquidFloatingActionButton_Example";
+			productName = "Pods-LiquidFloatingActionButton_Example";
+			productReference = 5326C5CA8426C0CF6D677E91BF2A2C52 /* Pods_LiquidFloatingActionButton_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		549EC8F1186C4136AD3D4CBFF076E300 /* Pods-LiquidFloatingActionButton_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C569544DC2589FEA8D7DA4B3A85C3AC /* Build configuration list for PBXNativeTarget "Pods-LiquidFloatingActionButton_Tests" */;
+			buildPhases = (
+				288D8016E3189C5740E54A0700B1658E /* Sources */,
+				2F0218E3C956C79C7BA26354AED022E8 /* Frameworks */,
+				09575F48B7786BD966F1E73D86CC7922 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C153D7EEA97E54FDE43E601E67B5188E /* PBXTargetDependency */,
+			);
+			name = "Pods-LiquidFloatingActionButton_Tests";
+			productName = "Pods-LiquidFloatingActionButton_Tests";
+			productReference = FB636B7F6C23BB05B0708C64E64D2387 /* Pods_LiquidFloatingActionButton_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E6416E0D82224310C976D0058CC87D8 /* LiquidFloatingActionButton */,
+				1E38DABEFC4A1E69E9577FF424907C98 /* LiquidFloatingActionButton-LiquidFloatingActionButton */,
+				43800D6302E8EC6CA16A563D575B6A60 /* Pods-LiquidFloatingActionButton_Example */,
+				549EC8F1186C4136AD3D4CBFF076E300 /* Pods-LiquidFloatingActionButton_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CA55216EF490B268E613A58614AE451 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E74EEA613A0098149BD31299096D3A4A /* LiquidFloatingActionButton.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB2D3C11E1C1E5EFE3CEE2C87CB2DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		288D8016E3189C5740E54A0700B1658E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D56C07ED2BA8F14A6A68D2F0E276BE0 /* Pods-LiquidFloatingActionButton_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31A557A1BF26AB18648988FD4AA328B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33604F863089E4618497F1B701F2F1E /* Pods-LiquidFloatingActionButton_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9356251B5A829D8B9ACFEB0850496EEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A305B37C606838507A779FADE7D86039 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9670DA61B8C516D00EA7E16 /* CGPointEx.swift in Sources */,
+				D9670DA51B8C516D00EA7E16 /* ArrayEx.swift in Sources */,
+				D9670DA71B8C516D00EA7E16 /* CGRectEx.swift in Sources */,
+				D9670DAB1B8C516D00EA7E16 /* SimpleCircleLiquidEngine.swift in Sources */,
+				D9670DAD1B8C51A300EA7E16 /* LiquittableCircle.swift in Sources */,
+				D9670DAA1B8C516D00EA7E16 /* LiquidUtil.swift in Sources */,
+				D9670DA81B8C516D00EA7E16 /* UIColorEx.swift in Sources */,
+				D9670DB11B8C560800EA7E16 /* LiquidFloatingActionButton.swift in Sources */,
+				4133980BB879D7EC0D8D43BD4F102FBE /* LiquidFloatingActionButton-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		353748F941E6FA3E4CC9CE376891078D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LiquidFloatingActionButton;
+			target = 1E6416E0D82224310C976D0058CC87D8 /* LiquidFloatingActionButton */;
+			targetProxy = 1942740D93EEB855323B3F68CFABBE38 /* PBXContainerItemProxy */;
+		};
+		BF829A3EF9D84CCE3F3388144E13C2AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LiquidFloatingActionButton-LiquidFloatingActionButton";
+			target = 1E38DABEFC4A1E69E9577FF424907C98 /* LiquidFloatingActionButton-LiquidFloatingActionButton */;
+			targetProxy = 2C74327C5F228EF25444620B95321115 /* PBXContainerItemProxy */;
+		};
+		C153D7EEA97E54FDE43E601E67B5188E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LiquidFloatingActionButton;
+			target = 1E6416E0D82224310C976D0058CC87D8 /* LiquidFloatingActionButton */;
+			targetProxy = 4D6A022D755DF05B3635915F4084AE7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FB544672E5728875A83AF02C76C1282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABA02E81D896C5C32929FE69E9A8CDEE /* Pods-LiquidFloatingActionButton_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Example/Pods-LiquidFloatingActionButton_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_LiquidFloatingActionButton_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		21D3CB1F2883F58141705C1EE655F958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F87CE2A01F9B7A4D21963480312C7B /* LiquidFloatingActionButton-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = LiquidFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D19CBD3930439B7983D9A5696CE5218C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F87CE2A01F9B7A4D21963480312C7B /* LiquidFloatingActionButton-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = LiquidFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D5119C620BB23FD7B8E98068F40F6CB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F87CE2A01F9B7A4D21963480312C7B /* LiquidFloatingActionButton-Private.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LiquidFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D522A731286A929AF25A63810564CD7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F87CE2A01F9B7A4D21963480312C7B /* LiquidFloatingActionButton-Private.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LiquidFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1AFE95579B6F1DB487D418D093BD076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0E0D813B48263918505658676B0E85 /* Pods-LiquidFloatingActionButton_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Tests/Pods-LiquidFloatingActionButton_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_LiquidFloatingActionButton_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD811BD053CBF47605C0C289F80F0964 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D32DD17D1BA46C6311DE0766A1FABAAE /* Pods-LiquidFloatingActionButton_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Example/Pods-LiquidFloatingActionButton_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_LiquidFloatingActionButton_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE8583B0D5217E3DDF7480029A01002A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 873AFE486B10F729482FC627D4865F8E /* Pods-LiquidFloatingActionButton_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Tests/Pods-LiquidFloatingActionButton_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_LiquidFloatingActionButton_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0050E4B9EBBDE44370D24C9E316A70BD /* Build configuration list for PBXNativeTarget "Pods-LiquidFloatingActionButton_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD811BD053CBF47605C0C289F80F0964 /* Debug */,
+				1FB544672E5728875A83AF02C76C1282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F226A8488A1C9AF2526CBDE053F3F6 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton-LiquidFloatingActionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19CBD3930439B7983D9A5696CE5218C /* Debug */,
+				21D3CB1F2883F58141705C1EE655F958 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C569544DC2589FEA8D7DA4B3A85C3AC /* Build configuration list for PBXNativeTarget "Pods-LiquidFloatingActionButton_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE8583B0D5217E3DDF7480029A01002A /* Debug */,
+				F1AFE95579B6F1DB487D418D093BD076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9D99E09F6B7A95AB0FBE3E9AE97A243 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5119C620BB23FD7B8E98068F40F6CB7 /* Debug */,
+				D522A731286A929AF25A63810564CD7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

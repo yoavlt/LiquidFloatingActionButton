@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import LiquidFloatingActionButton
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 56 - 16, width: 56, height: 56)
+        let floatingActionButton = LiquidFloatingActionButton(frame: floatingFrame, direction: .Line)
+        
+        self.view.addSubview(floatingActionButton)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,4 +26,3 @@ class ViewController: UIViewController {
     }
 
 }
-
