@@ -13,8 +13,13 @@ public class LiquittableCircle : UIView {
 
     var points: [CGPoint] = []
     var radius: CGFloat
-    var color: UIColor = UIColor.redColor()
+    var color: UIColor = UIColor.redColor() {
+        didSet {
+            setup()
+        }
+    }
 
+    let circleLayer = CAShapeLayer()
     var dt: CGPoint {
         get {
             var dx: CGFloat = 0
@@ -41,24 +46,19 @@ public class LiquittableCircle : UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func move(dt: CGPoint) {
-        let point = CGPoint(x: center.x + dt.x, y: center.y + dt.y)
-        self.center = point
-    }
-
     private func setup() {
         self.frame = CGRect(x: center.x - radius, y: center.y - radius, width: 2 * radius, height: 2 * radius)
         let bezierPath = UIBezierPath(ovalInRect: CGRect(origin: CGPointZero, size: CGSize(width: radius * 2, height: radius * 2)))
-        draw(bezierPath)
+        let layer = draw(bezierPath)
+        self.layer.addSublayer(layer)
     }
 
-    func draw(path: UIBezierPath) {
+    func draw(path: UIBezierPath) -> CAShapeLayer {
         self.layer.sublayers?.each { $0.removeFromSuperlayer() }
-        let layer = CAShapeLayer(layer: self.layer)
-        layer.lineWidth = 3.0
-        layer.fillColor = self.color.CGColor
-        layer.path = path.CGPath
-        self.layer.addSublayer(layer)
+        circleLayer.lineWidth = 3.0
+        circleLayer.fillColor = self.color.CGColor
+        circleLayer.path = path.CGPath
+        return circleLayer
     }
 
     func circlePoint(rad: CGFloat) -> CGPoint {

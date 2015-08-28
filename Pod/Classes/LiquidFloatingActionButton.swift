@@ -78,20 +78,24 @@ public class LiquidFloatingActionButton : UIView {
         insertSubview(cell, aboveSubview: baseView)
     }
 
+    // open all cells
     public func open() {
         // rotate plus icon
-        self.plusLayer.addAnimation(plusKeyframe(isClosed), forKey: "plusRot")
+        self.plusLayer.addAnimation(plusKeyframe(true), forKey: "plusRot")
         self.plusRotation = CGFloat(M_PI * 0.25) // 45 degree
         
         self.baseView.open(cells)
+        setNeedsDisplay()
     }
 
+    // close all cells
     public func close() {
         // rotate plus icon
-        self.plusLayer.addAnimation(plusKeyframe(isClosed), forKey: "plusRot")
+        self.plusLayer.addAnimation(plusKeyframe(false), forKey: "plusRot")
         self.plusRotation = 0
     
         self.baseView.close(cells)
+        setNeedsDisplay()
     }
 
     // MARK: draw icon
@@ -150,8 +154,8 @@ public class LiquidFloatingActionButton : UIView {
                 pathPlus(CGFloat(M_PI * 0.25)),
         ] : [
                 pathPlus(CGFloat(M_PI * 0.25)),
-                pathPlus(CGFloat(M_PI * 0.375)),
-                pathPlus(CGFloat(M_PI * 0.5)),
+                pathPlus(CGFloat(M_PI * 0.125)),
+                pathPlus(CGFloat(M_PI * 0)),
         ]
         let anim = CAKeyframeAnimation(keyPath: "path")
         anim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
@@ -385,7 +389,8 @@ class CircleLiquidBaseView : ActionBarBaseView {
 public class LiquidFloatingCell : LiquittableCircle {
     
     let callback: () -> ()
-    
+    var responsible = true
+
     init(center: CGPoint, radius: CGFloat, color: UIColor, icon: UIImage, callback: () -> ()) {
         self.callback = callback
         super.init(center: center, radius: radius, color: color)
@@ -424,7 +429,19 @@ public class LiquidFloatingCell : LiquittableCircle {
             }
         }
     }
-
+    
+    public override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        if responsible {
+            setNeedsDisplay()
+        }
+    }
+    
+    public override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
+        if responsible {
+            setNeedsDisplay()
+        }
+    }
+    
     override public func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.callback()
     }
