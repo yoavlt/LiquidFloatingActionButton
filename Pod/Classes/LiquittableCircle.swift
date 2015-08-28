@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class LiquittableCircle : UIView {
+public class LiquittableCircle : UIView {
 
     var points: [CGPoint] = []
     var radius: CGFloat
@@ -37,7 +37,7 @@ class LiquittableCircle : UIView {
         setup()
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required public init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
