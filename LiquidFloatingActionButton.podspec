@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "LiquidFloatingActionButton"
   s.version          = "0.1.0"
-  s.summary          = "A short description of LiquidFloatingActionButton."
+  s.summary          = "Material Design Floating Action Button in liquid state"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,10 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                      Material Design Floating Action Button in liquid state inspired by http://www.materialup.com/posts/material-in-a-liquid-state
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/LiquidFloatingActionButton"
+  s.homepage         = "https://github.com/yoavlt/LiquidFloatingActionButton"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Takuma Yoshida" => "yoa.jmpr.w@gmail.com" }

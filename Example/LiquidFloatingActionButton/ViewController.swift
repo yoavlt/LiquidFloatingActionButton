@@ -21,6 +21,7 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
         floatingActionButton = LiquidFloatingActionButton(frame: floatingFrame)
         floatingActionButton.dataSource = self
         floatingActionButton.delegate = self
+        floatingActionButton.color = UIColor.orangeColor()
         let cellFactory: (String) -> LiquidFloatingCell = { (iconName) in
             return LiquidFloatingCell(icon: UIImage(named: iconName)!)
         }

@@ -1,6 +1,6 @@
 # LiquidFloatingActionButton
 
-[![CI Status](http://img.shields.io/travis/Takuma Yoshida/LiquidFloatingActionButton.svg?style=flat)](https://travis-ci.org/Takuma Yoshida/LiquidFloatingActionButton)
+[![CI Status](http://img.shields.io/travis/Takuma Yoshida/LiquidFloatingActionButton.svg?style=flat)](https://travis-ci.org/yoavlt/LiquidFloatingActionButton)
 [![Version](https://img.shields.io/cocoapods/v/LiquidFloatingActionButton.svg?style=flat)](http://cocoapods.org/pods/LiquidFloatingActionButton)
 [![License](https://img.shields.io/cocoapods/l/LiquidFloatingActionButton.svg?style=flat)](http://cocoapods.org/pods/LiquidFloatingActionButton)
 [![Platform](https://img.shields.io/cocoapods/p/LiquidFloatingActionButton.svg?style=flat)](http://cocoapods.org/pods/LiquidFloatingActionButton)
