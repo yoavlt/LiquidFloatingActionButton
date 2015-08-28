@@ -28,7 +28,7 @@ public class LiquidFloatingActionButton : UIView {
     
     public var delegate:   LiquidFloatingActionButtonDelegate?
     public var dataSource: LiquidFloatingActionButtonDataSource?
-    
+
     public var responsible = true
     public var isClosed: Bool {
         get {
@@ -404,8 +404,12 @@ public class LiquidFloatingCell : LiquittableCircle {
     let internalRatio: CGFloat = 0.75
 
     let callback: () -> ()
-    var responsible = true // TODO
-    var originalColor: UIColor
+
+    public var responsible = true
+    public var imageView = UIImageView()
+
+    // for implement responsible color
+    private var originalColor: UIColor
     
     public override var frame: CGRect {
         didSet {
@@ -439,7 +443,6 @@ public class LiquidFloatingCell : LiquittableCircle {
     }
     
     func setup(image: UIImage, tintColor: UIColor = UIColor.whiteColor()) {
-        let imageView = UIImageView()
         imageView.image = image.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         imageView.tintColor = tintColor
         setupView(imageView)
@@ -452,18 +455,14 @@ public class LiquidFloatingCell : LiquittableCircle {
     }
     
     private func resizeSubviews() {
-        for subview in subviews {
-            if let view = subview as? UIView {
-                let size = CGSize(width: frame.width * 0.5, height: frame.height * 0.5)
-                view.frame = CGRect(x: frame.width - frame.width * internalRatio, y: frame.height - frame.height * internalRatio, width: size.width, height: size.height)
-            }
-        }
+        let size = CGSize(width: frame.width * 0.5, height: frame.height * 0.5)
+        imageView.frame = CGRect(x: frame.width - frame.width * internalRatio, y: frame.height - frame.height * internalRatio, width: size.width, height: size.height)
     }
     
     func update(key: CGFloat) {
         for subview in self.subviews {
             if let view = subview as? UIView {
-                view.alpha = 2 * (key - 0.5)
+                view.alpha = max(2 * (key * key - 0.5), 0)
             }
         }
     }
