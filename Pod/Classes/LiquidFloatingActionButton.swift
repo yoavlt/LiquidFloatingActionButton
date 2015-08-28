@@ -29,6 +29,7 @@ public enum LiquidFloatingDirection {
 public class LiquidFloatingActionButton : UIView {
 
     private let internalRadiusRatio: CGFloat = 20.0 / 56.0
+    public var cellRadiusRatio: CGFloat      = 0.38
     
     public let direction:  LiquidFloatingDirection
     public var delegate:   LiquidFloatingActionButtonDelegate?
@@ -67,23 +68,20 @@ public class LiquidFloatingActionButton : UIView {
 
     public func addCellImage(image: UIImage, onSelected: () -> ()) {
         let cell = LiquidFloatingCell(
-            center: self.center.minus(self.frame.origin),
-            radius: self.frame.width * 0.38,
-            color: self.color,
-            icon: image,
+            center  : self.center.minus(self.frame.origin),
+            radius  : self.frame.width * cellRadiusRatio,
+            color   : self.color,
+            icon    : image,
             callback: onSelected
         )
         cells.append(cell)
         insertSubview(cell, aboveSubview: baseView)
     }
 
-    public func addCellView(view: UIView, onSelected: () -> ()) {
-    }
-
     public func open() {
         // rotate plus icon
         self.plusLayer.addAnimation(plusKeyframe(isClosed), forKey: "plusRot")
-        self.plusRotation = CGFloat(M_PI * 0.25)
+        self.plusRotation = CGFloat(M_PI * 0.25) // 45 degree
         
         self.baseView.open(cells)
     }
@@ -182,6 +180,20 @@ public class LiquidFloatingActionButton : UIView {
         setNeedsDisplay()
     }
     
+    public override func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
+        for cell in self.cells {
+            let pointForTargetView = cell.convertPoint(point, fromView: self)
+            
+            if (CGRectContainsPoint(cell.bounds, pointForTargetView)) {
+                if cell.userInteractionEnabled {
+                    return cell.hitTest(pointForTargetView, withEvent: event)
+                }
+            }
+        }
+        
+        return super.hitTest(point, withEvent: event)
+    }
+    
     // MARK: private methods
     private func setup() {
         self.backgroundColor = UIColor.clearColor()
@@ -191,6 +203,7 @@ public class LiquidFloatingActionButton : UIView {
         addSubview(baseView)
         
         liquidView.frame = baseView.frame
+        liquidView.userInteractionEnabled = false
         addSubview(liquidView)
         
         liquidView.layer.addSublayer(circleLayer)
@@ -400,6 +413,7 @@ public class LiquidFloatingCell : LiquittableCircle {
     }
     
     func setupView(view: UIView) {
+        userInteractionEnabled = false
         addSubview(view)
     }
 
