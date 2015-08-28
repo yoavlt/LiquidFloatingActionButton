@@ -1,0 +1,6 @@
+framework module LiquidFloatingActionButton {
+  umbrella header "LiquidFloatingActionButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
