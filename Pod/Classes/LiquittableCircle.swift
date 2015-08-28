@@ -12,49 +12,57 @@ import UIKit
 public class LiquittableCircle : UIView {
 
     var points: [CGPoint] = []
-    var radius: CGFloat
+    var radius: CGFloat {
+        didSet {
+            self.frame = CGRect(x: center.x - radius, y: center.y - radius, width: 2 * radius, height: 2 * radius)
+            setup()
+        }
+    }
     var color: UIColor = UIColor.redColor() {
         didSet {
             setup()
         }
     }
-
-    let circleLayer = CAShapeLayer()
-    var dt: CGPoint {
-        get {
-            var dx: CGFloat = 0
-            var dy: CGFloat = 0
-            if let ddx = self.layer.presentationLayer().valueForKeyPath("transform.translation.y") as? CGFloat {
-                dx = ddx
-            }
-            if let ddy = self.layer.presentationLayer().valueForKeyPath("transform.translation.y") as? CGFloat {
-                dy = ddy
-            }
-            return CGPoint(x: dx, y: dy)
+    
+    override public var center: CGPoint {
+        didSet {
+            self.frame = CGRect(x: center.x - radius, y: center.y - radius, width: 2 * radius, height: 2 * radius)
+            setup()
         }
     }
 
+    let circleLayer = CAShapeLayer()
     init(center: CGPoint, radius: CGFloat, color: UIColor) {
         let frame = CGRect(x: center.x - radius, y: center.y - radius, width: 2 * radius, height: 2 * radius)
         self.radius = radius
         self.color = color
         super.init(frame: frame)
         setup()
+        self.layer.addSublayer(circleLayer)
+    }
+
+    init() {
+        self.radius = 0
+        super.init(frame: CGRectZero)
+        setup()
+        self.layer.addSublayer(circleLayer)
     }
 
     required public init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     private func setup() {
         self.frame = CGRect(x: center.x - radius, y: center.y - radius, width: 2 * radius, height: 2 * radius)
+        drawCircle()
+    }
+
+    func drawCircle() {
         let bezierPath = UIBezierPath(ovalInRect: CGRect(origin: CGPointZero, size: CGSize(width: radius * 2, height: radius * 2)))
-        let layer = draw(bezierPath)
-        self.layer.addSublayer(layer)
+        draw(bezierPath)
     }
 
     func draw(path: UIBezierPath) -> CAShapeLayer {
-        self.layer.sublayers?.each { $0.removeFromSuperlayer() }
         circleLayer.lineWidth = 3.0
         circleLayer.fillColor = self.color.CGColor
         circleLayer.path = path.CGPath
@@ -62,7 +70,7 @@ public class LiquittableCircle : UIView {
     }
 
     func circlePoint(rad: CGFloat) -> CGPoint {
-        return CGMath.circlePoint(center.plus(dt), radius: radius, rad: rad)
+        return CGMath.circlePoint(center, radius: radius, rad: rad)
     }
 
 }

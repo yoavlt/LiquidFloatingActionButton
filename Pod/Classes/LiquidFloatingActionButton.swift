@@ -9,15 +9,8 @@
 import Foundation
 import QuartzCore
 
-public enum LiquidFloatingDirection {
-    case Line
-    case LiquidLine
-    case Circle
-    case LiquidCircle
-}
-
 @objc public protocol LiquidFloatingActionButtonDataSource {
-    func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton)
+    func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton) -> Int
     func cellForIndex(index: Int) -> LiquidFloatingCell
 }
 
@@ -31,7 +24,6 @@ public class LiquidFloatingActionButton : UIView {
     private let internalRadiusRatio: CGFloat = 20.0 / 56.0
     public var cellRadiusRatio: CGFloat      = 0.38
     
-    public let direction:  LiquidFloatingDirection
     public var delegate:   LiquidFloatingActionButtonDelegate?
     public var dataSource: LiquidFloatingActionButtonDataSource?
     
@@ -52,16 +44,13 @@ public class LiquidFloatingActionButton : UIView {
 
     private var baseView = CircleLiquidBaseView()
     private let liquidView = UIView()
-    var cells: [UIView] = []
 
-    public init(frame: CGRect, direction: LiquidFloatingDirection = .Line) {
-        self.direction = direction
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
 
     required public init(coder aDecoder: NSCoder) {
-        self.direction = .Line
         super.init(coder: aDecoder)
         setup()
     }
@@ -74,8 +63,24 @@ public class LiquidFloatingActionButton : UIView {
             icon    : image,
             callback: onSelected
         )
-        cells.append(cell)
+//        cells.append(cell)
+    }
+    
+    private func insertCell(cell: LiquidFloatingCell) {
+        cell.color  = self.color
+        cell.radius = self.frame.width * cellRadiusRatio
+        cell.center = self.center.minus(self.frame.origin)
         insertSubview(cell, aboveSubview: baseView)
+    }
+    
+    private func cellArray() -> [LiquidFloatingCell] {
+        var result: [LiquidFloatingCell] = []
+        if let source = dataSource {
+            for i in 0..<source.numberOfCells(self) {
+                result.append(source.cellForIndex(i))
+            }
+        }
+        return result
     }
 
     // open all cells
@@ -83,7 +88,12 @@ public class LiquidFloatingActionButton : UIView {
         // rotate plus icon
         self.plusLayer.addAnimation(plusKeyframe(true), forKey: "plusRot")
         self.plusRotation = CGFloat(M_PI * 0.25) // 45 degree
-        
+
+        let cells = cellArray()
+        for cell in cells {
+            insertCell(cell)
+        }
+
         self.baseView.open(cells)
         setNeedsDisplay()
     }
@@ -94,7 +104,7 @@ public class LiquidFloatingActionButton : UIView {
         self.plusLayer.addAnimation(plusKeyframe(false), forKey: "plusRot")
         self.plusRotation = 0
     
-        self.baseView.close(cells)
+        self.baseView.close(cellArray())
         setNeedsDisplay()
     }
 
@@ -185,7 +195,7 @@ public class LiquidFloatingActionButton : UIView {
     }
     
     public override func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
-        for cell in self.cells {
+        for cell in cellArray() {
             let pointForTargetView = cell.convertPoint(point, fromView: self)
             
             if (CGRectContainsPoint(cell.bounds, pointForTargetView)) {
@@ -306,6 +316,10 @@ class CircleLiquidBaseView : ActionBarBaseView {
             for cell in openingCells {
                 cell.userInteractionEnabled = true
             }
+        } else {
+            for cell in openingCells {
+                cell.removeFromSuperview()
+            }
         }
     }
 
@@ -396,8 +410,21 @@ class CircleLiquidBaseView : ActionBarBaseView {
 
 public class LiquidFloatingCell : LiquittableCircle {
     
+    let internalRatio: CGFloat = 0.75
+
     let callback: () -> ()
-    var responsible = true
+    var responsible = true // TODO
+    
+    public override var frame: CGRect {
+        didSet {
+            for subview in subviews {
+                if let view = subview as? UIView {
+                    let size = CGSize(width: frame.width * 0.5, height: frame.height * 0.5)
+                    view.frame = CGRect(x: frame.width - frame.width * internalRatio, y: frame.height - frame.height * internalRatio, width: size.width, height: size.height)
+                }
+            }
+        }
+    }
 
     init(center: CGPoint, radius: CGFloat, color: UIColor, icon: UIImage, callback: () -> ()) {
         self.callback = callback
@@ -410,18 +437,24 @@ public class LiquidFloatingCell : LiquittableCircle {
         super.init(center: center, radius: radius, color: color)
         setupView(view)
     }
+    
+    public init(icon: UIImage, callback: () -> ()) {
+        self.callback = callback
+        super.init()
+        setup(icon)
+    }
 
     required public init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setup(image: UIImage) {
+    func setup(image: UIImage, tintColor: UIColor = UIColor.whiteColor()) {
         let size = CGSize(width: frame.width * 0.5, height: frame.height * 0.5)
         let imageView = UIImageView(
-            frame: CGRect(x: frame.width - frame.width * 0.75, y: frame.height - frame.height * 0.75, width: size.width, height: size.height)
+            frame: CGRect(x: frame.width - frame.width * internalRatio, y: frame.height - frame.height * internalRatio, width: size.width, height: size.height)
         )
         imageView.image = image.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-        imageView.tintColor = UIColor.whiteColor()
+        imageView.tintColor = tintColor
         setupView(imageView)
     }
     
