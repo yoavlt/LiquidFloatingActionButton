@@ -39,6 +39,7 @@ public class LiquittableCircle : UIView {
         super.init(frame: frame)
         setup()
         self.layer.addSublayer(circleLayer)
+        self.opaque = false
     }
 
     init() {
@@ -46,6 +47,7 @@ public class LiquittableCircle : UIView {
         super.init(frame: CGRectZero)
         setup()
         self.layer.addSublayer(circleLayer)
+        self.opaque = false
     }
 
     required public init(coder aDecoder: NSCoder) {
@@ -68,9 +70,13 @@ public class LiquittableCircle : UIView {
         circleLayer.path = path.CGPath
         return circleLayer
     }
-
+    
     func circlePoint(rad: CGFloat) -> CGPoint {
         return CGMath.circlePoint(center, radius: radius, rad: rad)
+    }
+    
+    public override func drawRect(rect: CGRect) {
+        drawCircle()
     }
 
 }

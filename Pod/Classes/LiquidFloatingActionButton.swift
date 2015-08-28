@@ -9,12 +9,14 @@
 import Foundation
 import QuartzCore
 
+// LiquidFloatingButton DataSource methods
 @objc public protocol LiquidFloatingActionButtonDataSource {
     func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton) -> Int
     func cellForIndex(index: Int) -> LiquidFloatingCell
 }
 
 @objc public protocol LiquidFloatingActionButtonDelegate {
+    // selected method
     optional func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int)
 }
 
@@ -403,6 +405,7 @@ public class LiquidFloatingCell : LiquittableCircle {
 
     let callback: () -> ()
     var responsible = true // TODO
+    var originalColor: UIColor
     
     public override var frame: CGRect {
         didSet {
@@ -412,18 +415,21 @@ public class LiquidFloatingCell : LiquittableCircle {
 
     init(center: CGPoint, radius: CGFloat, color: UIColor, icon: UIImage, callback: () -> ()) {
         self.callback = callback
+        self.originalColor = color
         super.init(center: center, radius: radius, color: color)
         setup(icon)
     }
 
     init(center: CGPoint, radius: CGFloat, color: UIColor, view: UIView, callback: () -> ()) {
         self.callback = callback
+        self.originalColor = color
         super.init(center: center, radius: radius, color: color)
         setupView(view)
     }
     
     public init(icon: UIImage, callback: () -> ()) {
         self.callback = callback
+        self.originalColor = UIColor.clearColor()
         super.init()
         setup(icon)
     }
@@ -464,18 +470,22 @@ public class LiquidFloatingCell : LiquittableCircle {
     
     public override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         if responsible {
+            originalColor = color
+            color = originalColor.white(0.5)
             setNeedsDisplay()
         }
     }
     
     public override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
         if responsible {
+            color = originalColor
             setNeedsDisplay()
         }
     }
     
     override public func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.callback()
+        color = originalColor
     }
 
 }
