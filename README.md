@@ -43,7 +43,7 @@ pod "LiquidFloatingActionButton"
 or, if you use [Carthage](https://github.com/Carthage/Carthage), add the following line to your `Carthage` file.
 
 ```
-github "yoavlt/LiquidLoader"
+github "yoavlt/LiquidFloatingActionButton"
 ```
 
 ## License
