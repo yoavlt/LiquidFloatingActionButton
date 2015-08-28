@@ -241,7 +241,7 @@ public class LiquidFloatingActionButton : UIView {
             for i in 0..<cells.count {
                 let cell = cells[i]
                 if target === cell {
-                    delegate?.liquidFloatingActionButton!(self, didSelectItemAtIndex: i)
+                    delegate?.liquidFloatingActionButton?(self, didSelectItemAtIndex: i)
                 }
             }
         }
