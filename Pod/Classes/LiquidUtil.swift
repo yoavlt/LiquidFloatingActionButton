@@ -30,14 +30,15 @@ func withFill(bezierPath: UIBezierPath, color: UIColor, f: () -> ()) {
 
 func appendShadow(layer: CALayer) {
     layer.shadowColor = UIColor.blackColor().CGColor
-    layer.shadowRadius = 4.0
-    layer.shadowOpacity = 0.3
-    layer.shadowOffset = CGSize(width: 2, height: 2)
+    layer.shadowRadius = 2.0
+    layer.shadowOpacity = 0.1
+    layer.shadowOffset = CGSize(width: 4, height: 4)
     layer.masksToBounds = false
 }
 
 func eraseShadow(layer: CALayer) {
     layer.shadowRadius = 0.0
+    layer.shadowColor = UIColor.clearColor().CGColor
 }
 
 class CGMath {

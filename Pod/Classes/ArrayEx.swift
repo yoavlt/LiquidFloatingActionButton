@@ -85,7 +85,7 @@ extension Array {
     }
     
     func at(index: Int) -> Element? {
-        if count > index {
+        if index >= 0 && count > index {
             return self[index]
         }
         return nil
@@ -101,6 +101,19 @@ extension Array {
             }
         }
         return res
+    }
+    
+    func concat<U>(array: [U]) -> [U] {
+        var result: [U] = []
+        for item in array {
+            result.append(item)
+        }
+        for item in self {
+            if let elem = item as? U {
+                result.append(elem)
+            }
+        }
+        return result
     }
     
 }
