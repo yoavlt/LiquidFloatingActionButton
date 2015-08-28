@@ -55,17 +55,6 @@ public class LiquidFloatingActionButton : UIView {
         setup()
     }
 
-    public func addCellImage(image: UIImage, onSelected: () -> ()) {
-        let cell = LiquidFloatingCell(
-            center  : self.center.minus(self.frame.origin),
-            radius  : self.frame.width * cellRadiusRatio,
-            color   : self.color,
-            icon    : image,
-            callback: onSelected
-        )
-//        cells.append(cell)
-    }
-    
     private func insertCell(cell: LiquidFloatingCell) {
         cell.color  = self.color
         cell.radius = self.frame.width * cellRadiusRatio
@@ -417,12 +406,7 @@ public class LiquidFloatingCell : LiquittableCircle {
     
     public override var frame: CGRect {
         didSet {
-            for subview in subviews {
-                if let view = subview as? UIView {
-                    let size = CGSize(width: frame.width * 0.5, height: frame.height * 0.5)
-                    view.frame = CGRect(x: frame.width - frame.width * internalRatio, y: frame.height - frame.height * internalRatio, width: size.width, height: size.height)
-                }
-            }
+            resizeSubviews()
         }
     }
 
@@ -449,10 +433,7 @@ public class LiquidFloatingCell : LiquittableCircle {
     }
     
     func setup(image: UIImage, tintColor: UIColor = UIColor.whiteColor()) {
-        let size = CGSize(width: frame.width * 0.5, height: frame.height * 0.5)
-        let imageView = UIImageView(
-            frame: CGRect(x: frame.width - frame.width * internalRatio, y: frame.height - frame.height * internalRatio, width: size.width, height: size.height)
-        )
+        let imageView = UIImageView()
         imageView.image = image.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         imageView.tintColor = tintColor
         setupView(imageView)
@@ -461,8 +442,18 @@ public class LiquidFloatingCell : LiquittableCircle {
     func setupView(view: UIView) {
         userInteractionEnabled = false
         addSubview(view)
+        resizeSubviews()
     }
-
+    
+    private func resizeSubviews() {
+        for subview in subviews {
+            if let view = subview as? UIView {
+                let size = CGSize(width: frame.width * 0.5, height: frame.height * 0.5)
+                view.frame = CGRect(x: frame.width - frame.width * internalRatio, y: frame.height - frame.height * internalRatio, width: size.width, height: size.height)
+            }
+        }
+    }
+    
     func update(key: CGFloat) {
         for subview in self.subviews {
             if let view = subview as? UIView {
