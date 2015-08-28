@@ -134,7 +134,7 @@ public class LiquidFloatingActionButton : UIView {
     
     private func drawShadow() {
         if enableShadow {
-            appendShadow(self.circleLayer)
+            circleLayer.appendShadow()
         }
     }
     
@@ -304,7 +304,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
         opening = true
         for cell in cells {
             cell.layer.removeAllAnimations()
-            eraseShadow(cell.layer)
+            cell.layer.eraseShadow()
             openingCells.append(cell)
         }
     }
@@ -317,7 +317,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
         displayLink?.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
         for cell in cells {
             cell.layer.removeAllAnimations()
-            eraseShadow(cell.layer)
+            cell.layer.eraseShadow()
             openingCells.append(cell)
             cell.userInteractionEnabled = false
         }
@@ -391,7 +391,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
     func stop() {
         for cell in openingCells {
             if enableShadow {
-                appendShadow(cell.layer)
+                cell.layer.appendShadow()
             }
         }
         openingCells = []

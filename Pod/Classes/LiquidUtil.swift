@@ -16,29 +16,19 @@ func withBezier(f: (UIBezierPath) -> ()) -> UIBezierPath {
     return bezierPath
 }
 
-func withStroke(bezierPath: UIBezierPath, color: UIColor, f: () -> ()) {
-    color.setStroke()
-    f()
-    bezierPath.stroke()
-}
-
-func withFill(bezierPath: UIBezierPath, color: UIColor, f: () -> ()) {
-    color.setFill()
-    f()
-    bezierPath.fill()
-}
-
-func appendShadow(layer: CALayer) {
-    layer.shadowColor = UIColor.blackColor().CGColor
-    layer.shadowRadius = 2.0
-    layer.shadowOpacity = 0.1
-    layer.shadowOffset = CGSize(width: 4, height: 4)
-    layer.masksToBounds = false
-}
-
-func eraseShadow(layer: CALayer) {
-    layer.shadowRadius = 0.0
-    layer.shadowColor = UIColor.clearColor().CGColor
+extension CALayer {
+    func appendShadow() {
+        shadowColor = UIColor.blackColor().CGColor
+        shadowRadius = 2.0
+        shadowOpacity = 0.1
+        shadowOffset = CGSize(width: 4, height: 4)
+        masksToBounds = false
+    }
+    
+    func eraseShadow() {
+        shadowRadius = 0.0
+        shadowColor = UIColor.clearColor().CGColor
+    }
 }
 
 class CGMath {

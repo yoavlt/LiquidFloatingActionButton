@@ -42,10 +42,6 @@ extension UIColor {
         return UIColor(red: self.red, green: self.green, blue: self.blue, alpha: alpha)
     }
     
-    func scale(scale: CGFloat) -> UIColor {
-        return UIColor(red: self.red * scale, green: self.green * scale, blue: self.blue * scale, alpha: self.alpha)
-    }
-    
     func white(scale: CGFloat) -> UIColor {
         return UIColor(
             red: self.red + (1.0 - self.red) * scale,
