@@ -284,7 +284,6 @@ class CircleLiquidBaseView : ActionBarBaseView {
             cell.layer.removeAllAnimations()
             eraseShadow(cell.layer)
             openingCells.append(cell)
-            cell.userInteractionEnabled = true
         }
     }
     
@@ -302,6 +301,14 @@ class CircleLiquidBaseView : ActionBarBaseView {
         }
     }
 
+    func didFinishUpdate() {
+        if opening {
+            for cell in openingCells {
+                cell.userInteractionEnabled = true
+            }
+        }
+    }
+
     func update(delay: CGFloat, duration: CGFloat, f: (UIView, Int, CGFloat) -> ()) {
         if openingCells.isEmpty {
             return
@@ -312,6 +319,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
         let allRatio = easeInEaseOut(t / maxDuration)
 
         if allRatio >= 1.0 {
+            didFinishUpdate()
             stop()
             return
         }
