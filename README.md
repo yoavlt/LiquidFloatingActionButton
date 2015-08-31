@@ -9,6 +9,8 @@
 
 LiquidFloatingActionButton is floating action button component of [material design](https://www.google.com/design/spec/material-design/introduction.html) in liquid state, inspired by [Material In a Liquid State](http://www.materialup.com/posts/material-in-a-liquid-state).
 
+![Demo](https://github.com/yoavlt/LiquidFloatingActionButton/blob/master/Demo/top.gif?raw=true)
+
 ## Features
 - [x] liquid animation
 - [x] easily custoizable
@@ -31,6 +33,9 @@ floatingActionButton.delegate = self
 
 ### LiquidFloatingActionButtonDelegate
 * optional func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int)
+
+## Easily customizable
+![Demo](https://github.com/yoavlt/LiquidFloatingActionButton/blob/master/Demo/customizable.gif?raw=true)
 
 ## Installation
 
