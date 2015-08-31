@@ -22,7 +22,6 @@ You just need implement `LiquidFloatingActionButtonDataSource` and `LiquidFloati
 
 ```swift
 let floatingActionButton = LiquidFloatingActionButton(frame: floatingFrame)
-floatingActionButton.responsible = false
 floatingActionButton.dataSource = self
 floatingActionButton.delegate = self
 ```
