@@ -16,6 +16,8 @@ LiquidFloatingActionButton is floating action button component of [material desi
 - [x] easily custoizable
 - [x] Objective-C complatible
 
+You can play a demo with [appetize.io](https://appetize.io/app/f4t42hgqbnbma4m12jcg3aeebg?device=iphone5s&scale=75&orientation=portrait)
+
 ## Usage
 
 You just need implement `LiquidFloatingActionButtonDataSource` and `LiquidFloatingActionButtonDelegate` similar to well-known UIKit design.
