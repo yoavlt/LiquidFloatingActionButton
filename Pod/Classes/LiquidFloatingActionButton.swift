@@ -20,11 +20,23 @@ import QuartzCore
     optional func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int)
 }
 
+public enum LiquidFloatingActionButtonAnimateStyle : Int {
+    case Up
+    case Right
+    case Left
+    case Down
+}
+
 @IBDesignable
 public class LiquidFloatingActionButton : UIView {
 
     private let internalRadiusRatio: CGFloat = 20.0 / 56.0
     public var cellRadiusRatio: CGFloat      = 0.38
+    public var animateStyle: LiquidFloatingActionButtonAnimateStyle = .Up {
+        didSet {
+            baseView.animateStyle = animateStyle
+        }
+    }
     public var enableShadow = true {
         didSet {
             setNeedsDisplay()
@@ -270,6 +282,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
     let openDuration: CGFloat  = 0.6
     let closeDuration: CGFloat = 0.2
     let viscosity: CGFloat     = 0.65
+    var animateStyle: LiquidFloatingActionButtonAnimateStyle = .Up
     var color: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0) {
         didSet {
             engine?.color = color
@@ -289,6 +302,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
     override func setup(actionButton: LiquidFloatingActionButton) {
         self.frame = actionButton.frame
         self.center = actionButton.center.minus(actionButton.frame.origin)
+        self.animateStyle = actionButton.animateStyle
         let radius = min(self.frame.width, self.frame.height) * 0.5
         self.engine = SimpleCircleLiquidEngine(radiusThresh: radius * 0.73, angleThresh: 0.45)
         engine?.viscosity = viscosity
@@ -385,7 +399,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
         update(0.1, duration: openDuration) { cell, i, ratio in
             let posRatio = ratio > CGFloat(i) / CGFloat(self.openingCells.count) ? ratio : 0
             let distance = (cell.frame.height * 0.5 + CGFloat(i + 1) * cell.frame.height * 1.5) * posRatio
-            cell.center = self.center.minusY(distance)
+            cell.center = self.center.plus(self.differencePoint(distance))
             cell.update(ratio, open: true)
         }
     }
@@ -393,8 +407,21 @@ class CircleLiquidBaseView : ActionBarBaseView {
     func updateClose() {
         update(0, duration: closeDuration) { cell, i, ratio in
             let distance = (cell.frame.height * 0.5 + CGFloat(i + 1) * cell.frame.height * 1.5) * (1 - ratio)
-            cell.center = self.center.minusY(distance)
+            cell.center = self.center.plus(self.differencePoint(distance))
             cell.update(ratio, open: false)
+        }
+    }
+    
+    func differencePoint(distance: CGFloat) -> CGPoint {
+        switch animateStyle {
+        case .Up:
+            return CGPoint(x: 0, y: -distance)
+        case .Right:
+            return CGPoint(x: distance, y: 0)
+        case .Left:
+            return CGPoint(x: -distance, y: 0)
+        case .Down:
+            return CGPoint(x: 0, y: distance)
         }
     }
     

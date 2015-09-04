@@ -16,25 +16,31 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.view.backgroundColor = UIColor(red: 55 / 255.0, green: 55 / 255.0, blue: 55 / 255.0, alpha: 1.0)
         // Do any additional setup after loading the view, typically from a nib.
-        let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 56 - 16, width: 56, height: 56)
-        floatingActionButton = LiquidFloatingActionButton(frame: floatingFrame)
-        floatingActionButton.dataSource = self
-        floatingActionButton.delegate = self
-        floatingActionButton.color = UIColor.orangeColor()
+        let createButton: (CGRect, LiquidFloatingActionButtonAnimateStyle) -> LiquidFloatingActionButton = { (frame, style) in
+            let floatingActionButton = LiquidFloatingActionButton(frame: frame)
+            floatingActionButton.animateStyle = style
+            floatingActionButton.dataSource = self
+            floatingActionButton.delegate = self
+            return floatingActionButton
+        }
+        
         let cellFactory: (String) -> LiquidFloatingCell = { (iconName) in
             return LiquidFloatingCell(icon: UIImage(named: iconName)!)
         }
-        
         cells.append(cellFactory("ic_cloud"))
         cells.append(cellFactory("ic_system"))
         cells.append(cellFactory("ic_place"))
-        cells.append(cellFactory("ic_art"))
-        cells.append(cellFactory("ic_brush"))
-        cells.append(cellFactory("ic_art"))
-        cells.append(cellFactory("ic_brush"))
+        
+        let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 56 - 16, width: 56, height: 56)
+        let bottomRightButton = createButton(floatingFrame, .Up)
+        
+        let floatingFrame2 = CGRect(x: 16, y: 16, width: 56, height: 56)
+        let topLeftButton = createButton(floatingFrame2, .Down)
 
-        self.view.addSubview(floatingActionButton)
+        self.view.addSubview(bottomRightButton)
+        self.view.addSubview(topLeftButton)
     }
 
     override func didReceiveMemoryWarning() {
