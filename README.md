@@ -14,7 +14,7 @@ LiquidFloatingActionButton is floating action button component of [material desi
 ## Features
 - [x] liquid animation
 - [x] easily custoizable
-- [x] Objective-C complatible
+- [x] Objective-C compatible
 
 You can play a demo with [appetize.io](https://appetize.io/app/f4t42hgqbnbma4m12jcg3aeebg?device=iphone5s&scale=75&orientation=portrait)
 
