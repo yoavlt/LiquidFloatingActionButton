@@ -73,7 +73,7 @@ public class LiquidFloatingActionButton : UIView {
         setup()
     }
 
-    required public init(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -173,7 +173,7 @@ public class LiquidFloatingActionButton : UIView {
     }
     
     private func plusKeyframe(closed: Bool) -> CAKeyframeAnimation {
-        var paths = closed ? [
+        let paths = closed ? [
                 pathPlus(CGFloat(M_PI * 0)),
                 pathPlus(CGFloat(M_PI * 0.125)),
                 pathPlus(CGFloat(M_PI * 0.25)),
@@ -193,18 +193,18 @@ public class LiquidFloatingActionButton : UIView {
     }
 
     // MARK: Events
-    public override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.touching = true
         setNeedsDisplay()
     }
     
-    public override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+    public override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.touching = false
         setNeedsDisplay()
         didTapped()
     }
     
-    public override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
+    public override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
         self.touching = false
         setNeedsDisplay()
     }
@@ -494,7 +494,7 @@ public class LiquidFloatingCell : LiquittableCircle {
         setup(icon)
     }
 
-    required public init(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -524,7 +524,7 @@ public class LiquidFloatingCell : LiquittableCircle {
         }
     }
     
-    public override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if responsible {
             originalColor = color
             color = originalColor.white(0.5)
@@ -532,14 +532,14 @@ public class LiquidFloatingCell : LiquittableCircle {
         }
     }
     
-    public override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
+    public override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
         if responsible {
             color = originalColor
             setNeedsDisplay()
         }
     }
     
-    override public func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override public func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         color = originalColor
         actionButton?.didTappedCell(self)
     }
