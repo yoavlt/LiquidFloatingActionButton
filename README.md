@@ -8,6 +8,7 @@
 (https://github.com/Carthage/Carthage)
 
 LiquidFloatingActionButton is floating action button component of [material design](https://www.google.com/design/spec/material-design/introduction.html) in liquid state, inspired by [Material In a Liquid State](http://www.materialup.com/posts/material-in-a-liquid-state).
+This is also [spinner loader](https://github.com/yoavlt/LiquidLoader) components in liquid state.
 
 ![Demo](https://github.com/yoavlt/LiquidFloatingActionButton/blob/master/Demo/top.gif?raw=true)
 
