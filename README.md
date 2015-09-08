@@ -16,6 +16,7 @@ This is also [spinner loader](https://github.com/yoavlt/LiquidLoader) components
 - [x] liquid animation
 - [x] easily custoizable
 - [x] Objective-C compatible
+- [x] Swift2.0
 
 You can play a demo with [appetize.io](https://appetize.io/app/f4t42hgqbnbma4m12jcg3aeebg?device=iphone5s&scale=75&orientation=portrait)
 
@@ -52,6 +53,8 @@ or, if you use [Carthage](https://github.com/Carthage/Carthage), add the followi
 ```
 github "yoavlt/LiquidFloatingActionButton"
 ```
+
+Please use `swift-2.0` branch if you adopt latest Xcode.
 
 ## License
 
