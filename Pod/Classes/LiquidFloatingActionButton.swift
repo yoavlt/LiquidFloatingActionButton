@@ -501,7 +501,7 @@ public class LiquidFloatingCell : LiquittableCircle {
         setupView(imageView)
     }
     
-    func setupView(view: UIView) {
+    public func setupView(view: UIView) {
         userInteractionEnabled = false
         addSubview(view)
         resizeSubviews()
