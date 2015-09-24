@@ -47,7 +47,7 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
         return cells.count
     }
