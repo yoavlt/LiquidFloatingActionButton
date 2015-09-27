@@ -47,6 +47,11 @@ public class LiquidFloatingActionButton : UIView {
     public var dataSource: LiquidFloatingActionButtonDataSource?
 
     public var responsible = true
+    public var isOpening: Bool  {
+        get {
+            return !baseView.openingCells.isEmpty
+        }
+    }
     public var isClosed: Bool {
         get {
             return plusRotation == 0
