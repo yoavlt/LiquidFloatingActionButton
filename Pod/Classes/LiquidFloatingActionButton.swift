@@ -406,14 +406,6 @@ class CircleLiquidBaseView : ActionBarBaseView {
         bigEngine?.draw(baseLiquid!)
     }
     
-    func updateOpen() {
-        update()
-    }
-    
-    func updateClose() {
-        update()
-    }
-    
 	func differencePoint(cellLength: CGFloat, ratio: CGFloat, i: Int) -> CGPoint {
 		var adjustedRatio = 1 - ratio
 		
@@ -468,7 +460,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
     
     func didDisplayRefresh(displayLink: CADisplayLink) {
 		keyDuration += CGFloat(displayLink.duration)
-		updateOpen()
+		update()
     }
 
 }
