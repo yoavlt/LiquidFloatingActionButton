@@ -30,9 +30,9 @@ public class CustomCell : LiquidFloatingCell {
         label.font = UIFont(name: "Helvetica-Neue", size: 12)
         addSubview(label)
         label.snp_makeConstraints { make in
-            make.left.equalTo(self).offset(-80)
+            make.centerY.equalTo(self).offset(30)
             make.width.equalTo(75)
-            make.top.height.equalTo(self)
+            make.centerX.height.equalTo(self)
         }
     }
 }
@@ -71,9 +71,19 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
         
         let floatingFrame2 = CGRect(x: 16, y: 16, width: 56, height: 56)
         let topLeftButton = createButton(floatingFrame2, .Down)
-
-        self.view.addSubview(bottomRightButton)
-        self.view.addSubview(topLeftButton)
+		
+		let floatingFrameBottomMiddle = CGRect(
+			x: (self.view.frame.width - 56 - 16) / 2,
+			y: self.view.frame.height - 56 - 16,
+			width: 56,
+			height: 56
+		)
+		
+		let bottomMiddleButton = createButton(floatingFrameBottomMiddle, .FanUp)
+		
+		self.view.addSubview(bottomRightButton)
+		self.view.addSubview(topLeftButton)
+		self.view.addSubview(bottomMiddleButton)
     }
 
     override func didReceiveMemoryWarning() {
