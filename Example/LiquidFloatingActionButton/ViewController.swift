@@ -37,6 +37,36 @@ public class CustomCell : LiquidFloatingCell {
     }
 }
 
+public class CustomDrawingActionButton: LiquidFloatingActionButton {
+    
+    override public func createPlusLayer(frame: CGRect) -> CAShapeLayer {
+        
+        let plusLayer = CAShapeLayer()
+        plusLayer.lineCap = kCALineCapRound
+        plusLayer.strokeColor = UIColor.whiteColor().CGColor
+        plusLayer.lineWidth = 3.0
+        
+        let w = frame.width
+        let h = frame.height
+        
+        let points = [
+            (CGPoint(x: w * 0.25, y: h * 0.35), CGPoint(x: w * 0.75, y: h * 0.35)),
+            (CGPoint(x: w * 0.25, y: h * 0.5), CGPoint(x: w * 0.75, y: h * 0.5)),
+            (CGPoint(x: w * 0.25, y: h * 0.65), CGPoint(x: w * 0.75, y: h * 0.65))
+        ]
+        
+        let path = UIBezierPath()
+        for (start, end) in points {
+            path.moveToPoint(start)
+            path.addLineToPoint(end)
+        }
+        
+        plusLayer.path = path.CGPath
+        
+        return plusLayer
+    }
+}
+
 class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, LiquidFloatingActionButtonDelegate {
     
     var cells: [LiquidFloatingCell] = []
@@ -44,10 +74,11 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 //        self.view.backgroundColor = UIColor(red: 55 / 255.0, green: 55 / 255.0, blue: 55 / 255.0, alpha: 1.0)
         // Do any additional setup after loading the view, typically from a nib.
         let createButton: (CGRect, LiquidFloatingActionButtonAnimateStyle) -> LiquidFloatingActionButton = { (frame, style) in
-            let floatingActionButton = LiquidFloatingActionButton(frame: frame)
+            let floatingActionButton = CustomDrawingActionButton(frame: frame)
             floatingActionButton.animateStyle = style
             floatingActionButton.dataSource = self
             floatingActionButton.delegate = self
@@ -68,6 +99,9 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
         
         let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 56 - 16, width: 56, height: 56)
         let bottomRightButton = createButton(floatingFrame, .Up)
+        
+        let image = UIImage(named: "ic_art")
+        bottomRightButton.image = image
         
         let floatingFrame2 = CGRect(x: 16, y: 16, width: 56, height: 56)
         let topLeftButton = createButton(floatingFrame2, .Down)
