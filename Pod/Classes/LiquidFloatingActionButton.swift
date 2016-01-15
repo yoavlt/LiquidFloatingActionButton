@@ -18,6 +18,8 @@ import QuartzCore
 @objc public protocol LiquidFloatingActionButtonDelegate {
     // selected method
     optional func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int)
+    optional func didTapped(liquidFloatingActionButton: LiquidFloatingActionButton)
+    optional func didLongTapped(liquidFloatingActionButton: LiquidFloatingActionButton)
 }
 
 public enum LiquidFloatingActionButtonAnimateStyle : Int {
@@ -47,6 +49,9 @@ public class LiquidFloatingActionButton : UIView {
     public var dataSource: LiquidFloatingActionButtonDataSource?
 
     public var responsible = true
+    private var longTapTimer : NSTimer?
+    public var longTapTime = 2.0
+    
     public var isClosed: Bool {
         get {
             return plusRotation == 0
@@ -195,13 +200,16 @@ public class LiquidFloatingActionButton : UIView {
     // MARK: Events
     public override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.touching = true
+        self.longTapTimer = NSTimer.scheduledTimerWithTimeInterval(self.longTapTime, target: self, selector: "didLongTapped", userInfo: nil, repeats: false)
         setNeedsDisplay()
     }
     
     public override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+        if(self.touching == true){
+            setNeedsDisplay()
+            didTapped()
+        }
         self.touching = false
-        setNeedsDisplay()
-        didTapped()
     }
     
     public override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
@@ -240,10 +248,19 @@ public class LiquidFloatingActionButton : UIView {
     }
 
     private func didTapped() {
+        longTapTimer?.invalidate()
+        delegate?.didTapped(self)
         if isClosed {
             open()
         } else {
             close()
+        }
+    }
+    
+    private func didLongTapped(){
+        self.touching = false
+        if isClosed{
+            delegate?.didLongTapped(self)
         }
     }
     
