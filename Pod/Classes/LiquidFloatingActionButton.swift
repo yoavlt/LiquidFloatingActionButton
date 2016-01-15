@@ -25,6 +25,7 @@ public enum LiquidFloatingActionButtonAnimateStyle : Int {
     case Right
     case Left
     case Down
+	case FanUp
 }
 
 @IBDesignable
@@ -268,9 +269,7 @@ class ActionBarBaseView : UIView {
 
 class CircleLiquidBaseView : ActionBarBaseView {
 
-    let openDuration: CGFloat  = 0.6
-    let closeDuration: CGFloat = 0.2
-    let viscosity: CGFloat     = 0.65
+	let viscosity: CGFloat     = 0.65
     var animateStyle: LiquidFloatingActionButtonAnimateStyle = .Up
     var color: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0) {
         didSet {
@@ -346,11 +345,19 @@ class CircleLiquidBaseView : ActionBarBaseView {
         }
     }
 
-    func update(delay: CGFloat, duration: CGFloat, f: (LiquidFloatingCell, Int, CGFloat) -> ()) {
+    func update() {
         if openingCells.isEmpty {
             return
         }
+		
+		var delay: CGFloat = 0.1
+		var duration: CGFloat = 0.2
 
+		if opening {
+			delay = 0.0
+			duration = 0.6
+		}
+		
         let maxDuration = duration + CGFloat(openingCells.count) * CGFloat(delay)
         let t = keyDuration
         let allRatio = easeInEaseOut(t / maxDuration)
@@ -367,7 +374,8 @@ class CircleLiquidBaseView : ActionBarBaseView {
             let liquidCell = openingCells[i]
             let cellDelay = CGFloat(delay) * CGFloat(i)
             let ratio = easeInEaseOut((t - cellDelay) / duration)
-            f(liquidCell, i, ratio)
+			liquidCell.center = self.center.plus(self.differencePoint(liquidCell.frame.height, ratio: ratio, i: i))
+			liquidCell.update(ratio, open: opening)
         }
 
         if let firstCell = openingCells.first {
@@ -382,24 +390,16 @@ class CircleLiquidBaseView : ActionBarBaseView {
         bigEngine?.draw(baseLiquid!)
     }
     
-    func updateOpen() {
-        update(0.1, duration: openDuration) { cell, i, ratio in
-            let posRatio = ratio > CGFloat(i) / CGFloat(self.openingCells.count) ? ratio : 0
-            let distance = (cell.frame.height * 0.5 + CGFloat(i + 1) * cell.frame.height * 1.5) * posRatio
-            cell.center = self.center.plus(self.differencePoint(distance))
-            cell.update(ratio, open: true)
-        }
-    }
-    
-    func updateClose() {
-        update(0, duration: closeDuration) { cell, i, ratio in
-            let distance = (cell.frame.height * 0.5 + CGFloat(i + 1) * cell.frame.height * 1.5) * (1 - ratio)
-            cell.center = self.center.plus(self.differencePoint(distance))
-            cell.update(ratio, open: false)
-        }
-    }
-    
-    func differencePoint(distance: CGFloat) -> CGPoint {
+	func differencePoint(cellLength: CGFloat, ratio: CGFloat, i: Int) -> CGPoint {
+		var adjustedRatio = 1 - ratio
+		
+		if opening {
+			adjustedRatio = ratio > CGFloat(i) / CGFloat(self.openingCells.count) ? ratio : 0
+		}
+		
+		let totalDistance = cellLength * 0.5 + CGFloat(i + 1) * cellLength * 1.5
+		let distance = totalDistance * adjustedRatio
+		
         switch animateStyle {
         case .Up:
             return CGPoint(x: 0, y: -distance)
@@ -409,7 +409,16 @@ class CircleLiquidBaseView : ActionBarBaseView {
             return CGPoint(x: -distance, y: 0)
         case .Down:
             return CGPoint(x: 0, y: distance)
-        }
+		case .FanUp:
+			let totalSpread = (CGFloat(self.openingCells.count) * cellLength + cellLength) * adjustedRatio
+			let totalRise = cellLength * 0.75 * adjustedRatio
+			let count: CGFloat = CGFloat(self.openingCells.count)
+			let countLessOne: CGFloat = count > 1.0 ? count - 1.0 : 1.0
+			let fanX = totalSpread * CGFloat(i) / countLessOne - totalSpread / 2.0
+			let distanceFromCenter = totalRise / (count - (count + 1.0) / 2.0) * (CGFloat(i) + 1.0 - (count + 1.0) / 2.0)
+			let fanY = (cellLength * 1.5 + totalRise - abs(distanceFromCenter)) * adjustedRatio
+			return CGPoint(x: -fanX, y: -fanY)
+		}
     }
     
     func stop() {
@@ -434,13 +443,8 @@ class CircleLiquidBaseView : ActionBarBaseView {
     }
     
     func didDisplayRefresh(displayLink: CADisplayLink) {
-        if opening {
-            keyDuration += CGFloat(displayLink.duration)
-            updateOpen()
-        } else {
-            keyDuration += CGFloat(displayLink.duration)
-            updateClose()
-        }
+		keyDuration += CGFloat(displayLink.duration)
+		update()
     }
 
 }
