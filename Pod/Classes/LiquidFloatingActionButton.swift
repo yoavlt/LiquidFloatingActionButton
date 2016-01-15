@@ -249,7 +249,7 @@ public class LiquidFloatingActionButton : UIView {
 
     private func didTapped() {
         longTapTimer?.invalidate()
-        delegate?.didTapped(self)
+        delegate!.didTapped!(self)
         if isClosed {
             open()
         } else {
@@ -260,7 +260,7 @@ public class LiquidFloatingActionButton : UIView {
     private func didLongTapped(){
         self.touching = false
         if isClosed{
-            delegate?.didLongTapped(self)
+            delegate!.didLongTapped!(self)
         }
     }
     
