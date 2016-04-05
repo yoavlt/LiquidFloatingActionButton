@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DBCE28963DAD945FFD48B50 /* Pods_LiquidFloatingActionButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3A86F9C536AF0FF2200223 /* Pods_LiquidFloatingActionButton_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		49A475E961E793F7AF7E4ED6 /* Pods_LiquidFloatingActionButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919BDD2D3636894AF8DB602C /* Pods_LiquidFloatingActionButton_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1DBCE28963DAD945FFD48B50 /* Pods_LiquidFloatingActionButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3A86F9C536AF0FF2200223 /* Pods_LiquidFloatingActionButton_Example.framework */; };
+		49A475E961E793F7AF7E4ED6 /* Pods_LiquidFloatingActionButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919BDD2D3636894AF8DB602C /* Pods_LiquidFloatingActionButton_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };

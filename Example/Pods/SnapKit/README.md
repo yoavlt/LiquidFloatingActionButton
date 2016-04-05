@@ -1,4 +1,4 @@
-<img src="http://snapkit.io/images/banner.png" alt="" />
+<img src="http://snapkit.io/images/banner.jpg" alt="" />
 
 SnapKit is a DSL to make Auto Layout easy on both iOS and OS X.
 
@@ -12,10 +12,10 @@ import SnapKit
 class MyViewController: UIViewController {
 
     lazy var box = UIView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.view.addSubview(box)
         box.snp_makeConstraints { (make) -> Void in
            make.width.height.equalTo(50)
