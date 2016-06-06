@@ -19,7 +19,7 @@ public class LiquittableCircle : UIView {
         }
     }
     // Set to public for setting indiviudal colors
-    public var color: UIColor = UIColor.redColor() {
+    public var color: UIColor? = nil {
         didSet {
             setup()
         }
@@ -67,7 +67,7 @@ public class LiquittableCircle : UIView {
 
     func draw(path: UIBezierPath) -> CAShapeLayer {
         circleLayer.lineWidth = 3.0
-        circleLayer.fillColor = self.color.CGColor
+        circleLayer.fillColor = self.color?.CGColor
         circleLayer.path = path.CGPath
         return circleLayer
     }

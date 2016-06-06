@@ -90,7 +90,11 @@ public class LiquidFloatingActionButton : UIView {
     }
 
     private func insertCell(cell: LiquidFloatingCell) {
-        // cell.color  = self.color
+        // Default to the button color
+        if cell.color == nil {
+            cell.color = self.color
+        }
+        
         cell.radius = self.frame.width * cellRadiusRatio
         cell.center = self.center.minus(self.frame.origin)
         cell.actionButton = self
@@ -374,7 +378,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
 
         if let firstCell = openingCells.first {
             // Set color of bigEngine
-            bigEngine?.color = firstCell.color
+            bigEngine?.color = firstCell.color!
             bigEngine?.push(baseLiquid!, other: firstCell)
         }
         
@@ -382,7 +386,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
             let prev = openingCells[i - 1]
             let cell = openingCells[i]
             // switch color to cell color
-            engine?.color = cell.color
+            engine?.color = cell.color!
             engine?.push(prev, other: cell)
         }
         engine?.draw(baseLiquid!)
@@ -517,7 +521,7 @@ public class LiquidFloatingCell : LiquittableCircle {
     
     public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if responsible {
-            originalColor = color
+            originalColor = color!
             color = originalColor.white(0.5)
             setNeedsDisplay()
         }

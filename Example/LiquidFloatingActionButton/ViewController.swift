@@ -96,12 +96,13 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
         
         // Insert cell with color customization!
         cells.append(cellFactory("ic_cloud"))
-        cells.last?.color = UIColor.redColor()
+        cells.last?.color = UIColor.redColor() // Set cell to red color
         
         cells.append(customCellFactory("ic_system"))
-        cells.last?.color = UIColor.blueColor()
+        cells.last?.color = UIColor.blueColor() // Set Cell to blue color
         
         cells.append(cellFactory("ic_place"))
+        // Cell becomes the button's color!
         
         let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 56 - 16, width: 56, height: 56)
         let bottomRightButton = createButton(floatingFrame, .Up)
