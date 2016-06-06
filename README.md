@@ -29,6 +29,29 @@ floatingActionButton.dataSource = self
 floatingActionButton.delegate = self
 ```
 
+This fork also allows the use of setting each icon's color intuitively.
+
+``` swift
+let floatingActionButton = LiquidFloatingActionButton(frame: floatingFrame)
+floatingActionButton.dataSource = self
+floatingActionButton.delegate = self
+
+// Button 1 will become a red color!
+let button1 = LiquidFloatingCell(icon: UIImage(named: iconNameThatExists)!)
+button1.color = UIColor.redColor()
+
+// Button 2 defaults to the floatingActionButton's color.
+let button2 = LiquidFloatingCell(icon: UIImage(named: iconNameThatExists)!)
+```
+
+This will let you have colored animations:
+
+![Demo](https://github.com/shotaroikeda/LiquidFloatingActionButton/blob/master/Demo/colored_example.gif?raw=true)
+
+See the [example]() for more details.
+
+
+
 ### LiquidFloatingActionButtonDataSource
 * func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton) -> Int
 * func cellForIndex(index: Int) -> LiquidFloatingCell
@@ -45,12 +68,12 @@ LiquidFloatingActionButton is available through [CocoaPods](http://cocoapods.org
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "LiquidFloatingActionButton"
+pod "LiquidFloatingActionButton", :git => "shotaroikeda/LiquidFloatingActionButton", :branch => 'swift-2.0'
 ```
 or, if you use [Carthage](https://github.com/Carthage/Carthage), add the following line to your `Carthage` file.
 
 ```
-github "yoavlt/LiquidFloatingActionButton"
+github "shotaroikeda/LiquidFloatingActionButton"
 ```
 
 ## License
