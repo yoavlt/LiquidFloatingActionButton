@@ -11,7 +11,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LiquidFloatingActionButton: dcdae1e59eb07eccbf60c027001a4d6731c345c9
+  LiquidFloatingActionButton: 1e13ddd113b18b953e80eed95adf64d2c0433815
   SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: d32e84aa2d52a9e8dbba10e8de937cda2a823e0d
+
+COCOAPODS: 1.0.1
