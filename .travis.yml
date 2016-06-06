@@ -5,6 +5,7 @@ install:
 
 before_script:
     - cd Example
+    - pod repo update
     - pod install
 
 xcode_workspace: LiquidFloatingActionButton.xcworkspace
