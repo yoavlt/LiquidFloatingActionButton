@@ -18,7 +18,7 @@ class SimpleCircleLiquidEngine {
     private var layer: CALayer = CAShapeLayer()
 
     var viscosity: CGFloat = 0.65
-    var color = UIColor.redColor()
+    var color = UIColor.blueColor()
     var angleOpen: CGFloat = 1.0
     
     let ConnectThresh: CGFloat = 0.3

@@ -93,8 +93,14 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
             let cell = CustomCell(icon: UIImage(named: iconName)!, name: iconName)
             return cell
         }
+        
+        // Insert cell with color customization!
         cells.append(cellFactory("ic_cloud"))
+        cells.last?.color = UIColor.redColor()
+        
         cells.append(customCellFactory("ic_system"))
+        cells.last?.color = UIColor.blueColor()
+        
         cells.append(cellFactory("ic_place"))
         
         let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 56 - 16, width: 56, height: 56)

@@ -56,7 +56,7 @@ public class LiquidFloatingActionButton : UIView {
     
     @IBInspectable public var color: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0) {
         didSet {
-            baseView.color = color
+            // baseView.color = color
         }
     }
     
@@ -90,7 +90,7 @@ public class LiquidFloatingActionButton : UIView {
     }
 
     private func insertCell(cell: LiquidFloatingCell) {
-        cell.color  = self.color
+        // cell.color  = self.color
         cell.radius = self.frame.width * cellRadiusRatio
         cell.center = self.center.minus(self.frame.origin)
         cell.actionButton = self
@@ -272,7 +272,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
     let closeDuration: CGFloat = 0.2
     let viscosity: CGFloat     = 0.65
     var animateStyle: LiquidFloatingActionButtonAnimateStyle = .Up
-    var color: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0) {
+    var color: UIColor = UIColor.brownColor() { // Seems like this color is unused...
         didSet {
             engine?.color = color
             bigEngine?.color = color
@@ -297,6 +297,8 @@ class CircleLiquidBaseView : ActionBarBaseView {
         engine?.viscosity = viscosity
         self.bigEngine = SimpleCircleLiquidEngine(radiusThresh: radius, angleThresh: 0.55)
         bigEngine?.viscosity = viscosity
+        
+        // Set default engine color -- these lines actually aren't needed!
         self.engine?.color = actionButton.color
         self.bigEngine?.color = actionButton.color
 
@@ -371,11 +373,16 @@ class CircleLiquidBaseView : ActionBarBaseView {
         }
 
         if let firstCell = openingCells.first {
+            // Set color of bigEngine
+            bigEngine?.color = firstCell.color
             bigEngine?.push(baseLiquid!, other: firstCell)
         }
+        
         for i in 1..<openingCells.count {
             let prev = openingCells[i - 1]
             let cell = openingCells[i]
+            // switch color to cell color
+            engine?.color = cell.color
             engine?.push(prev, other: cell)
         }
         engine?.draw(baseLiquid!)
