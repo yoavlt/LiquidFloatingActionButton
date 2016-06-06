@@ -46,7 +46,7 @@ let button2 = LiquidFloatingCell(icon: UIImage(named: iconNameThatExists)!)
 
 This will let you have colored animations:
 
-![Demo](https://github.com/shotaroikeda/LiquidFloatingActionButton/blob/master/Demo/colored_example.gif?raw=true)
+![Demo](https://github.com/shotaroikeda/LiquidFloatingActionButton/blob/swift-2.0/Demo/colored_example.gif?raw=true)
 
 See the [example](https://github.com/shotaroikeda/LiquidFloatingActionButton/blob/swift-2.0/Example/LiquidFloatingActionButton/ViewController.swift#L97-L105) for more details.
 
