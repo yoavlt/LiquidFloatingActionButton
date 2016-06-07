@@ -10,4 +10,4 @@ before_script:
 
 xcode_workspace: LiquidFloatingActionButton.xcworkspace
 xcode_scheme: LiquidFloatingActionButton-Example
-xcode_sdk: iphonesimulator9.0
+xcode_sdk: iphonesimulator9.3
