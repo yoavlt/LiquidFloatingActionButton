@@ -56,12 +56,6 @@ public class LiquidFloatingActionButton : UIView {
     public private(set) var isClosed: Bool = true
     
     @IBInspectable public var color: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0)
-    /* {
-        didSet {
-            // baseView.color = color
-        }
-    }
-    */
     
     @IBInspectable public var image: UIImage? {
         didSet {
@@ -93,10 +87,14 @@ public class LiquidFloatingActionButton : UIView {
     }
 
     private func insertCell(cell: LiquidFloatingCell) {
-        // Default to the button color
-        if cell.color == nil {
-            cell.color = self.color
-        }
+        /*
+         // Default to the button color
+         if cell.color == nil {
+             cell.color = self.color
+         }
+        */
+        // Make sure the default is my color
+        cell.defaultColor = self.color
         
         cell.radius = self.frame.width * cellRadiusRatio
         cell.center = self.center.minus(self.frame.origin)
@@ -279,15 +277,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
     let closeDuration: CGFloat = 0.2
     let viscosity: CGFloat     = 0.65
     var animateStyle: LiquidFloatingActionButtonAnimateStyle = .Up
-    /*
-    var color: UIColor = UIColor.brownColor() { // Seems like this color is unused...
-        didSet {
-            engine?.color = color
-            bigEngine?.color = color
-        }
-    }
-    */
-
+    
     var baseLiquid: LiquittableCircle?
     var engine:     SimpleCircleLiquidEngine?
     var bigEngine:  SimpleCircleLiquidEngine?
@@ -307,10 +297,6 @@ class CircleLiquidBaseView : ActionBarBaseView {
         self.bigEngine = SimpleCircleLiquidEngine(radiusThresh: radius, angleThresh: 0.55)
         bigEngine?.viscosity = viscosity
         
-        // Set default engine color -- these lines actually aren't needed!
-        self.engine?.color = actionButton.color
-        self.bigEngine?.color = actionButton.color
-
         baseLiquid = LiquittableCircle(center: self.center.minus(self.frame.origin), radius: radius, color: actionButton.color)
         baseLiquid?.clipsToBounds = false
         baseLiquid?.layer.masksToBounds = false
@@ -383,7 +369,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
 
         if let firstCell = openingCells.first {
             // Set color of bigEngine
-            bigEngine?.color = firstCell.color!
+            bigEngine?.color = firstCell.color ?? firstCell.defaultColor
             bigEngine?.push(baseLiquid!, other: firstCell)
         }
         
@@ -391,7 +377,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
             let prev = openingCells[i - 1]
             let cell = openingCells[i]
             // switch color to cell color
-            engine?.color = cell.color!
+            engine?.color = cell.color ?? cell.defaultColor
             engine?.push(prev, other: cell)
         }
         engine?.draw(baseLiquid!)

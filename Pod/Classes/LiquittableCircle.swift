@@ -25,6 +25,9 @@ public class LiquittableCircle : UIView {
         }
     }
     
+    // Store the default color
+    public var defaultColor: UIColor = UIColor.blueColor()
+    
     override public var center: CGPoint {
         didSet {
             self.frame = CGRect(x: center.x - radius, y: center.y - radius, width: 2 * radius, height: 2 * radius)
@@ -67,7 +70,7 @@ public class LiquittableCircle : UIView {
 
     func draw(path: UIBezierPath) -> CAShapeLayer {
         circleLayer.lineWidth = 3.0
-        circleLayer.fillColor = self.color?.CGColor
+        circleLayer.fillColor = self.color?.CGColor ?? self.defaultColor.CGColor
         circleLayer.path = path.CGPath
         return circleLayer
     }
