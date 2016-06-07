@@ -44,7 +44,7 @@ class SimpleCircleLiquidEngine {
 
     func clear() {
         layer.removeFromSuperlayer()
-        layer.sublayers?.each{ $0.removeFromSuperlayer() }
+        // layer.sublayers?.each{ $0.removeFromSuperlayer() } // let garbage collection handle this
         layer = CAShapeLayer()
     }
 
