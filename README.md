@@ -19,6 +19,9 @@ This is also [spinner loader](https://github.com/yoavlt/LiquidLoader) components
 
 You can play a demo with [appetize.io](https://appetize.io/app/f4t42hgqbnbma4m12jcg3aeebg?device=iphone5s&scale=75&orientation=portrait)
 
+## Requirements
+- Swift 2.0 is required. The swift-old branch has swift 1.0 compatibility but does not include the icon customization feature
+
 ## Usage
 
 You just need implement `LiquidFloatingActionButtonDataSource` and `LiquidFloatingActionButtonDelegate` similar to well-known UIKit design.
@@ -68,10 +71,9 @@ LiquidFloatingActionButton is available through [CocoaPods](http://cocoapods.org
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "LiquidFloatingActionButton", :git => "shotaroikeda/LiquidFloatingActionButton", :branch => 'swift-2.0'
+pod "LiquidFloatingActionButton", :git => "https://github.com/shotaroikeda/LiquidFloatingActionButton"
 ```
 or, if you use [Carthage](https://github.com/Carthage/Carthage), add the following line to your `Carthage` file.
-
 ```
 github "shotaroikeda/LiquidFloatingActionButton"
 ```
