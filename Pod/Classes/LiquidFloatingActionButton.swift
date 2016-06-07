@@ -54,11 +54,13 @@ public class LiquidFloatingActionButton : UIView {
     }
     public private(set) var isClosed: Bool = true
     
-    @IBInspectable public var color: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0) {
+    @IBInspectable public var color: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0)
+    /* {
         didSet {
             // baseView.color = color
         }
     }
+    */
     
     @IBInspectable public var image: UIImage? {
         didSet {
@@ -276,12 +278,14 @@ class CircleLiquidBaseView : ActionBarBaseView {
     let closeDuration: CGFloat = 0.2
     let viscosity: CGFloat     = 0.65
     var animateStyle: LiquidFloatingActionButtonAnimateStyle = .Up
+    /*
     var color: UIColor = UIColor.brownColor() { // Seems like this color is unused...
         didSet {
             engine?.color = color
             bigEngine?.color = color
         }
     }
+    */
 
     var baseLiquid: LiquittableCircle?
     var engine:     SimpleCircleLiquidEngine?
@@ -465,7 +469,7 @@ public class LiquidFloatingCell : LiquittableCircle {
     weak var actionButton: LiquidFloatingActionButton?
 
     // for implement responsible color
-    private var originalColor: UIColor
+    // private var originalColor: UIColor
     
     public override var frame: CGRect {
         didSet {
@@ -474,19 +478,19 @@ public class LiquidFloatingCell : LiquittableCircle {
     }
 
     init(center: CGPoint, radius: CGFloat, color: UIColor, icon: UIImage) {
-        self.originalColor = color
+        // self.originalColor = color
         super.init(center: center, radius: radius, color: color)
         setup(icon)
     }
 
     init(center: CGPoint, radius: CGFloat, color: UIColor, view: UIView) {
-        self.originalColor = color
+        // self.originalColor = color
         super.init(center: center, radius: radius, color: color)
         setupView(view)
     }
     
     public init(icon: UIImage) {
-        self.originalColor = UIColor.clearColor()
+        // self.originalColor = UIColor.clearColor()
         super.init()
         setup(icon)
     }
@@ -521,21 +525,21 @@ public class LiquidFloatingCell : LiquittableCircle {
     
     public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if responsible {
-            originalColor = color!
-            color = originalColor.white(0.5)
+            // originalColor = color!
+            // color = originalColor.white(0.5)
             setNeedsDisplay()
         }
     }
     
     public override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
         if responsible {
-            color = originalColor
+            // color = originalColor
             setNeedsDisplay()
         }
     }
     
     override public func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        color = originalColor
+        // color = originalColor
         actionButton?.didTappedCell(self)
     }
 
