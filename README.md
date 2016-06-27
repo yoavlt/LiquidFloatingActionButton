@@ -14,7 +14,7 @@ This is also [spinner loader](https://github.com/yoavlt/LiquidLoader) components
 
 ## Features
 - [x] liquid animation
-- [x] easily custoizable
+- [x] easily customizable
 - [x] Objective-C compatible
 - [x] Swift2.0
 
