@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'LiquidFloatingActionButton_Example', :exclusive => true do
   pod "LiquidFloatingActionButton", :path => "../"
+  pod "SnapKit"
 end
 
 target 'LiquidFloatingActionButton_Tests', :exclusive => true do
