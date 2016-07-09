@@ -54,8 +54,6 @@ or, if you use [Carthage](https://github.com/Carthage/Carthage), add the followi
 github "yoavlt/LiquidFloatingActionButton"
 ```
 
-Please use `swift-2.0` branch if you adopt latest Xcode.
-
 ## License
 
 LiquidFloatingActionButton is available under the MIT license. See the LICENSE file for more info.
