@@ -1,7 +1,7 @@
 //
 //  SnapKit
 //
-//  Copyright (c) 2011-2015 SnapKit Team - https://github.com/SnapKit
+//  Copyright (c) 2011-Present SnapKit Team - https://github.com/SnapKit
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -22,26 +22,26 @@
 //  THE SOFTWARE.
 
 #if os(iOS) || os(tvOS)
-import UIKit
+    import UIKit
 #else
-import AppKit
+    import AppKit
 #endif
 
-/**
-    Used to define `NSLayoutRelation`
-*/
+
 internal enum ConstraintRelation: Int {
-    case equal = 1, lessThanOrEqualTo, greaterThanOrEqualTo
+    case equal = 1
+    case lessThanOrEqual
+    case greaterThanOrEqual
     
     internal var layoutRelation: NSLayoutRelation {
         get {
             switch(self) {
-            case .lessThanOrEqualTo:
-                return .lessThanOrEqual
-            case .greaterThanOrEqualTo:
-                return .greaterThanOrEqual
-            default:
+            case .equal:
                 return .equal
+            case .lessThanOrEqual:
+                return .lessThanOrEqual
+            case .greaterThanOrEqual:
+                return .greaterThanOrEqual
             }
         }
     }
