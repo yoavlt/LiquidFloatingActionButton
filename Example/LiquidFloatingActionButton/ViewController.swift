@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import LiquidFloatingActionButton
 
-public class CustomCell : LiquidFloatingCell {
+open class CustomCell : LiquidFloatingCell {
     var name: String = "sample"
     
     init(icon: UIImage, name: String) {
@@ -22,28 +22,28 @@ public class CustomCell : LiquidFloatingCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public override func setupView(view: UIView) {
+    open override func setupView(_ view: UIView) {
         super.setupView(view)
         let label = UILabel()
         label.text = name
-        label.textColor = UIColor.whiteColor()
+        label.textColor = UIColor.white
         label.font = UIFont(name: "Helvetica-Neue", size: 12)
         addSubview(label)
-        label.snp_makeConstraints { make in
+        label.snp.makeConstraints({ make in
             make.left.equalTo(self).offset(-80)
             make.width.equalTo(75)
             make.top.height.equalTo(self)
-        }
+        })
     }
 }
 
-public class CustomDrawingActionButton: LiquidFloatingActionButton {
+open class CustomDrawingActionButton: LiquidFloatingActionButton {
     
-    override public func createPlusLayer(frame: CGRect) -> CAShapeLayer {
+    override open func createPlusLayer(_ frame: CGRect) -> CAShapeLayer {
         
         let plusLayer = CAShapeLayer()
         plusLayer.lineCap = kCALineCapRound
-        plusLayer.strokeColor = UIColor.whiteColor().CGColor
+        plusLayer.strokeColor = UIColor.white.cgColor
         plusLayer.lineWidth = 3.0
         
         let w = frame.width
@@ -57,11 +57,11 @@ public class CustomDrawingActionButton: LiquidFloatingActionButton {
         
         let path = UIBezierPath()
         for (start, end) in points {
-            path.moveToPoint(start)
-            path.addLineToPoint(end)
+            path.move(to: start)
+            path.addLine(to: end)
         }
         
-        plusLayer.path = path.CGPath
+        plusLayer.path = path.cgPath
         
         return plusLayer
     }
@@ -93,18 +93,25 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
             let cell = CustomCell(icon: UIImage(named: iconName)!, name: iconName)
             return cell
         }
+        
+        // Insert cell with color customization!
         cells.append(cellFactory("ic_cloud"))
+        cells.last?.color = UIColor.red // Set cell to red color
+        
         cells.append(customCellFactory("ic_system"))
+        cells.last?.color = UIColor.blue // Set Cell to blue color
+        
         cells.append(cellFactory("ic_place"))
+        // Cell becomes the button's color!
         
         let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 56 - 16, width: 56, height: 56)
-        let bottomRightButton = createButton(floatingFrame, .Up)
+        let bottomRightButton = createButton(floatingFrame, .up)
         
         let image = UIImage(named: "ic_art")
         bottomRightButton.image = image
         
         let floatingFrame2 = CGRect(x: 16, y: 16, width: 56, height: 56)
-        let topLeftButton = createButton(floatingFrame2, .Down)
+        let topLeftButton = createButton(floatingFrame2, .down)
 
         self.view.addSubview(bottomRightButton)
         self.view.addSubview(topLeftButton)
@@ -115,15 +122,15 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
         // Dispose of any resources that can be recreated.
     }
 
-    func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
+    func numberOfCells(_ liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
         return cells.count
     }
     
-    func cellForIndex(index: Int) -> LiquidFloatingCell {
+    func cellForIndex(_ index: Int) -> LiquidFloatingCell {
         return cells[index]
     }
     
-    func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
+    func liquidFloatingActionButton(_ liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
         print("did Tapped! \(index)")
         liquidFloatingActionButton.close()
     }

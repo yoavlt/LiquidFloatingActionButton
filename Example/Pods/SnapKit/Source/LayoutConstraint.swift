@@ -1,7 +1,7 @@
 //
 //  SnapKit
 //
-//  Copyright (c) 2011-2015 SnapKit Team - https://github.com/SnapKit
+//  Copyright (c) 2011-Present SnapKit Team - https://github.com/SnapKit
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -22,42 +22,36 @@
 //  THE SOFTWARE.
 
 #if os(iOS) || os(tvOS)
-import UIKit
+    import UIKit
 #else
-import AppKit
+    import AppKit
 #endif
 
-/**
-    Used to add extra information to the actual `NSLayoutConstraint`'s that will UIKit/AppKit will utilize
-*/
+
 public class LayoutConstraint: NSLayoutConstraint {
     
-    internal var snp_constraint: Constraint? = nil
+    public var label: String? {
+        get {
+            return self.identifier
+        }
+        set {
+            self.identifier = newValue
+        }
+    }
+    
+    internal weak var constraint: Constraint? = nil
     
 }
 
-internal func ==(left: LayoutConstraint, right: LayoutConstraint) -> Bool {
-    if left.firstItem !== right.firstItem {
-        return false
-    }
-    if left.secondItem !== right.secondItem {
-        return false
-    }
-    if left.firstAttribute != right.firstAttribute {
-        return false
-    }
-    if left.secondAttribute != right.secondAttribute {
-        return false
-    }
-    if left.relation != right.relation {
-        return false
-    }
-    if left.priority != right.priority {
-        return false
-    }
-    if left.multiplier != right.multiplier {
+internal func ==(lhs: LayoutConstraint, rhs: LayoutConstraint) -> Bool {
+    guard lhs.firstItem === rhs.firstItem &&
+          lhs.secondItem === rhs.secondItem &&
+          lhs.firstAttribute == rhs.firstAttribute &&
+          lhs.secondAttribute == rhs.secondAttribute &&
+          lhs.relation == rhs.relation &&
+          lhs.priority == rhs.priority &&
+          lhs.multiplier == rhs.multiplier else {
         return false
     }
     return true
 }
-

@@ -19,6 +19,9 @@ This is also [spinner loader](https://github.com/yoavlt/LiquidLoader) components
 
 You can play a demo with [appetize.io](https://appetize.io/app/f4t42hgqbnbma4m12jcg3aeebg?device=iphone5s&scale=75&orientation=portrait)
 
+## Requirements
+- Swift 2.0 is required. The swift-old branch has swift 1.0 compatibility but does not include the icon customization feature
+
 ## Usage
 
 You just need implement `LiquidFloatingActionButtonDataSource` and `LiquidFloatingActionButtonDelegate` similar to well-known UIKit design.
@@ -28,6 +31,29 @@ let floatingActionButton = LiquidFloatingActionButton(frame: floatingFrame)
 floatingActionButton.dataSource = self
 floatingActionButton.delegate = self
 ```
+
+This fork also allows the use of setting each icon's color intuitively.
+
+``` swift
+let floatingActionButton = LiquidFloatingActionButton(frame: floatingFrame)
+floatingActionButton.dataSource = self
+floatingActionButton.delegate = self
+
+// Button 1 will become a red color!
+let button1 = LiquidFloatingCell(icon: UIImage(named: iconNameThatExists)!)
+button1.color = UIColor.redColor()
+
+// Button 2 defaults to the floatingActionButton's color.
+let button2 = LiquidFloatingCell(icon: UIImage(named: iconNameThatExists)!)
+```
+
+This will let you have colored animations:
+
+![Demo](https://github.com/shotaroikeda/LiquidFloatingActionButton/blob/swift-2.0/Demo/colored_example.gif?raw=true)
+
+See the [example](https://github.com/shotaroikeda/LiquidFloatingActionButton/blob/swift-2.0/Example/LiquidFloatingActionButton/ViewController.swift#L97-L105) for more details.
+
+
 
 ### LiquidFloatingActionButtonDataSource
 * func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton) -> Int
@@ -45,12 +71,11 @@ LiquidFloatingActionButton is available through [CocoaPods](http://cocoapods.org
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "LiquidFloatingActionButton"
+pod "LiquidFloatingActionButton", :git => "https://github.com/shotaroikeda/LiquidFloatingActionButton"
 ```
 or, if you use [Carthage](https://github.com/Carthage/Carthage), add the following line to your `Carthage` file.
-
 ```
-github "yoavlt/LiquidFloatingActionButton"
+github "shotaroikeda/LiquidFloatingActionButton"
 ```
 
 ## License
