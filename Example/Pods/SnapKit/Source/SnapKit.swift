@@ -37,6 +37,6 @@ public class LayoutSupport {}
 public struct Config {
     
     /// The interface layout direction
-    public static var interfaceLayoutDirection = InterfaceLayoutDirection.LeftToRight
+    public static var interfaceLayoutDirection = InterfaceLayoutDirection.leftToRight
     
 }

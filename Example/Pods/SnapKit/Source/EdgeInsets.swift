@@ -24,7 +24,7 @@
 #if os(iOS) || os(tvOS)
 import UIKit
 public typealias EdgeInsets = UIEdgeInsets
-public func EdgeInsetsMake(top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) -> EdgeInsets {
+public func EdgeInsetsMake(_ top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) -> EdgeInsets {
     return EdgeInsets(top: top, left: left, bottom: bottom, right: right)
 }
 public let EdgeInsetsZero = EdgeInsets(top: 0, left: 0, bottom: 0, right: 0)

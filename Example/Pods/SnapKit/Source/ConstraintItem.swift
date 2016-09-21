@@ -30,7 +30,7 @@ import AppKit
 /**
     Used to assist in building a constraint
 */
-public class ConstraintItem {
+open class ConstraintItem {
     
     internal init(object: AnyObject?, attributes: ConstraintAttributes) {
         self.object = object

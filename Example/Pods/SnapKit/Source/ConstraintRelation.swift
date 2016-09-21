@@ -31,17 +31,17 @@ import AppKit
     Used to define `NSLayoutRelation`
 */
 internal enum ConstraintRelation: Int {
-    case Equal = 1, LessThanOrEqualTo, GreaterThanOrEqualTo
+    case equal = 1, lessThanOrEqualTo, greaterThanOrEqualTo
     
     internal var layoutRelation: NSLayoutRelation {
         get {
             switch(self) {
-            case .LessThanOrEqualTo:
-                return .LessThanOrEqual
-            case .GreaterThanOrEqualTo:
-                return .GreaterThanOrEqual
+            case .lessThanOrEqualTo:
+                return .lessThanOrEqual
+            case .greaterThanOrEqualTo:
+                return .greaterThanOrEqual
             default:
-                return .Equal
+                return .equal
             }
         }
     }
