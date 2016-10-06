@@ -12,30 +12,30 @@ import UIKit
 extension CGPoint {
     
     // 足し算
-    func plus(point: CGPoint) -> CGPoint {
+    func plus(_ point: CGPoint) -> CGPoint {
         return CGPoint(x: self.x + point.x, y: self.y + point.y)
     }
     
     // 引き算
-    func minus(point: CGPoint) -> CGPoint {
+    func minus(_ point: CGPoint) -> CGPoint {
         return CGPoint(x: self.x - point.x, y: self.y - point.y)
     }
 
-    func minusX(dx: CGFloat) -> CGPoint {
+    func minusX(_ dx: CGFloat) -> CGPoint {
         return CGPoint(x: self.x - dx, y: self.y)
     }
     
-    func minusY(dy: CGFloat) -> CGPoint {
+    func minusY(_ dy: CGFloat) -> CGPoint {
         return CGPoint(x: self.x, y: self.y - dy)
     }
     
     // 掛け算
-    func mul(rhs: CGFloat) -> CGPoint {
+    func mul(_ rhs: CGFloat) -> CGPoint {
         return CGPoint(x: self.x * rhs, y: self.y * rhs)
     }
     
     // 割り算
-    func div(rhs: CGFloat) -> CGPoint {
+    func div(_ rhs: CGFloat) -> CGPoint {
         return CGPoint(x: self.x / rhs, y: self.y / rhs)
     }
     
@@ -50,24 +50,24 @@ extension CGPoint {
     }
 
     // 内積
-    func dot(point: CGPoint) -> CGFloat {
+    func dot(_ point: CGPoint) -> CGFloat {
         return self.x * point.x + self.y * point.y
     }
 
     // 外積
-    func cross(point: CGPoint) -> CGFloat {
+    func cross(_ point: CGPoint) -> CGFloat {
         return self.x * point.y - self.y * point.x
     }
     
-    func split(point: CGPoint, ratio: CGFloat) -> CGPoint {
+    func split(_ point: CGPoint, ratio: CGFloat) -> CGPoint {
         return self.mul(ratio).plus(point.mul(1.0 - ratio))
     }
     
-    func mid(point: CGPoint) -> CGPoint {
+    func mid(_ point: CGPoint) -> CGPoint {
         return split(point, ratio: 0.5)
     }
     
-    static func intersection(from: CGPoint, to: CGPoint, from2: CGPoint, to2: CGPoint) -> CGPoint? {
+    static func intersection(_ from: CGPoint, to: CGPoint, from2: CGPoint, to2: CGPoint) -> CGPoint? {
         let ac = CGPoint(x: to.x - from.x, y: to.y - from.y)
         let bd = CGPoint(x: to2.x - from2.x, y: to2.y - from2.y)
         let ab = CGPoint(x: from2.x - from.x, y: from2.y - from.y)
