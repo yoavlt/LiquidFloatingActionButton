@@ -1,19 +1,19 @@
 PODS:
   - LiquidFloatingActionButton (1.2.0)
-  - SnapKit (0.20.0)
+  - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - LiquidFloatingActionButton (from `../`)
-  - SnapKit
+  - SnapKit (~> 3.0.2)
 
 EXTERNAL SOURCES:
   LiquidFloatingActionButton:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
   LiquidFloatingActionButton: 9c28961915754e08cf596ea6bdd60f9cd949f172
-  SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: d32e84aa2d52a9e8dbba10e8de937cda2a823e0d
+PODFILE CHECKSUM: 0d1a2e78c3ffdf5bdf3af8859e239319c6e809d8
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1
