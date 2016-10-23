@@ -29,7 +29,7 @@ public class CustomCell : LiquidFloatingCell {
         label.textColor = UIColor.white
         label.font = UIFont(name: "Helvetica-Neue", size: 12)
         addSubview(label)
-        label.snp_makeConstraints { make in
+        label.snp.makeConstraints { make in
             make.left.equalTo(self).offset(-80)
             make.width.equalTo(75)
             make.top.height.equalTo(self)
@@ -110,11 +110,6 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
         self.view.addSubview(topLeftButton)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     func numberOfCells(_ liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
         return cells.count
     }
@@ -123,7 +118,7 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
         return cells[index]
     }
     
-    func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
+    func liquidFloatingActionButton(_ liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
         print("did Tapped! \(index)")
         liquidFloatingActionButton.close()
     }
