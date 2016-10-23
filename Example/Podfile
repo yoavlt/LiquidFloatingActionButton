@@ -3,7 +3,7 @@ use_frameworks!
 
 target 'LiquidFloatingActionButton_Example' do
   pod "LiquidFloatingActionButton", :path => "../"
-  pod "SnapKit"
+  pod 'SnapKit', '~> 3.0'
 end
 
 target 'LiquidFloatingActionButton_Tests' do

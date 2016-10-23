@@ -1,13 +1,14 @@
-osx_image: xcode7.3
+osx_image: xcode8.0
 language: objective-c
 install:
-    - gem install cocoapods -v 1.0.1 --no-document
+    - gem install cocoapods -v 1.1.1 --no-document
 
 before_script:
     - cd Example
+    - pod repo update
     - pod install
 
 xcode_workspace: LiquidFloatingActionButton.xcworkspace
 xcode_scheme: LiquidFloatingActionButton-Example
-xcode_sdk: iphonesimulator9.3
+xcode_sdk: iphonesimulator10.0
 script: set -o pipefail
