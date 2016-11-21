@@ -43,8 +43,8 @@ open class LiquidFloatingActionButton : UIView {
         }
     }
     
-    open var delegate:   LiquidFloatingActionButtonDelegate?
-    open var dataSource: LiquidFloatingActionButtonDataSource?
+    weak open var delegate:   LiquidFloatingActionButtonDelegate?
+    weak open var dataSource: LiquidFloatingActionButtonDataSource?
 
     open var responsible = true
     open var isOpening: Bool  {
