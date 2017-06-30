@@ -18,6 +18,8 @@ import QuartzCore
 @objc public protocol LiquidFloatingActionButtonDelegate {
     // selected method
     @objc optional func liquidFloatingActionButton(_ liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int)
+	@objc optional func liquidFloatingActionButtonWillOpenDrawer(_ liquidFloatingActionButton: LiquidFloatingActionButton)
+	@objc optional func liquidFloatingActionButtonWillCloseDrawer(_ liquidFloatingActionButton: LiquidFloatingActionButton)
 }
 
 public enum LiquidFloatingActionButtonAnimateStyle : Int {
@@ -109,7 +111,8 @@ open class LiquidFloatingActionButton : UIView {
 
     // open all cells
     open func open() {
-        
+        delegate?.liquidFloatingActionButtonWillOpenDrawer?(self)
+		
         // rotate plus icon
         CATransaction.setAnimationDuration(0.8)
         self.plusLayer.transform = CATransform3DMakeRotation((CGFloat(M_PI) * rotationDegrees) / 180, 0, 0, 1)
@@ -126,7 +129,8 @@ open class LiquidFloatingActionButton : UIView {
 
     // close all cells
     open func close() {
-        
+        delegate?.liquidFloatingActionButtonWillCloseDrawer?(self)
+		
         // rotate plus icon
         CATransaction.setAnimationDuration(0.8)
         self.plusLayer.transform = CATransform3DMakeRotation(0, 0, 0, 1)
