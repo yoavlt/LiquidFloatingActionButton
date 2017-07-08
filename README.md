@@ -14,9 +14,9 @@ This is also [spinner loader](https://github.com/yoavlt/LiquidLoader) components
 
 ## Features
 - [x] liquid animation
-- [x] easily customizable
+- [x] Easily customizable
 - [x] Objective-C compatible
-- [x] Swift2.0
+- [x] Swift 2.0
 
 You can play a demo with [appetize.io](https://appetize.io/app/f4t42hgqbnbma4m12jcg3aeebg?device=iphone5s&scale=75&orientation=portrait)
 
@@ -31,11 +31,16 @@ floatingActionButton.delegate = self
 ```
 
 ### LiquidFloatingActionButtonDataSource
-* func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton) -> Int
-* func cellForIndex(index: Int) -> LiquidFloatingCell
+```swift
+func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton) -> Int
+func cellForIndex(index: Int) -> LiquidFloatingCell
+```
 
 ### LiquidFloatingActionButtonDelegate
-* optional func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int)
+
+```swift
+optional func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int)
+```
 
 ## Easily customizable
 ![Demo](https://github.com/yoavlt/LiquidFloatingActionButton/blob/master/Demo/customizable.gif?raw=true)
