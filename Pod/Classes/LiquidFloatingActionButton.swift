@@ -483,6 +483,12 @@ open class LiquidFloatingCell : LiquittableCircle {
         super.init()
         setup(icon)
     }
+    
+    public init(icon: UIImage , tintColor: UIColor) {
+        self.originalColor = UIColor.clear
+        super.init()
+        setup(icon, tintColor: tintColor)
+    }
 
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
