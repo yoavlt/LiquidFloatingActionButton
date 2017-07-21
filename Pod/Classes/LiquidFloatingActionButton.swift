@@ -22,7 +22,7 @@ import QuartzCore
 	@objc optional func liquidFloatingActionButtonWillCloseDrawer(_ liquidFloatingActionButton: LiquidFloatingActionButton)
 }
 
-public enum LiquidFloatingActionButtonAnimateStyle : Int {
+@objc public enum LiquidFloatingActionButtonAnimateStyle : Int {
     case up
     case right
     case left
