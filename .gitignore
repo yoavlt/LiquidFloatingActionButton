@@ -18,6 +18,9 @@ profile
 DerivedData
 *.hmap
 *.ipa
+!default.xcworkspace
+xcuserdata
+.gitignore
 
 # Bundler
 .bundle

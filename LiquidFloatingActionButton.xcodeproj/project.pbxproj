@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C18169331F21EADA00CA6D1E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C18169311F21EADA00CA6D1E /* Info.plist */; };
+		C18169341F21EADA00CA6D1E /* LiquidFloatingActionButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C18169321F21EADA00CA6D1E /* LiquidFloatingActionButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C181693D1F21EAE900CA6D1E /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18169351F21EAE900CA6D1E /* ArrayEx.swift */; };
+		C181693E1F21EAE900CA6D1E /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18169361F21EAE900CA6D1E /* CGPointEx.swift */; };
+		C181693F1F21EAE900CA6D1E /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18169371F21EAE900CA6D1E /* CGRectEx.swift */; };
+		C18169401F21EAE900CA6D1E /* LiquidFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18169381F21EAE900CA6D1E /* LiquidFloatingActionButton.swift */; };
+		C18169411F21EAE900CA6D1E /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18169391F21EAE900CA6D1E /* LiquidUtil.swift */; };
+		C18169421F21EAE900CA6D1E /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181693A1F21EAE900CA6D1E /* LiquittableCircle.swift */; };
+		C18169431F21EAE900CA6D1E /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181693B1F21EAE900CA6D1E /* SimpleCircleLiquidEngine.swift */; };
+		C18169441F21EAE900CA6D1E /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181693C1F21EAE900CA6D1E /* UIColorEx.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C18169261F21E9F800CA6D1E /* LiquidFloatingActionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiquidFloatingActionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18169311F21EADA00CA6D1E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Pod/Classes/Info.plist; sourceTree = SOURCE_ROOT; };
+		C18169321F21EADA00CA6D1E /* LiquidFloatingActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LiquidFloatingActionButton.h; path = Pod/Classes/LiquidFloatingActionButton.h; sourceTree = SOURCE_ROOT; };
+		C18169351F21EAE900CA6D1E /* ArrayEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayEx.swift; path = Pod/Classes/ArrayEx.swift; sourceTree = SOURCE_ROOT; };
+		C18169361F21EAE900CA6D1E /* CGPointEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGPointEx.swift; path = Pod/Classes/CGPointEx.swift; sourceTree = SOURCE_ROOT; };
+		C18169371F21EAE900CA6D1E /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGRectEx.swift; path = Pod/Classes/CGRectEx.swift; sourceTree = SOURCE_ROOT; };
+		C18169381F21EAE900CA6D1E /* LiquidFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiquidFloatingActionButton.swift; path = Pod/Classes/LiquidFloatingActionButton.swift; sourceTree = SOURCE_ROOT; };
+		C18169391F21EAE900CA6D1E /* LiquidUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiquidUtil.swift; path = Pod/Classes/LiquidUtil.swift; sourceTree = SOURCE_ROOT; };
+		C181693A1F21EAE900CA6D1E /* LiquittableCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LiquittableCircle.swift; path = Pod/Classes/LiquittableCircle.swift; sourceTree = SOURCE_ROOT; };
+		C181693B1F21EAE900CA6D1E /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleCircleLiquidEngine.swift; path = Pod/Classes/SimpleCircleLiquidEngine.swift; sourceTree = SOURCE_ROOT; };
+		C181693C1F21EAE900CA6D1E /* UIColorEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorEx.swift; path = Pod/Classes/UIColorEx.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C18169221F21E9F800CA6D1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C181691C1F21E9F700CA6D1E = {
+			isa = PBXGroup;
+			children = (
+				C18169281F21E9F800CA6D1E /* LiquidFloatingActionButton */,
+				C18169271F21E9F800CA6D1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C18169271F21E9F800CA6D1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C18169261F21E9F800CA6D1E /* LiquidFloatingActionButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C18169281F21E9F800CA6D1E /* LiquidFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				C18169351F21EAE900CA6D1E /* ArrayEx.swift */,
+				C18169361F21EAE900CA6D1E /* CGPointEx.swift */,
+				C18169371F21EAE900CA6D1E /* CGRectEx.swift */,
+				C18169381F21EAE900CA6D1E /* LiquidFloatingActionButton.swift */,
+				C18169391F21EAE900CA6D1E /* LiquidUtil.swift */,
+				C181693A1F21EAE900CA6D1E /* LiquittableCircle.swift */,
+				C181693B1F21EAE900CA6D1E /* SimpleCircleLiquidEngine.swift */,
+				C181693C1F21EAE900CA6D1E /* UIColorEx.swift */,
+				C18169321F21EADA00CA6D1E /* LiquidFloatingActionButton.h */,
+				C18169311F21EADA00CA6D1E /* Info.plist */,
+			);
+			path = LiquidFloatingActionButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C18169231F21E9F800CA6D1E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18169341F21EADA00CA6D1E /* LiquidFloatingActionButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C18169251F21E9F800CA6D1E /* LiquidFloatingActionButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C181692E1F21E9F800CA6D1E /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton" */;
+			buildPhases = (
+				C18169211F21E9F800CA6D1E /* Sources */,
+				C18169221F21E9F800CA6D1E /* Frameworks */,
+				C18169231F21E9F800CA6D1E /* Headers */,
+				C18169241F21E9F800CA6D1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiquidFloatingActionButton;
+			productName = LiquidFloatingActionButton;
+			productReference = C18169261F21E9F800CA6D1E /* LiquidFloatingActionButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C181691D1F21E9F800CA6D1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Sandeep Aggarwal";
+				TargetAttributes = {
+					C18169251F21E9F800CA6D1E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = L4XJFYDD5W;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C18169201F21E9F800CA6D1E /* Build configuration list for PBXProject "LiquidFloatingActionButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C181691C1F21E9F700CA6D1E;
+			productRefGroup = C18169271F21E9F800CA6D1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C18169251F21E9F800CA6D1E /* LiquidFloatingActionButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C18169241F21E9F800CA6D1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18169331F21EADA00CA6D1E /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C18169211F21E9F800CA6D1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18169431F21EAE900CA6D1E /* SimpleCircleLiquidEngine.swift in Sources */,
+				C18169421F21EAE900CA6D1E /* LiquittableCircle.swift in Sources */,
+				C181693D1F21EAE900CA6D1E /* ArrayEx.swift in Sources */,
+				C181693F1F21EAE900CA6D1E /* CGRectEx.swift in Sources */,
+				C18169441F21EAE900CA6D1E /* UIColorEx.swift in Sources */,
+				C18169411F21EAE900CA6D1E /* LiquidUtil.swift in Sources */,
+				C18169401F21EAE900CA6D1E /* LiquidFloatingActionButton.swift in Sources */,
+				C181693E1F21EAE900CA6D1E /* CGPointEx.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C181692C1F21E9F800CA6D1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C181692D1F21E9F800CA6D1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C181692F1F21E9F800CA6D1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L4XJFYDD5W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Pod/Classes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SandeepAggarwal.LiquidFloatingActionButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C18169301F21E9F800CA6D1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L4XJFYDD5W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Pod/Classes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SandeepAggarwal.LiquidFloatingActionButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C18169201F21E9F800CA6D1E /* Build configuration list for PBXProject "LiquidFloatingActionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C181692C1F21E9F800CA6D1E /* Debug */,
+				C181692D1F21E9F800CA6D1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C181692E1F21E9F800CA6D1E /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C181692F1F21E9F800CA6D1E /* Debug */,
+				C18169301F21E9F800CA6D1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C181691D1F21E9F800CA6D1E /* Project object */;
+}
