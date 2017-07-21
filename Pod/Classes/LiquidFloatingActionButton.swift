@@ -41,6 +41,7 @@ open class LiquidFloatingActionButton : UIView {
     }
     open var enableShadow = true {
         didSet {
+            baseView.enableShadow = enableShadow
             setNeedsDisplay()
         }
     }
@@ -178,6 +179,8 @@ open class LiquidFloatingActionButton : UIView {
     fileprivate func drawShadow() {
         if enableShadow {
             circleLayer.appendShadow()
+        } else {
+            circleLayer.eraseShadow()
         }
     }
     
@@ -420,6 +423,8 @@ class CircleLiquidBaseView : ActionBarBaseView {
         for cell in openingCells {
             if enableShadow {
                 cell.layer.appendShadow()
+            } else {
+                cell.layer.eraseShadow()
             }
         }
         openingCells = []
