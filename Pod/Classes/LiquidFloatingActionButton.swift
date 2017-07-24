@@ -27,6 +27,7 @@ import QuartzCore
     case right
     case left
     case down
+    case octagon
 }
 
 @IBDesignable
@@ -404,7 +405,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
         update(0.1, duration: openDuration) { cell, i, ratio in
             let posRatio = ratio > CGFloat(i) / CGFloat(self.openingCells.count) ? ratio : 0
             let distance = (cell.frame.height * 0.5 + CGFloat(i + 1) * cell.frame.height * 1.5) * posRatio
-            cell.center = self.center.plus(self.differencePoint(distance))
+            cell.center = self.center.plus(self.differencePoint(cell: cell, distance:distance, position: i, ratio: (Double(posRatio))))
             cell.update(ratio, open: true)
         }
     }
@@ -412,12 +413,12 @@ class CircleLiquidBaseView : ActionBarBaseView {
     func updateClose() {
         update(0, duration: closeDuration) { cell, i, ratio in
             let distance = (cell.frame.height * 0.5 + CGFloat(i + 1) * cell.frame.height * 1.5) * (1 - ratio)
-            cell.center = self.center.plus(self.differencePoint(distance))
+            cell.center = self.center.plus(self.differencePoint(cell: cell, distance:distance, position: i, ratio: (Double(1 - ratio))))
             cell.update(ratio, open: false)
         }
     }
     
-    func differencePoint(_ distance: CGFloat) -> CGPoint {
+    func differencePoint(cell: LiquidFloatingCell, distance: CGFloat, position: Int, ratio: Double) -> CGPoint {
         switch animateStyle {
         case .up:
             return CGPoint(x: 0, y: -distance)
@@ -427,6 +428,11 @@ class CircleLiquidBaseView : ActionBarBaseView {
             return CGPoint(x: -distance, y: 0)
         case .down:
             return CGPoint(x: 0, y: distance)
+        case .octagon:
+            
+            let radius = Double(cell.bounds.size.height * CGFloat(2.0))*ratio
+            let angle = -(45) * Double(position) * .pi / 180
+            return CGPoint(x: radius*sin(angle), y: -radius*cos(angle))
         }
     }
     
