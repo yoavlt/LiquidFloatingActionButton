@@ -66,6 +66,13 @@ open class LiquidFloatingActionButton : UIView {
     
     @IBInspectable open var cellColor: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0)
     
+    @IBInspectable open var liquidColor: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0){
+        didSet {
+            baseView.color = liquidColor
+        }
+    }
+
+    
     @IBInspectable open var image: UIImage? {
         didSet {
             if image != nil {
