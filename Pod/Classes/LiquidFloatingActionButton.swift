@@ -59,9 +59,12 @@ open class LiquidFloatingActionButton : UIView {
     
     @IBInspectable open var color: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0) {
         didSet {
+            cellColor = color
             baseView.color = color
         }
     }
+    
+    @IBInspectable open var cellColor: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0)
     
     @IBInspectable open var image: UIImage? {
         didSet {
@@ -94,7 +97,7 @@ open class LiquidFloatingActionButton : UIView {
     }
 
     fileprivate func insertCell(_ cell: LiquidFloatingCell) {
-        cell.color  = self.color
+        cell.color  = self.cellColor
         cell.radius = self.frame.width * cellRadiusRatio
         cell.center = self.center.minus(self.frame.origin)
         cell.actionButton = self
