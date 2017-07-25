@@ -79,6 +79,9 @@ open class LiquidFloatingActionButton : UIView {
             if image != nil {
                 plusLayer.contentsGravity =  kCAGravityCenter
                 plusLayer.contents = image!.cgImage
+                plusLayer.contentsScale = UIScreen.main.scale
+                plusLayer.rasterizationScale = UIScreen.main.scale
+                plusLayer.shouldRasterize = true
                 plusLayer.path = nil
             }
         }
