@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1432CD80BEFCC0AB2CDC8746B1DAA14F"
+               BlueprintIdentifier = "C18169251F21E9F800CA6D1E"
                BuildableName = "LiquidFloatingActionButton.framework"
-               BlueprintName = "LiquidFloatingActionButton-iOS8.0"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintName = "LiquidFloatingActionButton"
+               ReferencedContainer = "container:LiquidFloatingActionButton.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1432CD80BEFCC0AB2CDC8746B1DAA14F"
+            BlueprintIdentifier = "C18169251F21E9F800CA6D1E"
             BuildableName = "LiquidFloatingActionButton.framework"
-            BlueprintName = "LiquidFloatingActionButton-iOS8.0"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintName = "LiquidFloatingActionButton"
+            ReferencedContainer = "container:LiquidFloatingActionButton.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1432CD80BEFCC0AB2CDC8746B1DAA14F"
+            BlueprintIdentifier = "C18169251F21E9F800CA6D1E"
             BuildableName = "LiquidFloatingActionButton.framework"
-            BlueprintName = "LiquidFloatingActionButton-iOS8.0"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintName = "LiquidFloatingActionButton"
+            ReferencedContainer = "container:LiquidFloatingActionButton.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

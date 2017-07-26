@@ -43,6 +43,12 @@ extension UIColor {
     }
     
     func white(_ scale: CGFloat) -> UIColor {
+        
+        guard (self.cgColor.components?.count)! == 4 else
+        {
+            return UIColor.init(white: scale, alpha: 1.0)
+        }
+        
         return UIColor(
             red: self.redC + (1.0 - self.redC) * scale,
             green: self.greenC + (1.0 - self.greenC) * scale,

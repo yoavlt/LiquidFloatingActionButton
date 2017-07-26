@@ -18,6 +18,11 @@ profile
 DerivedData
 *.hmap
 *.ipa
+*.xcworkspace
+!default.xcworkspace
+xcuserdata
+
+
 
 # Bundler
 .bundle

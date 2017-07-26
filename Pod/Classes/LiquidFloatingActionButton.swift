@@ -22,11 +22,12 @@ import QuartzCore
 	@objc optional func liquidFloatingActionButtonWillCloseDrawer(_ liquidFloatingActionButton: LiquidFloatingActionButton)
 }
 
-public enum LiquidFloatingActionButtonAnimateStyle : Int {
+@objc public enum LiquidFloatingActionButtonAnimateStyle : Int {
     case up
     case right
     case left
     case down
+    case octagon
 }
 
 @IBDesignable
@@ -41,6 +42,7 @@ open class LiquidFloatingActionButton : UIView {
     }
     open var enableShadow = true {
         didSet {
+            baseView.enableShadow = enableShadow
             setNeedsDisplay()
         }
     }
@@ -58,14 +60,28 @@ open class LiquidFloatingActionButton : UIView {
     
     @IBInspectable open var color: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0) {
         didSet {
+            cellColor = color
             baseView.color = color
         }
     }
     
+    @IBInspectable open var cellColor: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0)
+    
+    @IBInspectable open var liquidColor: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0){
+        didSet {
+            baseView.color = liquidColor
+        }
+    }
+
+    
     @IBInspectable open var image: UIImage? {
         didSet {
             if image != nil {
+                plusLayer.contentsGravity =  kCAGravityCenter
                 plusLayer.contents = image!.cgImage
+                plusLayer.contentsScale = UIScreen.main.scale
+                plusLayer.rasterizationScale = UIScreen.main.scale
+                plusLayer.shouldRasterize = true
                 plusLayer.path = nil
             }
         }
@@ -92,7 +108,7 @@ open class LiquidFloatingActionButton : UIView {
     }
 
     fileprivate func insertCell(_ cell: LiquidFloatingCell) {
-        cell.color  = self.color
+        cell.color  = self.cellColor
         cell.radius = self.frame.width * cellRadiusRatio
         cell.center = self.center.minus(self.frame.origin)
         cell.actionButton = self
@@ -178,6 +194,8 @@ open class LiquidFloatingActionButton : UIView {
     fileprivate func drawShadow() {
         if enableShadow {
             circleLayer.appendShadow()
+        } else {
+            circleLayer.eraseShadow()
         }
     }
     
@@ -390,7 +408,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
         update(0.1, duration: openDuration) { cell, i, ratio in
             let posRatio = ratio > CGFloat(i) / CGFloat(self.openingCells.count) ? ratio : 0
             let distance = (cell.frame.height * 0.5 + CGFloat(i + 1) * cell.frame.height * 1.5) * posRatio
-            cell.center = self.center.plus(self.differencePoint(distance))
+            cell.center = self.center.plus(self.differencePoint(cell: cell, distance:distance, position: i, ratio: (Double(posRatio))))
             cell.update(ratio, open: true)
         }
     }
@@ -398,12 +416,12 @@ class CircleLiquidBaseView : ActionBarBaseView {
     func updateClose() {
         update(0, duration: closeDuration) { cell, i, ratio in
             let distance = (cell.frame.height * 0.5 + CGFloat(i + 1) * cell.frame.height * 1.5) * (1 - ratio)
-            cell.center = self.center.plus(self.differencePoint(distance))
+            cell.center = self.center.plus(self.differencePoint(cell: cell, distance:distance, position: i, ratio: (Double(1 - ratio))))
             cell.update(ratio, open: false)
         }
     }
     
-    func differencePoint(_ distance: CGFloat) -> CGPoint {
+    func differencePoint(cell: LiquidFloatingCell, distance: CGFloat, position: Int, ratio: Double) -> CGPoint {
         switch animateStyle {
         case .up:
             return CGPoint(x: 0, y: -distance)
@@ -413,6 +431,11 @@ class CircleLiquidBaseView : ActionBarBaseView {
             return CGPoint(x: -distance, y: 0)
         case .down:
             return CGPoint(x: 0, y: distance)
+        case .octagon:
+            
+            let radius = Double(cell.bounds.size.height * CGFloat(2.0))*ratio
+            let angle = -(45) * Double(position) * .pi / 180
+            return CGPoint(x: radius*sin(angle), y: -radius*cos(angle))
         }
     }
     
@@ -420,6 +443,8 @@ class CircleLiquidBaseView : ActionBarBaseView {
         for cell in openingCells {
             if enableShadow {
                 cell.layer.appendShadow()
+            } else {
+                cell.layer.eraseShadow()
             }
         }
         openingCells = []
@@ -482,6 +507,12 @@ open class LiquidFloatingCell : LiquittableCircle {
         self.originalColor = UIColor.clear
         super.init()
         setup(icon)
+    }
+    
+    public init(icon: UIImage , tintColor: UIColor) {
+        self.originalColor = UIColor.clear
+        super.init()
+        setup(icon, tintColor: tintColor)
     }
 
     required public init?(coder aDecoder: NSCoder) {
