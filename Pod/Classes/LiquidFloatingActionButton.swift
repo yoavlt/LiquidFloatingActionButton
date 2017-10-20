@@ -22,7 +22,7 @@ import QuartzCore
 	@objc optional func liquidFloatingActionButtonWillCloseDrawer(_ liquidFloatingActionButton: LiquidFloatingActionButton)
 }
 
-public enum LiquidFloatingActionButtonAnimateStyle : Int {
+@objc public enum LiquidFloatingActionButtonAnimateStyle : Int {
     case up
     case right
     case left
@@ -30,11 +30,11 @@ public enum LiquidFloatingActionButtonAnimateStyle : Int {
 }
 
 @IBDesignable
-open class LiquidFloatingActionButton : UIView {
+@objc open class LiquidFloatingActionButton : UIView {
 
     fileprivate let internalRadiusRatio: CGFloat = 20.0 / 56.0
     open var cellRadiusRatio: CGFloat      = 0.38
-    open var animateStyle: LiquidFloatingActionButtonAnimateStyle = .up {
+    @objc var animateStyle: LiquidFloatingActionButtonAnimateStyle = .up {
         didSet {
             baseView.animateStyle = animateStyle
         }
@@ -45,8 +45,8 @@ open class LiquidFloatingActionButton : UIView {
         }
     }
     
-    weak open var delegate:   LiquidFloatingActionButtonDelegate?
-    weak open var dataSource: LiquidFloatingActionButtonDataSource?
+    @IBInspectable weak open var delegate:   LiquidFloatingActionButtonDelegate?
+    @IBInspectable weak open var dataSource: LiquidFloatingActionButtonDataSource?
 
     open var responsible = true
     open var isOpening: Bool  {
@@ -115,7 +115,7 @@ open class LiquidFloatingActionButton : UIView {
 		
         // rotate plus icon
         CATransaction.setAnimationDuration(0.8)
-        self.plusLayer.transform = CATransform3DMakeRotation((CGFloat(M_PI) * rotationDegrees) / 180, 0, 0, 1)
+        self.plusLayer.transform = CATransform3DMakeRotation((CGFloat(Double.pi) * rotationDegrees) / 180, 0, 0, 1)
 
         let cells = cellArray()
         for cell in cells {
@@ -375,12 +375,12 @@ class CircleLiquidBaseView : ActionBarBaseView {
         }
 
         if let firstCell = openingCells.first {
-            bigEngine?.push(circle: baseLiquid!, other: firstCell)
+            _ = bigEngine?.push(circle: baseLiquid!, other: firstCell)
         }
         for i in 1..<openingCells.count {
             let prev = openingCells[i - 1]
             let cell = openingCells[i]
-            engine?.push(circle: prev, other: cell)
+            _ = engine?.push(circle: prev, other: cell)
         }
         engine?.draw(parent: baseLiquid!)
         bigEngine?.draw(parent: baseLiquid!)
@@ -437,7 +437,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
         return -1 * t * (t - 2)
     }
     
-    func didDisplayRefresh(_ displayLink: CADisplayLink) {
+    @objc func didDisplayRefresh(_ displayLink: CADisplayLink) {
         if opening {
             keyDuration += CGFloat(displayLink.duration)
             updateOpen()
@@ -449,7 +449,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
 
 }
 
-open class LiquidFloatingCell : LiquittableCircle {
+@objc open class LiquidFloatingCell : LiquittableCircle {
     
     let internalRatio: CGFloat = 0.75
 
