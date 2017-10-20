@@ -30,7 +30,7 @@ public enum LiquidFloatingActionButtonAnimateStyle : Int {
 }
 
 @IBDesignable
-open class LiquidFloatingActionButton : UIView {
+@objc open class LiquidFloatingActionButton : UIView {
 
     fileprivate let internalRadiusRatio: CGFloat = 20.0 / 56.0
     open var cellRadiusRatio: CGFloat      = 0.38
