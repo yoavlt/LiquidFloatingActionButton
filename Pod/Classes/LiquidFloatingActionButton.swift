@@ -22,7 +22,7 @@ import QuartzCore
 	@objc optional func liquidFloatingActionButtonWillCloseDrawer(_ liquidFloatingActionButton: LiquidFloatingActionButton)
 }
 
-public enum LiquidFloatingActionButtonAnimateStyle : Int {
+@objc public enum LiquidFloatingActionButtonAnimateStyle : Int {
     case up
     case right
     case left
@@ -34,7 +34,7 @@ public enum LiquidFloatingActionButtonAnimateStyle : Int {
 
     fileprivate let internalRadiusRatio: CGFloat = 20.0 / 56.0
     open var cellRadiusRatio: CGFloat      = 0.38
-    open var animateStyle: LiquidFloatingActionButtonAnimateStyle = .up {
+    @objc var animateStyle: LiquidFloatingActionButtonAnimateStyle = .up {
         didSet {
             baseView.animateStyle = animateStyle
         }
@@ -45,8 +45,8 @@ public enum LiquidFloatingActionButtonAnimateStyle : Int {
         }
     }
     
-    weak open var delegate:   LiquidFloatingActionButtonDelegate?
-    weak open var dataSource: LiquidFloatingActionButtonDataSource?
+    @IBInspectable weak open var delegate:   LiquidFloatingActionButtonDelegate?
+    @IBInspectable weak open var dataSource: LiquidFloatingActionButtonDataSource?
 
     open var responsible = true
     open var isOpening: Bool  {
@@ -449,7 +449,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
 
 }
 
-open class LiquidFloatingCell : LiquittableCircle {
+@objc open class LiquidFloatingCell : LiquittableCircle {
     
     let internalRatio: CGFloat = 0.75
 
