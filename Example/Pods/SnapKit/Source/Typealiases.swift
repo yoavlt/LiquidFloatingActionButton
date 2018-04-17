@@ -21,16 +21,17 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+import Foundation
+
 #if os(iOS) || os(tvOS)
     import UIKit
+    typealias LayoutRelation = NSLayoutRelation
+    typealias LayoutAttribute = NSLayoutAttribute
+    typealias LayoutPriority = UILayoutPriority
+#else
+    import AppKit
+    typealias LayoutRelation = NSLayoutConstraint.Relation
+    typealias LayoutAttribute = NSLayoutConstraint.Attribute
+    typealias LayoutPriority = NSLayoutConstraint.Priority
 #endif
-    
-    
-@available(iOS 9.0, *)
-public extension ConstraintLayoutGuide {
-    
-    public var snp: ConstraintLayoutGuideDSL {
-        return ConstraintLayoutGuideDSL(guide: self)
-    }
-    
-}
+

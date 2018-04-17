@@ -39,22 +39,22 @@ public protocol ConstraintDSL {
 extension ConstraintDSL {
     
     public func setLabel(_ value: String?) {
-        objc_setAssociatedObject(self.target, &labelKey, value, .OBJC_ASSOCIATION_COPY_NONATOMIC)
+        objc_setAssociatedObject(self.target as Any, &labelKey, value, .OBJC_ASSOCIATION_COPY_NONATOMIC)
     }
     public func label() -> String? {
-        return objc_getAssociatedObject(self.target, &labelKey) as? String
+        return objc_getAssociatedObject(self.target as Any, &labelKey) as? String
     }
     
 }
 private var labelKey: UInt8 = 0
 
 
-public protocol ConstraintAttributesDSL: ConstraintDSL {
+public protocol ConstraintBasicAttributesDSL : ConstraintDSL {
 }
-extension ConstraintAttributesDSL {
+extension ConstraintBasicAttributesDSL {
     
     // MARK: Basics
-
+    
     public var left: ConstraintItem {
         return ConstraintItem(target: self.target, attributes: ConstraintAttributes.left)
     }
@@ -106,6 +106,12 @@ extension ConstraintAttributesDSL {
     public var center: ConstraintItem {
         return ConstraintItem(target: self.target, attributes: ConstraintAttributes.center)
     }
+    
+}
+
+public protocol ConstraintAttributesDSL : ConstraintBasicAttributesDSL {
+}
+extension ConstraintAttributesDSL {
     
     // MARK: Baselines
     

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0830"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1432CD80BEFCC0AB2CDC8746B1DAA14F"
+               BlueprintIdentifier = "01C06C5A4A8D0738DD5BC95396A65DBF"
                BuildableName = "LiquidFloatingActionButton.framework"
                BlueprintName = "LiquidFloatingActionButton-iOS8.0"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1432CD80BEFCC0AB2CDC8746B1DAA14F"
+            BlueprintIdentifier = "01C06C5A4A8D0738DD5BC95396A65DBF"
             BuildableName = "LiquidFloatingActionButton.framework"
             BlueprintName = "LiquidFloatingActionButton-iOS8.0"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1432CD80BEFCC0AB2CDC8746B1DAA14F"
+            BlueprintIdentifier = "01C06C5A4A8D0738DD5BC95396A65DBF"
             BuildableName = "LiquidFloatingActionButton.framework"
             BlueprintName = "LiquidFloatingActionButton-iOS8.0"
             ReferencedContainer = "container:Pods.xcodeproj">
