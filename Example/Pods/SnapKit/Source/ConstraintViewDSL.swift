@@ -32,60 +32,58 @@ public struct ConstraintViewDSL: ConstraintAttributesDSL {
     
     @discardableResult
     public func prepareConstraints(_ closure: (_ make: ConstraintMaker) -> Void) -> [Constraint] {
-        return ConstraintMaker.prepareConstraints(view: self.view, closure: closure)
+        return ConstraintMaker.prepareConstraints(item: self.view, closure: closure)
     }
     
     public func makeConstraints(_ closure: (_ make: ConstraintMaker) -> Void) {
-        ConstraintMaker.makeConstraints(view: self.view, closure: closure)
+        ConstraintMaker.makeConstraints(item: self.view, closure: closure)
     }
     
     public func remakeConstraints(_ closure: (_ make: ConstraintMaker) -> Void) {
-        ConstraintMaker.remakeConstraints(view: self.view, closure: closure)
+        ConstraintMaker.remakeConstraints(item: self.view, closure: closure)
     }
     
     public func updateConstraints(_ closure: (_ make: ConstraintMaker) -> Void) {
-        ConstraintMaker.updateConstraints(view: self.view, closure: closure)
+        ConstraintMaker.updateConstraints(item: self.view, closure: closure)
     }
     
     public func removeConstraints() {
-        ConstraintMaker.removeConstraints(view: self.view)
+        ConstraintMaker.removeConstraints(item: self.view)
     }
-    
-    
     
     public var contentHuggingHorizontalPriority: Float {
         get {
-            return self.view.contentHuggingPriority(for: .horizontal)
+            return self.view.contentHuggingPriority(for: .horizontal).rawValue
         }
         set {
-            self.view.setContentHuggingPriority(newValue, for: .horizontal)
+            self.view.setContentHuggingPriority(LayoutPriority(rawValue: newValue), for: .horizontal)
         }
     }
     
     public var contentHuggingVerticalPriority: Float {
         get {
-            return self.view.contentHuggingPriority(for: .vertical)
+            return self.view.contentHuggingPriority(for: .vertical).rawValue
         }
         set {
-            self.view.setContentHuggingPriority(newValue, for: .vertical)
+            self.view.setContentHuggingPriority(LayoutPriority(rawValue: newValue), for: .vertical)
         }
     }
     
     public var contentCompressionResistanceHorizontalPriority: Float {
         get {
-            return self.view.contentCompressionResistancePriority(for: .horizontal)
+            return self.view.contentCompressionResistancePriority(for: .horizontal).rawValue
         }
         set {
-            self.view.setContentHuggingPriority(newValue, for: .horizontal)
+            self.view.setContentCompressionResistancePriority(LayoutPriority(rawValue: newValue), for: .horizontal)
         }
     }
     
     public var contentCompressionResistanceVerticalPriority: Float {
         get {
-            return self.view.contentCompressionResistancePriority(for: .vertical)
+            return self.view.contentCompressionResistancePriority(for: .vertical).rawValue
         }
         set {
-            self.view.setContentCompressionResistancePriority(newValue, for: .vertical)
+            self.view.setContentCompressionResistancePriority(LayoutPriority(rawValue: newValue), for: .vertical)
         }
     }
     
@@ -100,36 +98,4 @@ public struct ConstraintViewDSL: ConstraintAttributesDSL {
         
     }
     
-    internal var constraints: [Constraint] {
-        return self.constraintsHashTable.allObjects
-    }
-    
-    internal func add(constraints: [Constraint]) {
-        let hashTable = self.constraintsHashTable
-        for constraint in constraints {
-            hashTable.add(constraint)
-        }
-    }
-    
-    internal func remove(constraints: [Constraint]) {
-        let hashTable = self.constraintsHashTable
-        for constraint in constraints {
-            hashTable.remove(constraint)
-        }
-    }
-    
-    private var constraintsHashTable: NSHashTable<Constraint> {
-        let constraints: NSHashTable<Constraint>
-        
-        if let existing = objc_getAssociatedObject(self.view, &constraintsKey) as? NSHashTable<Constraint> {
-            constraints = existing
-        } else {
-            constraints = NSHashTable<Constraint>()
-            objc_setAssociatedObject(self.view, &constraintsKey, constraints, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
-        return constraints
-        
-    }
-    
 }
-private var constraintsKey: UInt8 = 0
