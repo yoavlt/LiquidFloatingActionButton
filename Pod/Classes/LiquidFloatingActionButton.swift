@@ -115,7 +115,7 @@ open class LiquidFloatingActionButton : UIView {
 		
         // rotate plus icon
         CATransaction.setAnimationDuration(0.8)
-        self.plusLayer.transform = CATransform3DMakeRotation((CGFloat(M_PI) * rotationDegrees) / 180, 0, 0, 1)
+        self.plusLayer.transform = CATransform3DMakeRotation((CGFloat(Double.pi) * rotationDegrees) / 180, 0, 0, 1)
 
         let cells = cellArray()
         for cell in cells {
@@ -375,12 +375,12 @@ class CircleLiquidBaseView : ActionBarBaseView {
         }
 
         if let firstCell = openingCells.first {
-            bigEngine?.push(circle: baseLiquid!, other: firstCell)
+            _ = bigEngine?.push(circle: baseLiquid!, other: firstCell)
         }
         for i in 1..<openingCells.count {
             let prev = openingCells[i - 1]
             let cell = openingCells[i]
-            engine?.push(circle: prev, other: cell)
+            _ = engine?.push(circle: prev, other: cell)
         }
         engine?.draw(parent: baseLiquid!)
         bigEngine?.draw(parent: baseLiquid!)
@@ -437,7 +437,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
         return -1 * t * (t - 2)
     }
     
-    func didDisplayRefresh(_ displayLink: CADisplayLink) {
+    @objc func didDisplayRefresh(_ displayLink: CADisplayLink) {
         if opening {
             keyDuration += CGFloat(displayLink.duration)
             updateOpen()
