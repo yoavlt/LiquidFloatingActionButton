@@ -27,40 +27,51 @@
     import AppKit
 #endif
 
-
-@available(iOS 9.0, OSX 10.11, *)
-public struct ConstraintLayoutGuideDSL: ConstraintAttributesDSL {
+public struct ConstraintPriority : ExpressibleByFloatLiteral, Equatable, Strideable {
+    public typealias FloatLiteralType = Float
     
-    @discardableResult
-    public func prepareConstraints(_ closure: (_ make: ConstraintMaker) -> Void) -> [Constraint] {
-        return ConstraintMaker.prepareConstraints(item: self.guide, closure: closure)
+    public let value: Float
+    
+    public init(floatLiteral value: Float) {
+        self.value = value
     }
     
-    public func makeConstraints(_ closure: (_ make: ConstraintMaker) -> Void) {
-        ConstraintMaker.makeConstraints(item: self.guide, closure: closure)
+    public init(_ value: Float) {
+        self.value = value
     }
     
-    public func remakeConstraints(_ closure: (_ make: ConstraintMaker) -> Void) {
-        ConstraintMaker.remakeConstraints(item: self.guide, closure: closure)
+    public static var required: ConstraintPriority {
+        return 1000.0
     }
     
-    public func updateConstraints(_ closure: (_ make: ConstraintMaker) -> Void) {
-        ConstraintMaker.updateConstraints(item: self.guide, closure: closure)
+    public static var high: ConstraintPriority {
+        return 750.0
     }
     
-    public func removeConstraints() {
-        ConstraintMaker.removeConstraints(item: self.guide)
-    }
-    
-    public var target: AnyObject? {
-        return self.guide
-    }
-    
-    internal let guide: ConstraintLayoutGuide
-    
-    internal init(guide: ConstraintLayoutGuide) {
-        self.guide = guide
+    public static var medium: ConstraintPriority {
+        #if os(OSX)
+            return 501.0
+        #else
+            return 500.0
+        #endif
         
     }
     
+    public static var low: ConstraintPriority {
+        return 250.0
+    }
+    
+    public static func ==(lhs: ConstraintPriority, rhs: ConstraintPriority) -> Bool {
+        return lhs.value == rhs.value
+    }
+
+    // MARK: Strideable
+
+    public func advanced(by n: FloatLiteralType) -> ConstraintPriority {
+        return ConstraintPriority(floatLiteral: value + n)
+    }
+
+    public func distance(to other: ConstraintPriority) -> FloatLiteralType {
+        return other.value - value
+    }
 }
