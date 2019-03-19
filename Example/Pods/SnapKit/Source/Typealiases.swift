@@ -21,65 +21,22 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
+import Foundation
+
 #if os(iOS) || os(tvOS)
     import UIKit
+#if swift(>=4.2)
+    typealias LayoutRelation = NSLayoutConstraint.Relation
+    typealias LayoutAttribute = NSLayoutConstraint.Attribute
+#else
+    typealias LayoutRelation = NSLayoutRelation
+    typealias LayoutAttribute = NSLayoutAttribute
+#endif
+    typealias LayoutPriority = UILayoutPriority
 #else
     import AppKit
+    typealias LayoutRelation = NSLayoutConstraint.Relation
+    typealias LayoutAttribute = NSLayoutConstraint.Attribute
+    typealias LayoutPriority = NSLayoutConstraint.Priority
 #endif
 
-
-public protocol ConstraintPriorityTarget {
-    
-    var constraintPriorityTargetValue: Float { get }
-    
-}
-
-extension Int: ConstraintPriorityTarget {
-    
-    public var constraintPriorityTargetValue: Float {
-        return Float(self)
-    }
-    
-}
-
-extension UInt: ConstraintPriorityTarget {
-    
-    public var constraintPriorityTargetValue: Float {
-        return Float(self)
-    }
-    
-}
-
-extension Float: ConstraintPriorityTarget {
-    
-    public var constraintPriorityTargetValue: Float {
-        return self
-    }
-    
-}
-
-extension Double: ConstraintPriorityTarget {
-    
-    public var constraintPriorityTargetValue: Float {
-        return Float(self)
-    }
-    
-}
-
-extension CGFloat: ConstraintPriorityTarget {
-    
-    public var constraintPriorityTargetValue: Float {
-        return Float(self)
-    }
-    
-}
-
-#if os(iOS) || os(tvOS)
-extension UILayoutPriority: ConstraintPriorityTarget {
-
-    public var constraintPriorityTargetValue: Float {
-        return self.rawValue
-    }
-
-}
-#endif
