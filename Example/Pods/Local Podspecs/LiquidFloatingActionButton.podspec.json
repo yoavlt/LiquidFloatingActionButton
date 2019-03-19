@@ -12,6 +12,7 @@
     "git": "https://github.com/yoavlt/LiquidFloatingActionButton.git",
     "tag": "2.0.0"
   },
+  "swift_version": "4.1",
   "platforms": {
     "ios": "8.0"
   },
