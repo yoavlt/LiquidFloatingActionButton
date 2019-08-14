@@ -115,7 +115,7 @@ open class LiquidFloatingActionButton : UIView {
 		
         // rotate plus icon
         CATransaction.setAnimationDuration(0.8)
-        self.plusLayer.transform = CATransform3DMakeRotation((CGFloat(M_PI) * rotationDegrees) / 180, 0, 0, 1)
+        self.plusLayer.transform = CATransform3DMakeRotation((CGFloat(Double.pi) * rotationDegrees) / 180, 0, 0, 1)
 
         let cells = cellArray()
         for cell in cells {
