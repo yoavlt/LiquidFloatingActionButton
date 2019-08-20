@@ -80,7 +80,7 @@ public class ConstraintMakerExtendable: ConstraintMakerRelatable {
         return self
     }
     
-    @available(*, deprecated:3.0, message:"Use lastBaseline instead")
+    @available(*, deprecated, message:"Use lastBaseline instead")
     public var baseline: ConstraintMakerExtendable {
         self.description.attributes += .lastBaseline
         return self
@@ -106,6 +106,12 @@ public class ConstraintMakerExtendable: ConstraintMakerRelatable {
     @available(iOS 8.0, *)
     public var rightMargin: ConstraintMakerExtendable {
         self.description.attributes += .rightMargin
+        return self
+    }
+    
+    @available(iOS 8.0, *)
+    public var topMargin: ConstraintMakerExtendable {
+        self.description.attributes += .topMargin
         return self
     }
     

@@ -29,6 +29,7 @@ class SimpleCircleLiquidEngine {
         self.angleThresh = angleThresh
     }
 
+    @discardableResult
     func push(circle: LiquittableCircle, other: LiquittableCircle) -> [LiquittableCircle] {
         if let paths = generateConnectedPath(circle: circle, other: other) {
             let layers = paths.map(self.constructLayer)
@@ -70,7 +71,7 @@ class SimpleCircleLiquidEngine {
     private func circleConnectedPoint(circle: LiquittableCircle, other: LiquittableCircle) -> (CGPoint, CGPoint) {
         var ratio = circleRatio(circle: circle, other: other)
         ratio = (ratio + ConnectThresh) / (1.0 + ConnectThresh)
-        let angle = CGFloat(M_PI_2) * angleOpen * ratio
+        let angle = CGFloat(Double.pi) * angleOpen * ratio
         return circleConnectedPoint(circle: circle, other: other, angle: angle)
     }
 
