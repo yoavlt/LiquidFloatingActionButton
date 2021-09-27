@@ -1,0 +1,6 @@
+framework module LiquidFloatingActionButton {
+  umbrella header "LiquidFloatingActionButton-iOS8.3-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -45,9 +45,7 @@ public class ConstraintMakerRelatable {
                   other.attributes.layoutAttributes.count <= 1 ||
                   other.attributes.layoutAttributes == self.description.attributes.layoutAttributes ||
                   other.attributes == .edges && self.description.attributes == .margins ||
-                  other.attributes == .margins && self.description.attributes == .edges ||
-                  other.attributes == .directionalEdges && self.description.attributes == .directionalMargins ||
-                  other.attributes == .directionalMargins && self.description.attributes == .directionalEdges else {
+                  other.attributes == .margins && self.description.attributes == .edges else {
                 fatalError("Cannot constraint to multiple non identical attributes. (\(file), \(line))");
             }
             
