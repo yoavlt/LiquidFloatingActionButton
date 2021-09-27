@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LiquidFloatingActionButton"
-  s.version          = "2.1.0"
+  s.version          = "2.2.0"
   s.summary          = "Material Design Floating Action Button in liquid state"
 
 # This description is used to generate tags and improve search results.
@@ -23,20 +23,14 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/yoavlt/LiquidFloatingActionButton"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Takuma Yoshida" => "yoa.jmpr.w@gmail.com" }
-  s.source           = { :git => "https://github.com/yoavlt/LiquidFloatingActionButton.git", :tag => s.version.to_s }
+  s.author           = { "Takuma Yoshida" => "yoa.jmpr.w@gmail.com", "José Enrique Sánchez" => 'jesanchez@jesanchez.es' }
+  s.source           = { :git => "https://github.com/jesancheza/LiquidFloatingActionButton.git", :branch => "develop" :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.swift_version = "4.2"
-  s.platform     = :ios, '8.0'
+  s.ios.deployment_target = '12.0'
+  s.swift_version = '5.0'
   s.requires_arc = true
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
 
   s.source_files = 'Pod/Classes/**/*'
-  # s.resource_bundles = {
-  #   'LiquidFloatingActionButton' => ['Pod/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

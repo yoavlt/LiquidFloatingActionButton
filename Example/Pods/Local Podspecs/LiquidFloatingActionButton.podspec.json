@@ -1,6 +1,6 @@
 {
   "name": "LiquidFloatingActionButton",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "summary": "Material Design Floating Action Button in liquid state",
   "description": "Material Design Floating Action Button in liquid state inspired by http://www.materialup.com/posts/material-in-a-liquid-state",
   "homepage": "https://github.com/yoavlt/LiquidFloatingActionButton",
@@ -10,12 +10,16 @@
   },
   "source": {
     "git": "https://github.com/yoavlt/LiquidFloatingActionButton.git",
-    "tag": "2.0.0"
+    "tag": "2.2.0"
   },
-  "swift_version": "4.1",
   "platforms": {
-    "ios": "8.0"
+    "ios": "12.0"
   },
+  "swift_versions": "5.0",
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*"
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "5.0"
+  },
+  "source_files": "Pod/Classes/**/*",
+  "swift_version": "5.0"
 }

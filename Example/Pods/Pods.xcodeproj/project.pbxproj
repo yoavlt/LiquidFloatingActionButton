@@ -7,226 +7,206 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DD9802A38696AC5B93C664B88258F44 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC50C5EC30235FF86CF17E8E217DFE4 /* CGPointEx.swift */; };
-		17CDAA483A178FB453C490A5232C02CB /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC50C5EC30235FF86CF17E8E217DFE4 /* CGPointEx.swift */; };
-		181E49FE7F5579CB1B8207A83529D44E /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08132DAA9309B4A5D5D62EFE494A9757 /* SimpleCircleLiquidEngine.swift */; };
-		18AE94D218EB1953EB0EA8CBD01358D2 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734D85E58F3C5B8F418EE9B0A943DFB6 /* ConstraintLayoutGuide.swift */; };
-		19E86C95FD6304EE8218706B9AEF05CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		19EBFDA684BE33C32D9578A7C41B93E2 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74142963C638167AD262CC11D9BAACA3 /* CGRectEx.swift */; };
-		1AE29BD9644427C3FFEF2D69737E512A /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F0A081446629E3DD3A63D8004AAC7 /* ArrayEx.swift */; };
-		1D39625507C5056C8B6BA1A66C4AC889 /* LiquidFloatingActionButton-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B2D61AF21C9E4DDEFFBC185890226F /* LiquidFloatingActionButton-iOS8.3-dummy.m */; };
-		205FAC12355034FBDB9BA7A223E0BE58 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A16CBDC9E8348101FB596E1B0D64B3DD /* SnapKit-dummy.m */; };
-		234F6F61CDAB39F14B9F1F3256A69794 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9F88505958E8DD77D99588F0471563 /* ConstraintPriority.swift */; };
-		239EDF53C803A110FC743703E7B88ED8 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425101B552E11290A01971FB977C9D94 /* ConstraintInsets.swift */; };
-		2B62AD6CBB85D6891CC0952F000A9311 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8959EFF4ED2C473620C5934AF38D555E /* ConstraintMaker.swift */; };
-		370BFA6EC8F20817134E8BEDAE7408F2 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C0BEE93AF56739E9FF303A7ECA5D04 /* UILayoutSupport+Extensions.swift */; };
-		3E85B0A0B21AA909691F9CB8E0D00AE0 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC6236D47CB2BA34B4F1F344E985DF2 /* ConstraintMultiplierTarget.swift */; };
-		3FFA936B82CF39F50FE9A211A67DC6C2 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E6A0E89915574C7D9DBC896D4A76A7 /* ConstraintLayoutSupport.swift */; };
-		40A499FEA3DD38A6CBE432BD17C8D41E /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5926F04B724FCFC18EB3D230A13C07 /* ConstraintMakerFinalizable.swift */; };
-		47E7900ECC0572477F1E4FFF4103DC9F /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B606E9EA85E4DDBE8A54E321EB814C25 /* LiquidUtil.swift */; };
-		47F414E9BCC1DD19B19912D207701A4F /* Pods-LiquidFloatingActionButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2FBE2FCE26BD0E5517A3091003A1BD /* Pods-LiquidFloatingActionButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B2F7D00241E752B5DF55ACF3BD63850 /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08132DAA9309B4A5D5D62EFE494A9757 /* SimpleCircleLiquidEngine.swift */; };
-		4E8F0F5FBE698B066BA9832B6C56161B /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718501E66EB9C33CE1F87D62CC2CC57D /* ConstraintViewDSL.swift */; };
-		5289BB40C962CAFF1A5877E4BC7C4D86 /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98BF0AC90B223FE8EEC596CDBB12A6 /* LiquittableCircle.swift */; };
-		53EFCFA6AAB2DB6E0FFCCD1D0699EF21 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15388F9916461AFADC0B83C0F3896286 /* ConstraintAttributes.swift */; };
-		55B246CC6F8236FFD6E467A4C1008D18 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D310AAB8E50557845B5D7CF84C02F45 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59C4A2E0819EDC87242D916E9E3218F0 /* Pods-LiquidFloatingActionButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DBD25489EC2C00108A29FF3F7A3FCF /* Pods-LiquidFloatingActionButton_Example-dummy.m */; };
-		6498EF2C8A130BB962F54BE2F34B7927 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		71E0AEE9C98AB9FA89A81AEEA01165C2 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DECB55AE295F271C9D4E2198054FA /* ConstraintLayoutGuideDSL.swift */; };
-		72F80E40E6DA4F7F650BFBEF20671943 /* LiquidFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BC17BB2E16E1C547CBC65D3DA1C959 /* LiquidFloatingActionButton.swift */; };
-		7927A2FE4C7EFC68B7C917C702BA9F9E /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6693C457C9655D1E49B7B8027767CF /* LayoutConstraintItem.swift */; };
-		7A492C7E9C5063AB455483D174050799 /* LiquidFloatingActionButton-iOS8.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E76FB1E8B07DCDFF5BAD1D51A90469F5 /* LiquidFloatingActionButton-iOS8.0-dummy.m */; };
-		7F5EEF01F793679ADD132786C6D1DEFF /* LiquidFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BC17BB2E16E1C547CBC65D3DA1C959 /* LiquidFloatingActionButton.swift */; };
-		8075199F7816579E38818F985313E5F5 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ABC1FF8C8F648909E0AC7911172933 /* ConstraintMakerRelatable.swift */; };
-		8CE09C2CBA9F37FE5090A5103B0EB0C7 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC8E050E3BE6E46D7C010378F29A56 /* ConstraintMakerPriortizable.swift */; };
-		9175906B0D3887ACA8D056434E9AB174 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		94D26B96A02F3BA6EA0B4A70A2607717 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3430CAA9F5F4252B6DD4819000AF4AF3 /* ConstraintInsetTarget.swift */; };
-		96ED52D514FFEEC8ACF714F0BFD2AA03 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B606E9EA85E4DDBE8A54E321EB814C25 /* LiquidUtil.swift */; };
-		97EA8A46BAE305B5E74920EAF3D454B0 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69940BF178423537E010EA0A592D164D /* Typealiases.swift */; };
-		987F2884354792B3500D6EF18AEF6379 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1F6250B9560C48D2982462F5197C7 /* ConstraintView+Extensions.swift */; };
-		99ABF8B541B53B6A918A7592640699BC /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74142963C638167AD262CC11D9BAACA3 /* CGRectEx.swift */; };
-		99CDB5C526468B0A6B5033F4BA4CB5B2 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = A671A026067AF279C0A07DAC5E3D5F56 /* ConstraintDescription.swift */; };
-		9D1616099FFAD97E6656625A1FA4AC4A /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC281399063A5E62CECFBBD097D01D2 /* ConstraintMakerExtendable.swift */; };
-		9E969E7359BD6029DD8FB93E9C972158 /* LiquidFloatingActionButton-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5DECE0AC29DD50DC67F0715A4AF123 /* LiquidFloatingActionButton-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A18EEE84D520F461ADE2C70355683710 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A754244D675324E814E05CF1E281645 /* ConstraintPriorityTarget.swift */; };
-		A7B76A9E6A6B861D0FD9D71DEEFB2D60 /* Pods-LiquidFloatingActionButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCFEAB480C0C0D8F12DB347F07F6E16A /* Pods-LiquidFloatingActionButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A96853843E3F8CA46C5F03EE7AA7EA48 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D235C0E8456DA03B8724F17EA46D9F /* Constraint.swift */; };
-		A9F27FB9C8B5A0E23DD8721587C1BCA2 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A7AEA6044B2018807C2D766ED9025D /* ConstraintItem.swift */; };
-		AC15A8CA04F1D245022EA28B810F9969 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		B17D7F37FA919CF1D6FF0BA1F9C8C264 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF6A5B7704FACC7F9307D312A7EF61 /* ConstraintRelation.swift */; };
-		BF2B5ED9C9DB40A9BB2A9661A39C3426 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D210A13529B69371A362230828E459 /* ConstraintOffsetTarget.swift */; };
-		C29E5555FF7716C263E001A1D37379BE /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C98BF0AC90B223FE8EEC596CDBB12A6 /* LiquittableCircle.swift */; };
-		C895C6EAF7312551BF6864978FBB153C /* Pods-LiquidFloatingActionButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B8E61164CC261E567BBDF566F8770 /* Pods-LiquidFloatingActionButton_Tests-dummy.m */; };
-		CA1C5D947D6D046314BB7B61FE14D171 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987D9011F616F5690D09CFC59CAC79EC /* ConstraintView.swift */; };
-		CBBDD9002FFE2FB3964BBBD06DBDE0CF /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F94C7C263067A0535BA4C068F5BA96 /* Debugging.swift */; };
-		CC08AAD8D5AA9DF1766CCAB30CE10813 /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2F0A081446629E3DD3A63D8004AAC7 /* ArrayEx.swift */; };
-		CFE7B249B93C87C0020E8D3D87B1D08A /* LiquidFloatingActionButton-iOS8.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5EE517ACA43772BF27A9BCD4DBB35C3 /* LiquidFloatingActionButton-iOS8.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D14E6E6177B5BAECEABD4D50B7229920 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D0C15939397708F7A906796D4C407 /* ConstraintMakerEditable.swift */; };
-		D89D8EE73FFDF784E87CF5C472D9BC74 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC0B0BEE9660C5040BB30228F5543F /* UIColorEx.swift */; };
-		DA0FB15128B05C6E6F60D70E17E65F0A /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B2D75BA44BD7EC2F724E0EDB30F325 /* ConstraintLayoutGuide+Extensions.swift */; };
-		DDF74C611EBFF25A137B5C1E32C7B1BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		E3C8E7EE1AE1BA185E2C39B69500E04C /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDC6561D7E59F96048734F4A9C87399 /* LayoutConstraint.swift */; };
-		E3E91C89F6DC6B2A59F4F8A9C0543650 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ECFB28DDFA00A26C7DEFA47C0B957D /* ConstraintRelatableTarget.swift */; };
-		E4AFBA322B1D36DC0981E92F3776758A /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DC359A7B04F408D0E8233AE8D87CCB /* ConstraintDSL.swift */; };
-		EB9A59598072CA9D7660AA499C8F8F98 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215EB1EB7D34BAE4D61BE35FD37C7B8C /* ConstraintConstantTarget.swift */; };
-		EDC7D7025FE7B18EF207C55A02BE3457 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66AA66BCD7583FB9A6324FB89D6C530 /* ConstraintLayoutSupportDSL.swift */; };
-		F22120DC4382E45A9190E385659E8F66 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC0B0BEE9660C5040BB30228F5543F /* UIColorEx.swift */; };
-		FDB50C2934ABFD8D1A9AA4E0F4AA88F5 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53136A44C3AF8EA930C8F0C67B926F0 /* ConstraintConfig.swift */; };
+		01C550A53C9E2047C83F8E85BBB558E6 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */; };
+		039EAFE7935113805F3FC21BF1B7C9D5 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */; };
+		091B053F99B19C441D5EAFB412D580EA /* Pods-LiquidFloatingActionButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2CA3B97A30BD3F49F624165923FA1EF /* Pods-LiquidFloatingActionButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F8D64613F2542C040E72966F1D054EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		11CECCCD4C5C498F5360D53C81D54098 /* LiquidFloatingActionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6991DCAE50569F600E2DEEC6D3AC53B8 /* LiquidFloatingActionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1956E392D500F3CD899D39A5F805736D /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */; };
+		1AFB1E9136716C0B61D6C700FF1E60FD /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */; };
+		2031A0A29D30E7B988D25A30EA03876A /* Pods-LiquidFloatingActionButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 196AAA79A681BFD361E9FEE1427FF7C5 /* Pods-LiquidFloatingActionButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21AB1101BBE4D28D74ED4EDF0D59025A /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */; };
+		232B2F922E972D9F43D2EE15ACECE734 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */; };
+		2A1BBBC87AC2367BD14610A9D10D285E /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */; };
+		2C06F2E972444D359754D21AC46BFFE2 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */; };
+		30AB6BC14E02F8B7AF11525AE9F209A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3BFC243AB9BD579969F0D5756560BCAA /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */; };
+		3E5285F4F36EAD77ECABBFB7F36BB1BB /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */; };
+		488DDF90FE036BCC04FE69232C5E4E15 /* Pods-LiquidFloatingActionButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E2E4B0C575712B4313A6CFA99C10F7 /* Pods-LiquidFloatingActionButton_Tests-dummy.m */; };
+		4C7A676DAE95EEAC3787A75349F0862D /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */; };
+		4CF24469640156A4E42D91390EFF12CA /* Pods-LiquidFloatingActionButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CBF5B5EFF3405CA075BF4835F53191C /* Pods-LiquidFloatingActionButton_Example-dummy.m */; };
+		4E2C8E2F59DEBF9CAC61326201EE3876 /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB33B08306A6084B1E3A4D7833EC1FC4 /* ArrayEx.swift */; };
+		51CD5887014967E77E58F5A163996454 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */; };
+		57B1876F2BE4168E5BFDB63D8CC849A0 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */; };
+		5854DF509E8A016B6235793D04083035 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */; };
+		5AF7A9443E4CC04CEADBBF51791E8254 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300CAC3F0210B45F2B3AB04BA78564B /* UIColorEx.swift */; };
+		699BF65CE684890FF53EFE3F27C55C0F /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8908D66DDD47CEA5B41CB36BBA419FE9 /* CGRectEx.swift */; };
+		69CCBEEDFCA6D743D80026568D961919 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */; };
+		69E3A06BBDFDC7D06A9D4BDC4E895E73 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */; };
+		6E0EB9E7FAAEDBB7A73ECF3095F69C4A /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */; };
+		71DE9DC2FA583526AB4D1FD7F00C099C /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */; };
+		75E146C12D1287228A0B493E87CDE31F /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */; };
+		77C9889055A3B32EA13A9616824DB0ED /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */; };
+		7813A09B8F9242BBF63900D45EF15054 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		79286C4507EDD8A496D42D31FDF597E7 /* LiquidFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C1D14508D16542922A33010C94605 /* LiquidFloatingActionButton.swift */; };
+		7C1702076F3A31D8D2D45A4A9F09B266 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */; };
+		8277256ADEC3C4DCF79957D1CA681A9A /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */; };
+		8705BBF0D428BF0AE1B554A377ECC540 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */; };
+		870C98E14D9930B7AC5AFB1BDE2224D6 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7AF87F4DC507DFA589D7CDCA548354 /* CGPointEx.swift */; };
+		94AA107B1A813168782FBED4675AA26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9961FF0B70B2CC33E78C8B35D4318878 /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26542C0B5A4ACF295F17E916C416BD56 /* SimpleCircleLiquidEngine.swift */; };
+		99B5296A5EDECE0557B9DA53D9E19CA1 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */; };
+		9B09968922C73D50040C6EEF57890D6E /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */; };
+		A1884F8C772E942413ABF17C8CB041A8 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572B3D3AE09996CC1797BDBAC31206E2 /* LiquidUtil.swift */; };
+		A270CD9EC3C541FE86E65AEDCEF500CF /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */; };
+		A601B4B0702492852E0028DDC7E057B0 /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341871BD97EA1059088A500DE61A8F41 /* LiquittableCircle.swift */; };
+		A66ED57B365A35434C5BAF4B990819B7 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC35C9341C4BB156BB26FDD237EE3721 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */; };
+		B599696DFEF6B2A5ECF528F4E5BB1846 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */; };
+		B780B272106411CBE258BB60FFC45410 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */; };
+		BECA67DFB5E0984DFAEFCB775C31972E /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */; };
+		C412F27D75AFC0DF0F0289DBB270931C /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */; };
+		CE62FEABA57B2B53EABF8C7DCCC6B2C4 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */; };
+		D4697DC40F3B059E4A0867838CA1814E /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */; };
+		E8F2429683B3015CBD39CE883770BCA7 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */; };
+		E9A970BC24EA15832F248EA020072746 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */; };
+		EB1726F5E0D0EEBA20E4528B1E37A8FA /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */; };
+		EE909C7C786140109051BC9562EEC7C8 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */; };
+		F8F240D67101E546CDCFFAE17F4711C7 /* LiquidFloatingActionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D7FEC21711ECEF7320663185FE7C48 /* LiquidFloatingActionButton-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		238A30E5F4C278737675A96D84DD4283 /* PBXContainerItemProxy */ = {
+		06AADEB10B25CC4B126F5B70D6D7DE55 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D000F964B5FC2B3C7A7D6090BD9946B6;
-			remoteInfo = "LiquidFloatingActionButton-iOS8.3";
+			remoteGlobalIDString = E76DDF79D71069F58B3AF25702161428;
+			remoteInfo = LiquidFloatingActionButton;
 		};
-		2999DFD933B84E5B5F6731E79DFC2C79 /* PBXContainerItemProxy */ = {
+		232A9343E255FA95E8A21C78AC2E7FA1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C4A7FA529137A20F38B9BCD9485DA761;
-			remoteInfo = "LiquidFloatingActionButton-iOS8.0";
+			remoteGlobalIDString = E76DDF79D71069F58B3AF25702161428;
+			remoteInfo = LiquidFloatingActionButton;
 		};
-		AE98928B278CFB807E170A7FD9E75E35 /* PBXContainerItemProxy */ = {
+		59DDE3953401DC89B38A1018AF3F0060 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 051203B31B31F935B8B455722EB7842F;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
 			remoteInfo = SnapKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008B62590F6163A1770E90279FAE3262 /* LiquidFloatingActionButton-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LiquidFloatingActionButton-iOS8.3-prefix.pch"; path = "../LiquidFloatingActionButton-iOS8.3/LiquidFloatingActionButton-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
-		02E6A0E89915574C7D9DBC896D4A76A7 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
-		07F94C1C71FCDBD0CA5AC83C21C38A35 /* LiquidFloatingActionButton-iOS8.3-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "LiquidFloatingActionButton-iOS8.3-Info.plist"; path = "../LiquidFloatingActionButton-iOS8.3/LiquidFloatingActionButton-iOS8.3-Info.plist"; sourceTree = "<group>"; };
-		08132DAA9309B4A5D5D62EFE494A9757 /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleCircleLiquidEngine.swift; path = Pod/Classes/SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
-		0A754244D675324E814E05CF1E281645 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
-		0A8B8E61164CC261E567BBDF566F8770 /* Pods-LiquidFloatingActionButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiquidFloatingActionButton_Tests-dummy.m"; sourceTree = "<group>"; };
-		0F2FBE2FCE26BD0E5517A3091003A1BD /* Pods-LiquidFloatingActionButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiquidFloatingActionButton_Tests-umbrella.h"; sourceTree = "<group>"; };
-		121FDED4A06C21BE92F6CE3131809E4F /* LiquidFloatingActionButton-iOS8.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "LiquidFloatingActionButton-iOS8.3.xcconfig"; path = "../LiquidFloatingActionButton-iOS8.3/LiquidFloatingActionButton-iOS8.3.xcconfig"; sourceTree = "<group>"; };
-		14ABC1FF8C8F648909E0AC7911172933 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
-		15388F9916461AFADC0B83C0F3896286 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
-		16DC359A7B04F408D0E8233AE8D87CCB /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
-		18AC0B0BEE9660C5040BB30228F5543F /* UIColorEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorEx.swift; path = Pod/Classes/UIColorEx.swift; sourceTree = "<group>"; };
-		1A0D1CD10B3EBE5D1172D46A5158D007 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
-		1D0030FFCA27E5E4FB09D27CF34B21D0 /* LiquidFloatingActionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiquidFloatingActionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D310AAB8E50557845B5D7CF84C02F45 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
-		1F5DECE0AC29DD50DC67F0715A4AF123 /* LiquidFloatingActionButton-iOS8.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LiquidFloatingActionButton-iOS8.3-umbrella.h"; path = "../LiquidFloatingActionButton-iOS8.3/LiquidFloatingActionButton-iOS8.3-umbrella.h"; sourceTree = "<group>"; };
-		215EB1EB7D34BAE4D61BE35FD37C7B8C /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
-		218DECB55AE295F271C9D4E2198054FA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
-		22144C92BCE81CF11711C3B5F4515371 /* Pods-LiquidFloatingActionButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidFloatingActionButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		26FF6A5B7704FACC7F9307D312A7EF61 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
-		2C98BF0AC90B223FE8EEC596CDBB12A6 /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquittableCircle.swift; path = Pod/Classes/LiquittableCircle.swift; sourceTree = "<group>"; };
-		2FC50C5EC30235FF86CF17E8E217DFE4 /* CGPointEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPointEx.swift; path = Pod/Classes/CGPointEx.swift; sourceTree = "<group>"; };
-		3430CAA9F5F4252B6DD4819000AF4AF3 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
-		34BC17BB2E16E1C547CBC65D3DA1C959 /* LiquidFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidFloatingActionButton.swift; path = Pod/Classes/LiquidFloatingActionButton.swift; sourceTree = "<group>"; };
-		34E20F87F3A8F71EACC2EBFA8BBBDE57 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		3500A0F32009E3669FB6213AE25B58C8 /* LiquidFloatingActionButton-iOS8.0-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LiquidFloatingActionButton-iOS8.0-Info.plist"; sourceTree = "<group>"; };
-		37DA6DD29234435A32BA1C9B2389C6DD /* LiquidFloatingActionButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LiquidFloatingActionButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		37F31EE7D221CB8A42887612A85FD489 /* Pods-LiquidFloatingActionButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidFloatingActionButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		38C0BEE93AF56739E9FF303A7ECA5D04 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
-		39CC9C241967C63E4EC0BAE1A4CDEE01 /* Pods-LiquidFloatingActionButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidFloatingActionButton_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3A2F0A081446629E3DD3A63D8004AAC7 /* ArrayEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayEx.swift; path = Pod/Classes/ArrayEx.swift; sourceTree = "<group>"; };
-		3AF951511FFE32AD69C5BB1EA307BC5D /* LiquidFloatingActionButton-iOS8.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "LiquidFloatingActionButton-iOS8.0.modulemap"; sourceTree = "<group>"; };
-		3D913FA522FA48735B8DB023C1E794FB /* LiquidFloatingActionButton-iOS8.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-iOS8.0-prefix.pch"; sourceTree = "<group>"; };
-		3EEF84EA071AE73119F9F78CCB7A8FB5 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
-		425101B552E11290A01971FB977C9D94 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
-		42EC8E050E3BE6E46D7C010378F29A56 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
-		433C4C98F997BEFA652BAC3B182165D5 /* Pods-LiquidFloatingActionButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiquidFloatingActionButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5D03F3C139319EA4D8F5A6B079637C29 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
-		5FC6236D47CB2BA34B4F1F344E985DF2 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
-		65ECFB28DDFA00A26C7DEFA47C0B957D /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
-		696D0C15939397708F7A906796D4C407 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
-		699386D2338C126D5C73F8302D04B07E /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiquidFloatingActionButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		69940BF178423537E010EA0A592D164D /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
-		69CB43AAFE41C8C6AA4B66C093E8B95C /* Pods-LiquidFloatingActionButton_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidFloatingActionButton_Example-Info.plist"; sourceTree = "<group>"; };
-		6FDC6561D7E59F96048734F4A9C87399 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
-		704DEE59C5D3F61A8FB322B0D54C3C86 /* Pods-LiquidFloatingActionButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidFloatingActionButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		718501E66EB9C33CE1F87D62CC2CC57D /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
-		734D85E58F3C5B8F418EE9B0A943DFB6 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
-		74142963C638167AD262CC11D9BAACA3 /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectEx.swift; path = Pod/Classes/CGRectEx.swift; sourceTree = "<group>"; };
-		74D1F6250B9560C48D2982462F5197C7 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		74D235C0E8456DA03B8724F17EA46D9F /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
-		7BEA02E9D275B6BA35EE71496DA4BD38 /* Pods-LiquidFloatingActionButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiquidFloatingActionButton_Example.modulemap"; sourceTree = "<group>"; };
-		8959EFF4ED2C473620C5934AF38D555E /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		8981FC81C050869714E9F8E1B51D69DA /* Pods_LiquidFloatingActionButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidFloatingActionButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C5926F04B724FCFC18EB3D230A13C07 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
-		8D6693C457C9655D1E49B7B8027767CF /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
-		90D210A13529B69371A362230828E459 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
-		987D9011F616F5690D09CFC59CAC79EC /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
-		9AC281399063A5E62CECFBBD097D01D2 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
-		9BC6B8FB9B6B7EE0E6C2EF4E5614AA40 /* Pods-LiquidFloatingActionButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiquidFloatingActionButton_Tests.modulemap"; sourceTree = "<group>"; };
+		00046A7945CD0811589770377ACEDEA2 /* LiquidFloatingActionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiquidFloatingActionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		03AEB0C8913B29A2AF52F2FAA482FC2F /* LiquidFloatingActionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-prefix.pch"; sourceTree = "<group>"; };
+		071984735C7B84094E07D76EDD39787D /* Pods_LiquidFloatingActionButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidFloatingActionButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		09D7FEC21711ECEF7320663185FE7C48 /* LiquidFloatingActionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidFloatingActionButton-dummy.m"; sourceTree = "<group>"; };
+		0FE007A7234EBB051FEE9B8FADEF2F14 /* LiquidFloatingActionButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LiquidFloatingActionButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		160C956F3DB126AABF8034C291AEB324 /* Pods-LiquidFloatingActionButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidFloatingActionButton_Example.release.xcconfig"; sourceTree = "<group>"; };
+		181C1D14508D16542922A33010C94605 /* LiquidFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidFloatingActionButton.swift; path = Pod/Classes/LiquidFloatingActionButton.swift; sourceTree = "<group>"; };
+		196AAA79A681BFD361E9FEE1427FF7C5 /* Pods-LiquidFloatingActionButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiquidFloatingActionButton_Example-umbrella.h"; sourceTree = "<group>"; };
+		19E096D0F65E29996FD5564E257CA280 /* Pods-LiquidFloatingActionButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidFloatingActionButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		26542C0B5A4ACF295F17E916C416BD56 /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleCircleLiquidEngine.swift; path = Pod/Classes/SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
+		2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		341871BD97EA1059088A500DE61A8F41 /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquittableCircle.swift; path = Pod/Classes/LiquittableCircle.swift; sourceTree = "<group>"; };
+		391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		3C983B56C6DA676C15916B7F65DB8D70 /* Pods-LiquidFloatingActionButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidFloatingActionButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		42F8E3B992C30DC7470842B15ABA85A6 /* Pods-LiquidFloatingActionButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiquidFloatingActionButton_Tests.modulemap"; sourceTree = "<group>"; };
+		4300CAC3F0210B45F2B3AB04BA78564B /* UIColorEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorEx.swift; path = Pod/Classes/UIColorEx.swift; sourceTree = "<group>"; };
+		45E2E4B0C575712B4313A6CFA99C10F7 /* Pods-LiquidFloatingActionButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiquidFloatingActionButton_Tests-dummy.m"; sourceTree = "<group>"; };
+		464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		4816B2D78A3F58FB26C002CD0623CA1F /* Pods-LiquidFloatingActionButton_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidFloatingActionButton_Tests-Info.plist"; sourceTree = "<group>"; };
+		4E9D14EB4EA7297AB31D29BCE034D872 /* LiquidFloatingActionButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidFloatingActionButton.debug.xcconfig; sourceTree = "<group>"; };
+		50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		54087CE35918E72A0CA8053C138F5F60 /* Pods-LiquidFloatingActionButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiquidFloatingActionButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		54B9824F4827EECBAACAB012DE749F6A /* LiquidFloatingActionButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LiquidFloatingActionButton.modulemap; sourceTree = "<group>"; };
+		56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		572B3D3AE09996CC1797BDBAC31206E2 /* LiquidUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidUtil.swift; path = Pod/Classes/LiquidUtil.swift; sourceTree = "<group>"; };
+		625C9FBE318646D61C9303E395F5D272 /* Pods-LiquidFloatingActionButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidFloatingActionButton_Example-frameworks.sh"; sourceTree = "<group>"; };
+		66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		6991DCAE50569F600E2DEEC6D3AC53B8 /* LiquidFloatingActionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-umbrella.h"; sourceTree = "<group>"; };
+		6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		6CBF5B5EFF3405CA075BF4835F53191C /* Pods-LiquidFloatingActionButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiquidFloatingActionButton_Example-dummy.m"; sourceTree = "<group>"; };
+		6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		78257397246E9797D18C7094CC948B50 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		7CA59ECF51F3952D67A642EB323281E3 /* LiquidFloatingActionButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidFloatingActionButton.release.xcconfig; sourceTree = "<group>"; };
+		7F6715CA39C49C906C36E9952A434322 /* Pods-LiquidFloatingActionButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidFloatingActionButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		803FA06AF9DE0F9B3D728554C60FF3A1 /* Pods-LiquidFloatingActionButton_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidFloatingActionButton_Example-Info.plist"; sourceTree = "<group>"; };
+		8908D66DDD47CEA5B41CB36BBA419FE9 /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectEx.swift; path = Pod/Classes/CGRectEx.swift; sourceTree = "<group>"; };
+		91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Source/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
+		91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		94EFBC2220937333FCD600A6F17B89F6 /* Pods-LiquidFloatingActionButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidFloatingActionButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		966427912140C5E25C35822483D090A9 /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiquidFloatingActionButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		968ECEE90E5B261032843951B2C3F4F3 /* Pods-LiquidFloatingActionButton_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidFloatingActionButton_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A16CBDC9E8348101FB596E1B0D64B3DD /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
-		A66AA66BCD7583FB9A6324FB89D6C530 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
-		A671A026067AF279C0A07DAC5E3D5F56 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
-		AA7509B089A3C16E10C9AC3CECB73B82 /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidFloatingActionButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B606E9EA85E4DDBE8A54E321EB814C25 /* LiquidUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidUtil.swift; path = Pod/Classes/LiquidUtil.swift; sourceTree = "<group>"; };
-		B8A97BC196B68430000E7FC9A5040EFF /* Pods-LiquidFloatingActionButton_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidFloatingActionButton_Tests-Info.plist"; sourceTree = "<group>"; };
-		BC9F88505958E8DD77D99588F0471563 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
-		BDC00CBF927EFC86392707D615D716E1 /* Pods-LiquidFloatingActionButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidFloatingActionButton_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C5EE517ACA43772BF27A9BCD4DBB35C3 /* LiquidFloatingActionButton-iOS8.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-iOS8.0-umbrella.h"; sourceTree = "<group>"; };
-		CA4FF4E71663EC42540FE25987543F34 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D0F94C7C263067A0535BA4C068F5BA96 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
-		D29B09C032C64D86C380932E4F2C0B79 /* Pods_LiquidFloatingActionButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidFloatingActionButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E76FB1E8B07DCDFF5BAD1D51A90469F5 /* LiquidFloatingActionButton-iOS8.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidFloatingActionButton-iOS8.0-dummy.m"; sourceTree = "<group>"; };
-		E8B2D75BA44BD7EC2F724E0EDB30F325 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
-		E8DBD25489EC2C00108A29FF3F7A3FCF /* Pods-LiquidFloatingActionButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiquidFloatingActionButton_Example-dummy.m"; sourceTree = "<group>"; };
-		E9CB85CBC0F6FE92EF582A4F182FCF18 /* LiquidFloatingActionButton-iOS8.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "LiquidFloatingActionButton-iOS8.3.modulemap"; path = "../LiquidFloatingActionButton-iOS8.3/LiquidFloatingActionButton-iOS8.3.modulemap"; sourceTree = "<group>"; };
-		EBB3F5736648B5F151B1B99D66A4C3F5 /* LiquidFloatingActionButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiquidFloatingActionButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE40E21D19D849CA8CAD76BCB72A7E9B /* LiquidFloatingActionButton-iOS8.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LiquidFloatingActionButton-iOS8.0.xcconfig"; sourceTree = "<group>"; };
-		F140218A3D6B2EC3B73483DA73E0179B /* Pods-LiquidFloatingActionButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidFloatingActionButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F1A7AEA6044B2018807C2D766ED9025D /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
-		F1F1C4DA14BB04789825BACE2F7D4DDA /* Pods-LiquidFloatingActionButton_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidFloatingActionButton_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		F53136A44C3AF8EA930C8F0C67B926F0 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
-		F82A85969B74D86A334FC5DFEBFDBA74 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8B2D61AF21C9E4DDEFFBC185890226F /* LiquidFloatingActionButton-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "LiquidFloatingActionButton-iOS8.3-dummy.m"; path = "../LiquidFloatingActionButton-iOS8.3/LiquidFloatingActionButton-iOS8.3-dummy.m"; sourceTree = "<group>"; };
-		F8F43A7FA376E36241D600174158AA22 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FCFEAB480C0C0D8F12DB347F07F6E16A /* Pods-LiquidFloatingActionButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiquidFloatingActionButton_Example-umbrella.h"; sourceTree = "<group>"; };
+		A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
+		A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		A6960435FED084BEB6CBB036AEF61F9C /* Pods_LiquidFloatingActionButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidFloatingActionButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Source/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
+		A8594C9DEFB5BD50B41E8E8F101E0DFB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BBC781D443BD36C973735ADDBB777A9A /* LiquidFloatingActionButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LiquidFloatingActionButton-Info.plist"; sourceTree = "<group>"; };
+		BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		CB33B08306A6084B1E3A4D7833EC1FC4 /* ArrayEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayEx.swift; path = Pod/Classes/ArrayEx.swift; sourceTree = "<group>"; };
+		D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		D2CA3B97A30BD3F49F624165923FA1EF /* Pods-LiquidFloatingActionButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiquidFloatingActionButton_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		DB245E28353CB04E99F7802258D0A490 /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidFloatingActionButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		FEF1A4500F7807BBB9C974219C779D61 /* Pods-LiquidFloatingActionButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiquidFloatingActionButton_Example.modulemap"; sourceTree = "<group>"; };
+		FF7AF87F4DC507DFA589D7CDCA548354 /* CGPointEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPointEx.swift; path = Pod/Classes/CGPointEx.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		25B9FBFCFF88C4258C92DA3F436EDF0D /* Frameworks */ = {
+		149AA1292B4A9FB74177EFC71B9DFE0E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC15A8CA04F1D245022EA28B810F9969 /* Foundation.framework in Frameworks */,
+				94AA107B1A813168782FBED4675AA26D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		321FC6246DD62F871DE23B2E1385BE0B /* Frameworks */ = {
+		3C8B1704CC97EF12D3409771318C6433 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9175906B0D3887ACA8D056434E9AB174 /* Foundation.framework in Frameworks */,
+				7813A09B8F9242BBF63900D45EF15054 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55650C1E6D0051065E15EFDBB0F70A9C /* Frameworks */ = {
+		BCE6C539F508C08DBB3FC34A4B3C6632 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19E86C95FD6304EE8218706B9AEF05CC /* Foundation.framework in Frameworks */,
+				0F8D64613F2542C040E72966F1D054EB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E171AC83C96DE4798EE4FB5A3412ADC /* Frameworks */ = {
+		ECAF17C4AC8F761C858877B92B9F02DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDF74C611EBFF25A137B5C1E32C7B1BE /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D510769E1525CEE13ADA5BE2F84F4A69 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6498EF2C8A130BB962F54BE2F34B7927 /* Foundation.framework in Frameworks */,
+				30AB6BC14E02F8B7AF11525AE9F209A3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,108 +216,181 @@
 		16D001D37B53E3E646CB1BD9E1D064C3 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9C8898441E56DB2E68AAEAFA20024693 /* Pods-LiquidFloatingActionButton_Example */,
-				9508B454D1AFBC8CF8A416A62168D966 /* Pods-LiquidFloatingActionButton_Tests */,
+				352EA0DD4BC0C3C92AB36DF7C6FAA93D /* Pods-LiquidFloatingActionButton_Example */,
+				5A4A527B4B6A2A3ABD7BE8AF9FFF8B53 /* Pods-LiquidFloatingActionButton_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		427B270BD76A5EF45313FBF29233B96D /* Pods */ = {
+		173BF66381E499E757EAC89760CE7335 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F64F26DEDF5F31DDC5DB06B012746920 /* SnapKit */,
+				A8594C9DEFB5BD50B41E8E8F101E0DFB /* LICENSE */,
+				0FE007A7234EBB051FEE9B8FADEF2F14 /* LiquidFloatingActionButton.podspec */,
+				78257397246E9797D18C7094CC948B50 /* README.md */,
 			);
-			name = Pods;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		62D8C4024CD0D6ADAE76D3FF26781D0A /* Products */ = {
+		1D6A6263E6A17978929541A332FAECDD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D0030FFCA27E5E4FB09D27CF34B21D0 /* LiquidFloatingActionButton.framework */,
-				EBB3F5736648B5F151B1B99D66A4C3F5 /* LiquidFloatingActionButton.framework */,
-				D29B09C032C64D86C380932E4F2C0B79 /* Pods_LiquidFloatingActionButton_Example.framework */,
-				8981FC81C050869714E9F8E1B51D69DA /* Pods_LiquidFloatingActionButton_Tests.framework */,
-				F82A85969B74D86A334FC5DFEBFDBA74 /* SnapKit.framework */,
+				00046A7945CD0811589770377ACEDEA2 /* LiquidFloatingActionButton.framework */,
+				A6960435FED084BEB6CBB036AEF61F9C /* Pods_LiquidFloatingActionButton_Example.framework */,
+				071984735C7B84094E07D76EDD39787D /* Pods_LiquidFloatingActionButton_Tests.framework */,
+				979486118B3E90C08386079D57962701 /* SnapKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6C1F78216BD4F9A2D5A462DBBE925F49 /* LiquidFloatingActionButton */ = {
+		352EA0DD4BC0C3C92AB36DF7C6FAA93D /* Pods-LiquidFloatingActionButton_Example */ = {
 			isa = PBXGroup;
 			children = (
-				3A2F0A081446629E3DD3A63D8004AAC7 /* ArrayEx.swift */,
-				2FC50C5EC30235FF86CF17E8E217DFE4 /* CGPointEx.swift */,
-				74142963C638167AD262CC11D9BAACA3 /* CGRectEx.swift */,
-				34BC17BB2E16E1C547CBC65D3DA1C959 /* LiquidFloatingActionButton.swift */,
-				B606E9EA85E4DDBE8A54E321EB814C25 /* LiquidUtil.swift */,
-				2C98BF0AC90B223FE8EEC596CDBB12A6 /* LiquittableCircle.swift */,
-				08132DAA9309B4A5D5D62EFE494A9757 /* SimpleCircleLiquidEngine.swift */,
-				18AC0B0BEE9660C5040BB30228F5543F /* UIColorEx.swift */,
-				A236372B9F955F7E469E55A4521EA090 /* Pod */,
-				ED2C2B45652A64204FC5F1951D4E7B94 /* Support Files */,
-			);
-			name = LiquidFloatingActionButton;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		9453231C6389EAF577FAE4D0C34174EB /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6C1F78216BD4F9A2D5A462DBBE925F49 /* LiquidFloatingActionButton */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		9508B454D1AFBC8CF8A416A62168D966 /* Pods-LiquidFloatingActionButton_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				9BC6B8FB9B6B7EE0E6C2EF4E5614AA40 /* Pods-LiquidFloatingActionButton_Tests.modulemap */,
-				699386D2338C126D5C73F8302D04B07E /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.markdown */,
-				AA7509B089A3C16E10C9AC3CECB73B82 /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.plist */,
-				0A8B8E61164CC261E567BBDF566F8770 /* Pods-LiquidFloatingActionButton_Tests-dummy.m */,
-				F1F1C4DA14BB04789825BACE2F7D4DDA /* Pods-LiquidFloatingActionButton_Tests-frameworks.sh */,
-				B8A97BC196B68430000E7FC9A5040EFF /* Pods-LiquidFloatingActionButton_Tests-Info.plist */,
-				0F2FBE2FCE26BD0E5517A3091003A1BD /* Pods-LiquidFloatingActionButton_Tests-umbrella.h */,
-				704DEE59C5D3F61A8FB322B0D54C3C86 /* Pods-LiquidFloatingActionButton_Tests.debug.xcconfig */,
-				22144C92BCE81CF11711C3B5F4515371 /* Pods-LiquidFloatingActionButton_Tests.release.xcconfig */,
-			);
-			name = "Pods-LiquidFloatingActionButton_Tests";
-			path = "Target Support Files/Pods-LiquidFloatingActionButton_Tests";
-			sourceTree = "<group>";
-		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		9C8898441E56DB2E68AAEAFA20024693 /* Pods-LiquidFloatingActionButton_Example */ = {
-			isa = PBXGroup;
-			children = (
-				7BEA02E9D275B6BA35EE71496DA4BD38 /* Pods-LiquidFloatingActionButton_Example.modulemap */,
-				433C4C98F997BEFA652BAC3B182165D5 /* Pods-LiquidFloatingActionButton_Example-acknowledgements.markdown */,
-				37F31EE7D221CB8A42887612A85FD489 /* Pods-LiquidFloatingActionButton_Example-acknowledgements.plist */,
-				E8DBD25489EC2C00108A29FF3F7A3FCF /* Pods-LiquidFloatingActionButton_Example-dummy.m */,
-				39CC9C241967C63E4EC0BAE1A4CDEE01 /* Pods-LiquidFloatingActionButton_Example-frameworks.sh */,
-				69CB43AAFE41C8C6AA4B66C093E8B95C /* Pods-LiquidFloatingActionButton_Example-Info.plist */,
-				FCFEAB480C0C0D8F12DB347F07F6E16A /* Pods-LiquidFloatingActionButton_Example-umbrella.h */,
-				F140218A3D6B2EC3B73483DA73E0179B /* Pods-LiquidFloatingActionButton_Example.debug.xcconfig */,
-				BDC00CBF927EFC86392707D615D716E1 /* Pods-LiquidFloatingActionButton_Example.release.xcconfig */,
+				FEF1A4500F7807BBB9C974219C779D61 /* Pods-LiquidFloatingActionButton_Example.modulemap */,
+				54087CE35918E72A0CA8053C138F5F60 /* Pods-LiquidFloatingActionButton_Example-acknowledgements.markdown */,
+				7F6715CA39C49C906C36E9952A434322 /* Pods-LiquidFloatingActionButton_Example-acknowledgements.plist */,
+				6CBF5B5EFF3405CA075BF4835F53191C /* Pods-LiquidFloatingActionButton_Example-dummy.m */,
+				625C9FBE318646D61C9303E395F5D272 /* Pods-LiquidFloatingActionButton_Example-frameworks.sh */,
+				803FA06AF9DE0F9B3D728554C60FF3A1 /* Pods-LiquidFloatingActionButton_Example-Info.plist */,
+				196AAA79A681BFD361E9FEE1427FF7C5 /* Pods-LiquidFloatingActionButton_Example-umbrella.h */,
+				19E096D0F65E29996FD5564E257CA280 /* Pods-LiquidFloatingActionButton_Example.debug.xcconfig */,
+				160C956F3DB126AABF8034C291AEB324 /* Pods-LiquidFloatingActionButton_Example.release.xcconfig */,
 			);
 			name = "Pods-LiquidFloatingActionButton_Example";
 			path = "Target Support Files/Pods-LiquidFloatingActionButton_Example";
 			sourceTree = "<group>";
 		};
-		A236372B9F955F7E469E55A4521EA090 /* Pod */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				34E20F87F3A8F71EACC2EBFA8BBBDE57 /* LICENSE */,
-				37DA6DD29234435A32BA1C9B2389C6DD /* LiquidFloatingActionButton.podspec */,
-				F8F43A7FA376E36241D600174158AA22 /* README.md */,
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
-			name = Pod;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5A4A527B4B6A2A3ABD7BE8AF9FFF8B53 /* Pods-LiquidFloatingActionButton_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				42F8E3B992C30DC7470842B15ABA85A6 /* Pods-LiquidFloatingActionButton_Tests.modulemap */,
+				966427912140C5E25C35822483D090A9 /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.markdown */,
+				DB245E28353CB04E99F7802258D0A490 /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.plist */,
+				45E2E4B0C575712B4313A6CFA99C10F7 /* Pods-LiquidFloatingActionButton_Tests-dummy.m */,
+				968ECEE90E5B261032843951B2C3F4F3 /* Pods-LiquidFloatingActionButton_Tests-frameworks.sh */,
+				4816B2D78A3F58FB26C002CD0623CA1F /* Pods-LiquidFloatingActionButton_Tests-Info.plist */,
+				D2CA3B97A30BD3F49F624165923FA1EF /* Pods-LiquidFloatingActionButton_Tests-umbrella.h */,
+				94EFBC2220937333FCD600A6F17B89F6 /* Pods-LiquidFloatingActionButton_Tests.debug.xcconfig */,
+				3C983B56C6DA676C15916B7F65DB8D70 /* Pods-LiquidFloatingActionButton_Tests.release.xcconfig */,
+			);
+			name = "Pods-LiquidFloatingActionButton_Tests";
+			path = "Target Support Files/Pods-LiquidFloatingActionButton_Tests";
+			sourceTree = "<group>";
+		};
+		79CA54BCEE20C8F1C23C1388BE4F85C6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54B9824F4827EECBAACAB012DE749F6A /* LiquidFloatingActionButton.modulemap */,
+				09D7FEC21711ECEF7320663185FE7C48 /* LiquidFloatingActionButton-dummy.m */,
+				BBC781D443BD36C973735ADDBB777A9A /* LiquidFloatingActionButton-Info.plist */,
+				03AEB0C8913B29A2AF52F2FAA482FC2F /* LiquidFloatingActionButton-prefix.pch */,
+				6991DCAE50569F600E2DEEC6D3AC53B8 /* LiquidFloatingActionButton-umbrella.h */,
+				4E9D14EB4EA7297AB31D29BCE034D872 /* LiquidFloatingActionButton.debug.xcconfig */,
+				7CA59ECF51F3952D67A642EB323281E3 /* LiquidFloatingActionButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LiquidFloatingActionButton";
+			sourceTree = "<group>";
+		};
+		7F02E3862C6E84203E8324D9D0088797 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				50380F281EC3EE769C85035CCEA77226 /* Constraint.swift */,
+				13F460233F2A555D41511B6CCA66A124 /* ConstraintAttributes.swift */,
+				250E41DBB680A3A2ECDDD2210311B230 /* ConstraintConfig.swift */,
+				6D990E0FED5B41C1F13AC6B08208A99B /* ConstraintConstantTarget.swift */,
+				CB1D9F6F4E2364DFAF158E04AF5D5EAA /* ConstraintDescription.swift */,
+				91164BE769DA144776663FBF46785561 /* ConstraintDirectionalInsets.swift */,
+				A7D358AA1606C7B2CDC8555485807E9E /* ConstraintDirectionalInsetTarget.swift */,
+				7AE00ECC24C5CC6DC938204FF42AD0E5 /* ConstraintDSL.swift */,
+				549471CD1FE3A1E1865DD172864918D3 /* ConstraintInsets.swift */,
+				7C2EC377264B25FB0E67D150E37E87CD /* ConstraintInsetTarget.swift */,
+				474AFC560A8B414B467174737DBC891A /* ConstraintItem.swift */,
+				66C5188AE61F0E667CD9E7ED28CDD61C /* ConstraintLayoutGuide.swift */,
+				09BF299D2EEB87E7DD02630E87B96224 /* ConstraintLayoutGuide+Extensions.swift */,
+				BE0BE9F3D55FDB29EF516F6D6B1B6BCA /* ConstraintLayoutGuideDSL.swift */,
+				3D705690D879064ED84970813189D8D4 /* ConstraintLayoutSupport.swift */,
+				C4A46A8054577838D49C60142EB88B13 /* ConstraintLayoutSupportDSL.swift */,
+				141BC33167429B9926FB24A17F01568C /* ConstraintMaker.swift */,
+				E2C3B0B200350EAC8F42EF635FF31BD1 /* ConstraintMakerEditable.swift */,
+				E43F10DE451FED17810D9B5C237324A5 /* ConstraintMakerExtendable.swift */,
+				11D02329E74D733C03BF6BAE1F564481 /* ConstraintMakerFinalizable.swift */,
+				91A53CAF547D71AEFABE49D91B4E6816 /* ConstraintMakerPriortizable.swift */,
+				724FB64349F5678CE1709979CF0DD952 /* ConstraintMakerRelatable.swift */,
+				F7AB9BB47A2175181386A432C07253AE /* ConstraintMultiplierTarget.swift */,
+				47B200BD964F52F6693D4168248B8645 /* ConstraintOffsetTarget.swift */,
+				F0BD95F32F2E57D6B9100B77B93F013C /* ConstraintPriority.swift */,
+				9716AD15FADF38A93170E034F2BCE457 /* ConstraintPriorityTarget.swift */,
+				2975CA5A0D26BC84F3EE9912FEBDA795 /* ConstraintRelatableTarget.swift */,
+				25479F58B67AA43E092C7B156C1B5C1B /* ConstraintRelation.swift */,
+				A51E99894F75F00A281BE6A32FBDE495 /* ConstraintView.swift */,
+				EE9055CEA7890517265589BD23D73A49 /* ConstraintView+Extensions.swift */,
+				56006AA49A060CA2830F32CD6F394823 /* ConstraintViewDSL.swift */,
+				D038D2FAA2F6B073D1B64B8635F4E3E6 /* Debugging.swift */,
+				F44C5B72775F6AF0891BF331F32FE10D /* LayoutConstraint.swift */,
+				464C01543F3BCEDEE51ABAA696513D0B /* LayoutConstraintItem.swift */,
+				D4E066869A95E00B949CBA4D2284C35F /* Typealiases.swift */,
+				6A9341666EAC154422A032092A7DC2D7 /* UILayoutSupport+Extensions.swift */,
+				843EFF0C650682C304D518A9092EE9FD /* Support Files */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		843EFF0C650682C304D518A9092EE9FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7889131C1139F96BBDA94CEE2E694763 /* SnapKit.modulemap */,
+				E13B89FFD81AACB7530769CA05EEA26B /* SnapKit-dummy.m */,
+				391A6F8B42D2CD885F8F3C4CE6859439 /* SnapKit-Info.plist */,
+				E14A09DC3AD8CA84464FEC37F0FC99D1 /* SnapKit-prefix.pch */,
+				0116B84A6773B75FCBFCB479E740F0F3 /* SnapKit-umbrella.h */,
+				7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */,
+				A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		9453231C6389EAF577FAE4D0C34174EB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A50159AD8C9324B5404A75AA545FB14A /* LiquidFloatingActionButton */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A50159AD8C9324B5404A75AA545FB14A /* LiquidFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				CB33B08306A6084B1E3A4D7833EC1FC4 /* ArrayEx.swift */,
+				FF7AF87F4DC507DFA589D7CDCA548354 /* CGPointEx.swift */,
+				8908D66DDD47CEA5B41CB36BBA419FE9 /* CGRectEx.swift */,
+				181C1D14508D16542922A33010C94605 /* LiquidFloatingActionButton.swift */,
+				572B3D3AE09996CC1797BDBAC31206E2 /* LiquidUtil.swift */,
+				341871BD97EA1059088A500DE61A8F41 /* LiquittableCircle.swift */,
+				26542C0B5A4ACF295F17E916C416BD56 /* SimpleCircleLiquidEngine.swift */,
+				4300CAC3F0210B45F2B3AB04BA78564B /* UIColorEx.swift */,
+				173BF66381E499E757EAC89760CE7335 /* Pod */,
+				79CA54BCEE20C8F1C23C1388BE4F85C6 /* Support Files */,
+			);
+			name = LiquidFloatingActionButton;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BA22F08D059965C9A09F78196176CEDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F02E3862C6E84203E8324D9D0088797 /* SnapKit */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -346,8 +399,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				9453231C6389EAF577FAE4D0C34174EB /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				427B270BD76A5EF45313FBF29233B96D /* Pods */,
-				62D8C4024CD0D6ADAE76D3FF26781D0A /* Products */,
+				BA22F08D059965C9A09F78196176CEDB /* Pods */,
+				1D6A6263E6A17978929541A332FAECDD /* Products */,
 				16D001D37B53E3E646CB1BD9E1D064C3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -355,141 +408,76 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E30FFDD7CFF30076B0BF0F0C15956A86 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CA4FF4E71663EC42540FE25987543F34 /* SnapKit.modulemap */,
-				5D03F3C139319EA4D8F5A6B079637C29 /* SnapKit.xcconfig */,
-				A16CBDC9E8348101FB596E1B0D64B3DD /* SnapKit-dummy.m */,
-				3EEF84EA071AE73119F9F78CCB7A8FB5 /* SnapKit-Info.plist */,
-				1A0D1CD10B3EBE5D1172D46A5158D007 /* SnapKit-prefix.pch */,
-				1D310AAB8E50557845B5D7CF84C02F45 /* SnapKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SnapKit";
-			sourceTree = "<group>";
-		};
-		ED2C2B45652A64204FC5F1951D4E7B94 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3AF951511FFE32AD69C5BB1EA307BC5D /* LiquidFloatingActionButton-iOS8.0.modulemap */,
-				EE40E21D19D849CA8CAD76BCB72A7E9B /* LiquidFloatingActionButton-iOS8.0.xcconfig */,
-				E76FB1E8B07DCDFF5BAD1D51A90469F5 /* LiquidFloatingActionButton-iOS8.0-dummy.m */,
-				3500A0F32009E3669FB6213AE25B58C8 /* LiquidFloatingActionButton-iOS8.0-Info.plist */,
-				3D913FA522FA48735B8DB023C1E794FB /* LiquidFloatingActionButton-iOS8.0-prefix.pch */,
-				C5EE517ACA43772BF27A9BCD4DBB35C3 /* LiquidFloatingActionButton-iOS8.0-umbrella.h */,
-				E9CB85CBC0F6FE92EF582A4F182FCF18 /* LiquidFloatingActionButton-iOS8.3.modulemap */,
-				121FDED4A06C21BE92F6CE3131809E4F /* LiquidFloatingActionButton-iOS8.3.xcconfig */,
-				F8B2D61AF21C9E4DDEFFBC185890226F /* LiquidFloatingActionButton-iOS8.3-dummy.m */,
-				07F94C1C71FCDBD0CA5AC83C21C38A35 /* LiquidFloatingActionButton-iOS8.3-Info.plist */,
-				008B62590F6163A1770E90279FAE3262 /* LiquidFloatingActionButton-iOS8.3-prefix.pch */,
-				1F5DECE0AC29DD50DC67F0715A4AF123 /* LiquidFloatingActionButton-iOS8.3-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LiquidFloatingActionButton-iOS8.0";
-			sourceTree = "<group>";
-		};
-		F64F26DEDF5F31DDC5DB06B012746920 /* SnapKit */ = {
-			isa = PBXGroup;
-			children = (
-				74D235C0E8456DA03B8724F17EA46D9F /* Constraint.swift */,
-				15388F9916461AFADC0B83C0F3896286 /* ConstraintAttributes.swift */,
-				F53136A44C3AF8EA930C8F0C67B926F0 /* ConstraintConfig.swift */,
-				215EB1EB7D34BAE4D61BE35FD37C7B8C /* ConstraintConstantTarget.swift */,
-				A671A026067AF279C0A07DAC5E3D5F56 /* ConstraintDescription.swift */,
-				16DC359A7B04F408D0E8233AE8D87CCB /* ConstraintDSL.swift */,
-				425101B552E11290A01971FB977C9D94 /* ConstraintInsets.swift */,
-				3430CAA9F5F4252B6DD4819000AF4AF3 /* ConstraintInsetTarget.swift */,
-				F1A7AEA6044B2018807C2D766ED9025D /* ConstraintItem.swift */,
-				734D85E58F3C5B8F418EE9B0A943DFB6 /* ConstraintLayoutGuide.swift */,
-				E8B2D75BA44BD7EC2F724E0EDB30F325 /* ConstraintLayoutGuide+Extensions.swift */,
-				218DECB55AE295F271C9D4E2198054FA /* ConstraintLayoutGuideDSL.swift */,
-				02E6A0E89915574C7D9DBC896D4A76A7 /* ConstraintLayoutSupport.swift */,
-				A66AA66BCD7583FB9A6324FB89D6C530 /* ConstraintLayoutSupportDSL.swift */,
-				8959EFF4ED2C473620C5934AF38D555E /* ConstraintMaker.swift */,
-				696D0C15939397708F7A906796D4C407 /* ConstraintMakerEditable.swift */,
-				9AC281399063A5E62CECFBBD097D01D2 /* ConstraintMakerExtendable.swift */,
-				8C5926F04B724FCFC18EB3D230A13C07 /* ConstraintMakerFinalizable.swift */,
-				42EC8E050E3BE6E46D7C010378F29A56 /* ConstraintMakerPriortizable.swift */,
-				14ABC1FF8C8F648909E0AC7911172933 /* ConstraintMakerRelatable.swift */,
-				5FC6236D47CB2BA34B4F1F344E985DF2 /* ConstraintMultiplierTarget.swift */,
-				90D210A13529B69371A362230828E459 /* ConstraintOffsetTarget.swift */,
-				BC9F88505958E8DD77D99588F0471563 /* ConstraintPriority.swift */,
-				0A754244D675324E814E05CF1E281645 /* ConstraintPriorityTarget.swift */,
-				65ECFB28DDFA00A26C7DEFA47C0B957D /* ConstraintRelatableTarget.swift */,
-				26FF6A5B7704FACC7F9307D312A7EF61 /* ConstraintRelation.swift */,
-				987D9011F616F5690D09CFC59CAC79EC /* ConstraintView.swift */,
-				74D1F6250B9560C48D2982462F5197C7 /* ConstraintView+Extensions.swift */,
-				718501E66EB9C33CE1F87D62CC2CC57D /* ConstraintViewDSL.swift */,
-				D0F94C7C263067A0535BA4C068F5BA96 /* Debugging.swift */,
-				6FDC6561D7E59F96048734F4A9C87399 /* LayoutConstraint.swift */,
-				8D6693C457C9655D1E49B7B8027767CF /* LayoutConstraintItem.swift */,
-				69940BF178423537E010EA0A592D164D /* Typealiases.swift */,
-				38C0BEE93AF56739E9FF303A7ECA5D04 /* UILayoutSupport+Extensions.swift */,
-				E30FFDD7CFF30076B0BF0F0C15956A86 /* Support Files */,
-			);
-			path = SnapKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5997F54DC54F9D84D1E2306F1E0E82FF /* Headers */ = {
+		519D54999F90AC507C621EE65A1FD6A6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE7B249B93C87C0020E8D3D87B1D08A /* LiquidFloatingActionButton-iOS8.0-umbrella.h in Headers */,
+				2031A0A29D30E7B988D25A30EA03876A /* Pods-LiquidFloatingActionButton_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6917134E99BF23BF3A42A57E8FB7E3D3 /* Headers */ = {
+		6B594D849D9C39E1B0A440D3A0ADF6BA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7B76A9E6A6B861D0FD9D71DEEFB2D60 /* Pods-LiquidFloatingActionButton_Example-umbrella.h in Headers */,
+				091B053F99B19C441D5EAFB412D580EA /* Pods-LiquidFloatingActionButton_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C87761CFFBF7089ACBC6772361F2895A /* Headers */ = {
+		7DFCF5F12AEEED0500986DBC9BF76170 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47F414E9BCC1DD19B19912D207701A4F /* Pods-LiquidFloatingActionButton_Tests-umbrella.h in Headers */,
+				A66ED57B365A35434C5BAF4B990819B7 /* SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D29CAED289D577E70FC7B1E5B5457341 /* Headers */ = {
+		9D2BCF0BC8E868537527B7872D7E718B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55B246CC6F8236FFD6E467A4C1008D18 /* SnapKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F32B0BABE364D309FFD2CB7E8EB1148F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9E969E7359BD6029DD8FB93E9C972158 /* LiquidFloatingActionButton-iOS8.3-umbrella.h in Headers */,
+				11CECCCD4C5C498F5360D53C81D54098 /* LiquidFloatingActionButton-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		051203B31B31F935B8B455722EB7842F /* SnapKit */ = {
+		01325EB94C5FD1EE79989FA4AFEE00B5 /* Pods-LiquidFloatingActionButton_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9ABCE58E927A729F9E7424CBC398CFE2 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildConfigurationList = 6CBA3F13BAFE573088BC8CC69CBB5C3C /* Build configuration list for PBXNativeTarget "Pods-LiquidFloatingActionButton_Tests" */;
 			buildPhases = (
-				D29CAED289D577E70FC7B1E5B5457341 /* Headers */,
-				444472ECCF39A41784669AF401B281D4 /* Sources */,
-				9E171AC83C96DE4798EE4FB5A3412ADC /* Frameworks */,
-				06FC58AB9C60801F065CBB3B08E365BD /* Resources */,
+				6B594D849D9C39E1B0A440D3A0ADF6BA /* Headers */,
+				884EAFC497997852A8705600EFB36308 /* Sources */,
+				BCE6C539F508C08DBB3FC34A4B3C6632 /* Frameworks */,
+				322EDA463AA311572B8B20194EF16822 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BF1677B89527DB7E56EDBBB06E6A204 /* PBXTargetDependency */,
+			);
+			name = "Pods-LiquidFloatingActionButton_Tests";
+			productName = "Pods-LiquidFloatingActionButton_Tests";
+			productReference = 071984735C7B84094E07D76EDD39787D /* Pods_LiquidFloatingActionButton_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F8CE4DC18DBEA01587212F09727DB3D /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				7DFCF5F12AEEED0500986DBC9BF76170 /* Headers */,
+				89222AF845A30312C284F407BA48B98F /* Sources */,
+				3C8B1704CC97EF12D3409771318C6433 /* Frameworks */,
+				9C691CAA90D9565F2EFF5EF823D8A80C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -497,82 +485,45 @@
 			);
 			name = SnapKit;
 			productName = SnapKit;
-			productReference = F82A85969B74D86A334FC5DFEBFDBA74 /* SnapKit.framework */;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		053EC713A27B090A1DBEA394D1DEB426 /* Pods-LiquidFloatingActionButton_Example */ = {
+		D2075567800A198F1D940DBADEA4F8B2 /* Pods-LiquidFloatingActionButton_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 271A545ADCEBC8170B43C035554EFD6A /* Build configuration list for PBXNativeTarget "Pods-LiquidFloatingActionButton_Example" */;
+			buildConfigurationList = C36239B1FC84C5F9A54EF45B278CCBE5 /* Build configuration list for PBXNativeTarget "Pods-LiquidFloatingActionButton_Example" */;
 			buildPhases = (
-				6917134E99BF23BF3A42A57E8FB7E3D3 /* Headers */,
-				4211C6B43C959A7A34E48C85CD7E893C /* Sources */,
-				321FC6246DD62F871DE23B2E1385BE0B /* Frameworks */,
-				7305A60D510F8B78006E58562CE4DDC9 /* Resources */,
+				519D54999F90AC507C621EE65A1FD6A6 /* Headers */,
+				640D49CA6C2F76929AE7C29CAA9C13D3 /* Sources */,
+				ECAF17C4AC8F761C858877B92B9F02DD /* Frameworks */,
+				FAD55BD0240FED150C7B0374FF66C825 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8BE9F9A21B9126D02A1E7A502B1BE70D /* PBXTargetDependency */,
-				5403299C8AA0A244004D0D57B94BA57D /* PBXTargetDependency */,
+				64C0E19A1CC675635DCC04CEB304F114 /* PBXTargetDependency */,
+				D792544D262140B4894EF50D72F8F692 /* PBXTargetDependency */,
 			);
 			name = "Pods-LiquidFloatingActionButton_Example";
 			productName = "Pods-LiquidFloatingActionButton_Example";
-			productReference = D29B09C032C64D86C380932E4F2C0B79 /* Pods_LiquidFloatingActionButton_Example.framework */;
+			productReference = A6960435FED084BEB6CBB036AEF61F9C /* Pods_LiquidFloatingActionButton_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BA04DC24C4974CB82BDD3D9CBBCB54AD /* Pods-LiquidFloatingActionButton_Tests */ = {
+		E76DDF79D71069F58B3AF25702161428 /* LiquidFloatingActionButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13C69A1D22B1613CEE8CA9AE2952E817 /* Build configuration list for PBXNativeTarget "Pods-LiquidFloatingActionButton_Tests" */;
+			buildConfigurationList = 9DF3DA953911779A88D3AD9649FCC73F /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton" */;
 			buildPhases = (
-				C87761CFFBF7089ACBC6772361F2895A /* Headers */,
-				A543E12EF9F9D2FBC7F4D57DE3C8EE08 /* Sources */,
-				55650C1E6D0051065E15EFDBB0F70A9C /* Frameworks */,
-				E5EDABAEDA1690331D3C1C0C93C3C07B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8B2982E31DD2103E600D4AFE5E45DF9B /* PBXTargetDependency */,
-			);
-			name = "Pods-LiquidFloatingActionButton_Tests";
-			productName = "Pods-LiquidFloatingActionButton_Tests";
-			productReference = 8981FC81C050869714E9F8E1B51D69DA /* Pods_LiquidFloatingActionButton_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C4A7FA529137A20F38B9BCD9485DA761 /* LiquidFloatingActionButton-iOS8.0 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4DA78552CDC9ED9393915CEDC5724F71 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton-iOS8.0" */;
-			buildPhases = (
-				5997F54DC54F9D84D1E2306F1E0E82FF /* Headers */,
-				B8754EAA58281DD91A5E7010BB28B64B /* Sources */,
-				25B9FBFCFF88C4258C92DA3F436EDF0D /* Frameworks */,
-				B53F3A3AC3033D295493DBE96DA8DBE5 /* Resources */,
+				9D2BCF0BC8E868537527B7872D7E718B /* Headers */,
+				C94FE1E4E5142898F1FF51613A619838 /* Sources */,
+				149AA1292B4A9FB74177EFC71B9DFE0E /* Frameworks */,
+				31A14254EF308F9A7A0AECCB626CF90E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "LiquidFloatingActionButton-iOS8.0";
-			productName = "LiquidFloatingActionButton-iOS8.0";
-			productReference = 1D0030FFCA27E5E4FB09D27CF34B21D0 /* LiquidFloatingActionButton.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D000F964B5FC2B3C7A7D6090BD9946B6 /* LiquidFloatingActionButton-iOS8.3 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E0641EE756AD1479F9824966BC0B1757 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton-iOS8.3" */;
-			buildPhases = (
-				F32B0BABE364D309FFD2CB7E8EB1148F /* Headers */,
-				F4065A837513A25DC95E2DD289A1C174 /* Sources */,
-				D510769E1525CEE13ADA5BE2F84F4A69 /* Frameworks */,
-				6373814481350A529F41A70EB7C39AAA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "LiquidFloatingActionButton-iOS8.3";
-			productName = "LiquidFloatingActionButton-iOS8.3";
-			productReference = EBB3F5736648B5F151B1B99D66A4C3F5 /* LiquidFloatingActionButton.framework */;
+			name = LiquidFloatingActionButton;
+			productName = LiquidFloatingActionButton;
+			productReference = 00046A7945CD0811589770377ACEDEA2 /* LiquidFloatingActionButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -581,68 +532,64 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					C4A7FA529137A20F38B9BCD9485DA761 = {
-						LastSwiftMigration = 1010;
+					01325EB94C5FD1EE79989FA4AFEE00B5 = {
+						DevelopmentTeam = 77CWZUCG47;
 					};
-					D000F964B5FC2B3C7A7D6090BD9946B6 = {
-						LastSwiftMigration = 1010;
+					D2075567800A198F1D940DBADEA4F8B2 = {
+						DevelopmentTeam = 77CWZUCG47;
+					};
+					E76DDF79D71069F58B3AF25702161428 = {
+						DevelopmentTeam = 77CWZUCG47;
 					};
 				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 62D8C4024CD0D6ADAE76D3FF26781D0A /* Products */;
+			productRefGroup = 1D6A6263E6A17978929541A332FAECDD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C4A7FA529137A20F38B9BCD9485DA761 /* LiquidFloatingActionButton-iOS8.0 */,
-				D000F964B5FC2B3C7A7D6090BD9946B6 /* LiquidFloatingActionButton-iOS8.3 */,
-				053EC713A27B090A1DBEA394D1DEB426 /* Pods-LiquidFloatingActionButton_Example */,
-				BA04DC24C4974CB82BDD3D9CBBCB54AD /* Pods-LiquidFloatingActionButton_Tests */,
-				051203B31B31F935B8B455722EB7842F /* SnapKit */,
+				E76DDF79D71069F58B3AF25702161428 /* LiquidFloatingActionButton */,
+				D2075567800A198F1D940DBADEA4F8B2 /* Pods-LiquidFloatingActionButton_Example */,
+				01325EB94C5FD1EE79989FA4AFEE00B5 /* Pods-LiquidFloatingActionButton_Tests */,
+				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		06FC58AB9C60801F065CBB3B08E365BD /* Resources */ = {
+		31A14254EF308F9A7A0AECCB626CF90E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6373814481350A529F41A70EB7C39AAA /* Resources */ = {
+		322EDA463AA311572B8B20194EF16822 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7305A60D510F8B78006E58562CE4DDC9 /* Resources */ = {
+		9C691CAA90D9565F2EFF5EF823D8A80C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B53F3A3AC3033D295493DBE96DA8DBE5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5EDABAEDA1690331D3C1C0C93C3C07B /* Resources */ = {
+		FAD55BD0240FED150C7B0374FF66C825 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -652,178 +599,132 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4211C6B43C959A7A34E48C85CD7E893C /* Sources */ = {
+		640D49CA6C2F76929AE7C29CAA9C13D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59C4A2E0819EDC87242D916E9E3218F0 /* Pods-LiquidFloatingActionButton_Example-dummy.m in Sources */,
+				4CF24469640156A4E42D91390EFF12CA /* Pods-LiquidFloatingActionButton_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		444472ECCF39A41784669AF401B281D4 /* Sources */ = {
+		884EAFC497997852A8705600EFB36308 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A96853843E3F8CA46C5F03EE7AA7EA48 /* Constraint.swift in Sources */,
-				53EFCFA6AAB2DB6E0FFCCD1D0699EF21 /* ConstraintAttributes.swift in Sources */,
-				FDB50C2934ABFD8D1A9AA4E0F4AA88F5 /* ConstraintConfig.swift in Sources */,
-				EB9A59598072CA9D7660AA499C8F8F98 /* ConstraintConstantTarget.swift in Sources */,
-				99CDB5C526468B0A6B5033F4BA4CB5B2 /* ConstraintDescription.swift in Sources */,
-				E4AFBA322B1D36DC0981E92F3776758A /* ConstraintDSL.swift in Sources */,
-				239EDF53C803A110FC743703E7B88ED8 /* ConstraintInsets.swift in Sources */,
-				94D26B96A02F3BA6EA0B4A70A2607717 /* ConstraintInsetTarget.swift in Sources */,
-				A9F27FB9C8B5A0E23DD8721587C1BCA2 /* ConstraintItem.swift in Sources */,
-				DA0FB15128B05C6E6F60D70E17E65F0A /* ConstraintLayoutGuide+Extensions.swift in Sources */,
-				18AE94D218EB1953EB0EA8CBD01358D2 /* ConstraintLayoutGuide.swift in Sources */,
-				71E0AEE9C98AB9FA89A81AEEA01165C2 /* ConstraintLayoutGuideDSL.swift in Sources */,
-				3FFA936B82CF39F50FE9A211A67DC6C2 /* ConstraintLayoutSupport.swift in Sources */,
-				EDC7D7025FE7B18EF207C55A02BE3457 /* ConstraintLayoutSupportDSL.swift in Sources */,
-				2B62AD6CBB85D6891CC0952F000A9311 /* ConstraintMaker.swift in Sources */,
-				D14E6E6177B5BAECEABD4D50B7229920 /* ConstraintMakerEditable.swift in Sources */,
-				9D1616099FFAD97E6656625A1FA4AC4A /* ConstraintMakerExtendable.swift in Sources */,
-				40A499FEA3DD38A6CBE432BD17C8D41E /* ConstraintMakerFinalizable.swift in Sources */,
-				8CE09C2CBA9F37FE5090A5103B0EB0C7 /* ConstraintMakerPriortizable.swift in Sources */,
-				8075199F7816579E38818F985313E5F5 /* ConstraintMakerRelatable.swift in Sources */,
-				3E85B0A0B21AA909691F9CB8E0D00AE0 /* ConstraintMultiplierTarget.swift in Sources */,
-				BF2B5ED9C9DB40A9BB2A9661A39C3426 /* ConstraintOffsetTarget.swift in Sources */,
-				234F6F61CDAB39F14B9F1F3256A69794 /* ConstraintPriority.swift in Sources */,
-				A18EEE84D520F461ADE2C70355683710 /* ConstraintPriorityTarget.swift in Sources */,
-				E3E91C89F6DC6B2A59F4F8A9C0543650 /* ConstraintRelatableTarget.swift in Sources */,
-				B17D7F37FA919CF1D6FF0BA1F9C8C264 /* ConstraintRelation.swift in Sources */,
-				987F2884354792B3500D6EF18AEF6379 /* ConstraintView+Extensions.swift in Sources */,
-				CA1C5D947D6D046314BB7B61FE14D171 /* ConstraintView.swift in Sources */,
-				4E8F0F5FBE698B066BA9832B6C56161B /* ConstraintViewDSL.swift in Sources */,
-				CBBDD9002FFE2FB3964BBBD06DBDE0CF /* Debugging.swift in Sources */,
-				E3C8E7EE1AE1BA185E2C39B69500E04C /* LayoutConstraint.swift in Sources */,
-				7927A2FE4C7EFC68B7C917C702BA9F9E /* LayoutConstraintItem.swift in Sources */,
-				205FAC12355034FBDB9BA7A223E0BE58 /* SnapKit-dummy.m in Sources */,
-				97EA8A46BAE305B5E74920EAF3D454B0 /* Typealiases.swift in Sources */,
-				370BFA6EC8F20817134E8BEDAE7408F2 /* UILayoutSupport+Extensions.swift in Sources */,
+				488DDF90FE036BCC04FE69232C5E4E15 /* Pods-LiquidFloatingActionButton_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A543E12EF9F9D2FBC7F4D57DE3C8EE08 /* Sources */ = {
+		89222AF845A30312C284F407BA48B98F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C895C6EAF7312551BF6864978FBB153C /* Pods-LiquidFloatingActionButton_Tests-dummy.m in Sources */,
+				3BFC243AB9BD579969F0D5756560BCAA /* Constraint.swift in Sources */,
+				2A1BBBC87AC2367BD14610A9D10D285E /* ConstraintAttributes.swift in Sources */,
+				9B09968922C73D50040C6EEF57890D6E /* ConstraintConfig.swift in Sources */,
+				5854DF509E8A016B6235793D04083035 /* ConstraintConstantTarget.swift in Sources */,
+				B599696DFEF6B2A5ECF528F4E5BB1846 /* ConstraintDescription.swift in Sources */,
+				AC35C9341C4BB156BB26FDD237EE3721 /* ConstraintDirectionalInsets.swift in Sources */,
+				71DE9DC2FA583526AB4D1FD7F00C099C /* ConstraintDirectionalInsetTarget.swift in Sources */,
+				8277256ADEC3C4DCF79957D1CA681A9A /* ConstraintDSL.swift in Sources */,
+				21AB1101BBE4D28D74ED4EDF0D59025A /* ConstraintInsets.swift in Sources */,
+				2C06F2E972444D359754D21AC46BFFE2 /* ConstraintInsetTarget.swift in Sources */,
+				99B5296A5EDECE0557B9DA53D9E19CA1 /* ConstraintItem.swift in Sources */,
+				1AFB1E9136716C0B61D6C700FF1E60FD /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				A270CD9EC3C541FE86E65AEDCEF500CF /* ConstraintLayoutGuide.swift in Sources */,
+				77C9889055A3B32EA13A9616824DB0ED /* ConstraintLayoutGuideDSL.swift in Sources */,
+				57B1876F2BE4168E5BFDB63D8CC849A0 /* ConstraintLayoutSupport.swift in Sources */,
+				01C550A53C9E2047C83F8E85BBB558E6 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				51CD5887014967E77E58F5A163996454 /* ConstraintMaker.swift in Sources */,
+				7C1702076F3A31D8D2D45A4A9F09B266 /* ConstraintMakerEditable.swift in Sources */,
+				69CCBEEDFCA6D743D80026568D961919 /* ConstraintMakerExtendable.swift in Sources */,
+				C412F27D75AFC0DF0F0289DBB270931C /* ConstraintMakerFinalizable.swift in Sources */,
+				EE909C7C786140109051BC9562EEC7C8 /* ConstraintMakerPriortizable.swift in Sources */,
+				75E146C12D1287228A0B493E87CDE31F /* ConstraintMakerRelatable.swift in Sources */,
+				D4697DC40F3B059E4A0867838CA1814E /* ConstraintMultiplierTarget.swift in Sources */,
+				8705BBF0D428BF0AE1B554A377ECC540 /* ConstraintOffsetTarget.swift in Sources */,
+				232B2F922E972D9F43D2EE15ACECE734 /* ConstraintPriority.swift in Sources */,
+				E8F2429683B3015CBD39CE883770BCA7 /* ConstraintPriorityTarget.swift in Sources */,
+				69E3A06BBDFDC7D06A9D4BDC4E895E73 /* ConstraintRelatableTarget.swift in Sources */,
+				CE62FEABA57B2B53EABF8C7DCCC6B2C4 /* ConstraintRelation.swift in Sources */,
+				3E5285F4F36EAD77ECABBFB7F36BB1BB /* ConstraintView+Extensions.swift in Sources */,
+				BECA67DFB5E0984DFAEFCB775C31972E /* ConstraintView.swift in Sources */,
+				EB1726F5E0D0EEBA20E4528B1E37A8FA /* ConstraintViewDSL.swift in Sources */,
+				B780B272106411CBE258BB60FFC45410 /* Debugging.swift in Sources */,
+				039EAFE7935113805F3FC21BF1B7C9D5 /* LayoutConstraint.swift in Sources */,
+				E9A970BC24EA15832F248EA020072746 /* LayoutConstraintItem.swift in Sources */,
+				4C7A676DAE95EEAC3787A75349F0862D /* SnapKit-dummy.m in Sources */,
+				1956E392D500F3CD899D39A5F805736D /* Typealiases.swift in Sources */,
+				6E0EB9E7FAAEDBB7A73ECF3095F69C4A /* UILayoutSupport+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8754EAA58281DD91A5E7010BB28B64B /* Sources */ = {
+		C94FE1E4E5142898F1FF51613A619838 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC08AAD8D5AA9DF1766CCAB30CE10813 /* ArrayEx.swift in Sources */,
-				17CDAA483A178FB453C490A5232C02CB /* CGPointEx.swift in Sources */,
-				19EBFDA684BE33C32D9578A7C41B93E2 /* CGRectEx.swift in Sources */,
-				7A492C7E9C5063AB455483D174050799 /* LiquidFloatingActionButton-iOS8.0-dummy.m in Sources */,
-				72F80E40E6DA4F7F650BFBEF20671943 /* LiquidFloatingActionButton.swift in Sources */,
-				47E7900ECC0572477F1E4FFF4103DC9F /* LiquidUtil.swift in Sources */,
-				5289BB40C962CAFF1A5877E4BC7C4D86 /* LiquittableCircle.swift in Sources */,
-				4B2F7D00241E752B5DF55ACF3BD63850 /* SimpleCircleLiquidEngine.swift in Sources */,
-				F22120DC4382E45A9190E385659E8F66 /* UIColorEx.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4065A837513A25DC95E2DD289A1C174 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1AE29BD9644427C3FFEF2D69737E512A /* ArrayEx.swift in Sources */,
-				0DD9802A38696AC5B93C664B88258F44 /* CGPointEx.swift in Sources */,
-				99ABF8B541B53B6A918A7592640699BC /* CGRectEx.swift in Sources */,
-				1D39625507C5056C8B6BA1A66C4AC889 /* LiquidFloatingActionButton-iOS8.3-dummy.m in Sources */,
-				7F5EEF01F793679ADD132786C6D1DEFF /* LiquidFloatingActionButton.swift in Sources */,
-				96ED52D514FFEEC8ACF714F0BFD2AA03 /* LiquidUtil.swift in Sources */,
-				C29E5555FF7716C263E001A1D37379BE /* LiquittableCircle.swift in Sources */,
-				181E49FE7F5579CB1B8207A83529D44E /* SimpleCircleLiquidEngine.swift in Sources */,
-				D89D8EE73FFDF784E87CF5C472D9BC74 /* UIColorEx.swift in Sources */,
+				4E2C8E2F59DEBF9CAC61326201EE3876 /* ArrayEx.swift in Sources */,
+				870C98E14D9930B7AC5AFB1BDE2224D6 /* CGPointEx.swift in Sources */,
+				699BF65CE684890FF53EFE3F27C55C0F /* CGRectEx.swift in Sources */,
+				F8F240D67101E546CDCFFAE17F4711C7 /* LiquidFloatingActionButton-dummy.m in Sources */,
+				79286C4507EDD8A496D42D31FDF597E7 /* LiquidFloatingActionButton.swift in Sources */,
+				A1884F8C772E942413ABF17C8CB041A8 /* LiquidUtil.swift in Sources */,
+				A601B4B0702492852E0028DDC7E057B0 /* LiquittableCircle.swift in Sources */,
+				9961FF0B70B2CC33E78C8B35D4318878 /* SimpleCircleLiquidEngine.swift in Sources */,
+				5AF7A9443E4CC04CEADBBF51791E8254 /* UIColorEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5403299C8AA0A244004D0D57B94BA57D /* PBXTargetDependency */ = {
+		64C0E19A1CC675635DCC04CEB304F114 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LiquidFloatingActionButton;
+			target = E76DDF79D71069F58B3AF25702161428 /* LiquidFloatingActionButton */;
+			targetProxy = 06AADEB10B25CC4B126F5B70D6D7DE55 /* PBXContainerItemProxy */;
+		};
+		8BF1677B89527DB7E56EDBBB06E6A204 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LiquidFloatingActionButton;
+			target = E76DDF79D71069F58B3AF25702161428 /* LiquidFloatingActionButton */;
+			targetProxy = 232A9343E255FA95E8A21C78AC2E7FA1 /* PBXContainerItemProxy */;
+		};
+		D792544D262140B4894EF50D72F8F692 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
-			target = 051203B31B31F935B8B455722EB7842F /* SnapKit */;
-			targetProxy = AE98928B278CFB807E170A7FD9E75E35 /* PBXContainerItemProxy */;
-		};
-		8B2982E31DD2103E600D4AFE5E45DF9B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "LiquidFloatingActionButton-iOS8.3";
-			target = D000F964B5FC2B3C7A7D6090BD9946B6 /* LiquidFloatingActionButton-iOS8.3 */;
-			targetProxy = 238A30E5F4C278737675A96D84DD4283 /* PBXContainerItemProxy */;
-		};
-		8BE9F9A21B9126D02A1E7A502B1BE70D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "LiquidFloatingActionButton-iOS8.0";
-			target = C4A7FA529137A20F38B9BCD9485DA761 /* LiquidFloatingActionButton-iOS8.0 */;
-			targetProxy = 2999DFD933B84E5B5F6731E79DFC2C79 /* PBXContainerItemProxy */;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 59DDE3953401DC89B38A1018AF3F0060 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		009D4EFDABF68350640475C6CDAB17B2 /* Debug */ = {
+		294BBEDE72DC061BF4895EA447C0B6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE40E21D19D849CA8CAD76BCB72A7E9B /* LiquidFloatingActionButton-iOS8.0.xcconfig */;
+			baseConfigurationReference = 7CA59ECF51F3952D67A642EB323281E3 /* LiquidFloatingActionButton.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 77CWZUCG47;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton-iOS8.0/LiquidFloatingActionButton-iOS8.0-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton-iOS8.0/LiquidFloatingActionButton-iOS8.0-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton-iOS8.0/LiquidFloatingActionButton-iOS8.0.modulemap";
+				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton.modulemap";
 				PRODUCT_MODULE_NAME = LiquidFloatingActionButton;
 				PRODUCT_NAME = LiquidFloatingActionButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		00A73175E9326DDB1DAA444EA60B42F9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE40E21D19D849CA8CAD76BCB72A7E9B /* LiquidFloatingActionButton-iOS8.0.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton-iOS8.0/LiquidFloatingActionButton-iOS8.0-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton-iOS8.0/LiquidFloatingActionButton-iOS8.0-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton-iOS8.0/LiquidFloatingActionButton-iOS8.0.modulemap";
-				PRODUCT_MODULE_NAME = LiquidFloatingActionButton;
-				PRODUCT_NAME = LiquidFloatingActionButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -831,42 +732,11 @@
 			};
 			name = Release;
 		};
-		048B28C0A00A84A0878B249169F0102D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D03F3C139319EA4D8F5A6B079637C29 /* SnapKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
-				PRODUCT_MODULE_NAME = SnapKit;
-				PRODUCT_NAME = SnapKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -889,99 +759,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		1B43F5CA057E7610AE45E4B452D3E861 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDC00CBF927EFC86392707D615D716E1 /* Pods-LiquidFloatingActionButton_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Example/Pods-LiquidFloatingActionButton_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Example/Pods-LiquidFloatingActionButton_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1007,7 +785,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1015,16 +793,16 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		501455B922CF983AA819AD605D308FD9 /* Debug */ = {
+		3EDB59372EEC5C4A15A0A4671F090A7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D03F3C139319EA4D8F5A6B079637C29 /* SnapKit.xcconfig */;
+			baseConfigurationReference = 7C21E0C93A1141A1E2EB51575500E27D /* SnapKit.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1036,7 +814,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
 				PRODUCT_MODULE_NAME = SnapKit;
@@ -1044,162 +822,32 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		559A9DA61952295BD6D0339007D4398E /* Debug */ = {
+		60B47C49E91C55DA37990396D308E883 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 704DEE59C5D3F61A8FB322B0D54C3C86 /* Pods-LiquidFloatingActionButton_Tests.debug.xcconfig */;
+			baseConfigurationReference = 19E096D0F65E29996FD5564E257CA280 /* Pods-LiquidFloatingActionButton_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Tests/Pods-LiquidFloatingActionButton_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Tests/Pods-LiquidFloatingActionButton_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		68CCD939C3C9C77395C06F348452E7AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 121FDED4A06C21BE92F6CE3131809E4F /* LiquidFloatingActionButton-iOS8.3.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton-iOS8.3/LiquidFloatingActionButton-iOS8.3-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton-iOS8.3/LiquidFloatingActionButton-iOS8.3-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton-iOS8.3/LiquidFloatingActionButton-iOS8.3.modulemap";
-				PRODUCT_MODULE_NAME = LiquidFloatingActionButton;
-				PRODUCT_NAME = LiquidFloatingActionButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7294D64DABAB5432C48363801711C7AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22144C92BCE81CF11711C3B5F4515371 /* Pods-LiquidFloatingActionButton_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Tests/Pods-LiquidFloatingActionButton_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Tests/Pods-LiquidFloatingActionButton_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		887CDA30F4D0DFEA7D1754D0D597A605 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 121FDED4A06C21BE92F6CE3131809E4F /* LiquidFloatingActionButton-iOS8.3.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton-iOS8.3/LiquidFloatingActionButton-iOS8.3-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton-iOS8.3/LiquidFloatingActionButton-iOS8.3-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton-iOS8.3/LiquidFloatingActionButton-iOS8.3.modulemap";
-				PRODUCT_MODULE_NAME = LiquidFloatingActionButton;
-				PRODUCT_NAME = LiquidFloatingActionButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DC1AA2C7A9F8BE27C855AE278757CF03 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F140218A3D6B2EC3B73483DA73E0179B /* Pods-LiquidFloatingActionButton_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 77CWZUCG47;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Example/Pods-LiquidFloatingActionButton_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Example/Pods-LiquidFloatingActionButton_Example.modulemap";
@@ -1216,59 +864,282 @@
 			};
 			name = Debug;
 		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9B03F698077AAC698423D56E7A79058B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E9D14EB4EA7297AB31D29BCE034D872 /* LiquidFloatingActionButton.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 77CWZUCG47;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiquidFloatingActionButton/LiquidFloatingActionButton.modulemap";
+				PRODUCT_MODULE_NAME = LiquidFloatingActionButton;
+				PRODUCT_NAME = LiquidFloatingActionButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A87A4F9C29BD853EF3A4277F9396E13C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 160C956F3DB126AABF8034C291AEB324 /* Pods-LiquidFloatingActionButton_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 77CWZUCG47;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Example/Pods-LiquidFloatingActionButton_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Example/Pods-LiquidFloatingActionButton_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ABC6AC7A3199D095BD8D7D18719462F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94EFBC2220937333FCD600A6F17B89F6 /* Pods-LiquidFloatingActionButton_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 77CWZUCG47;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Tests/Pods-LiquidFloatingActionButton_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Tests/Pods-LiquidFloatingActionButton_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE68ABC6A62BD523CBE6E1DF572BF635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C983B56C6DA676C15916B7F65DB8D70 /* Pods-LiquidFloatingActionButton_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 77CWZUCG47;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Tests/Pods-LiquidFloatingActionButton_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiquidFloatingActionButton_Tests/Pods-LiquidFloatingActionButton_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8E2727D3336CF336135F8BD261C1C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1CD432F32277BB93DEAADA626ECEC5B /* SnapKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13C69A1D22B1613CEE8CA9AE2952E817 /* Build configuration list for PBXNativeTarget "Pods-LiquidFloatingActionButton_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				559A9DA61952295BD6D0339007D4398E /* Debug */,
-				7294D64DABAB5432C48363801711C7AF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		271A545ADCEBC8170B43C035554EFD6A /* Build configuration list for PBXNativeTarget "Pods-LiquidFloatingActionButton_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC1AA2C7A9F8BE27C855AE278757CF03 /* Debug */,
-				1B43F5CA057E7610AE45E4B452D3E861 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
-				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4DA78552CDC9ED9393915CEDC5724F71 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton-iOS8.0" */ = {
+		6CBA3F13BAFE573088BC8CC69CBB5C3C /* Build configuration list for PBXNativeTarget "Pods-LiquidFloatingActionButton_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				009D4EFDABF68350640475C6CDAB17B2 /* Debug */,
-				00A73175E9326DDB1DAA444EA60B42F9 /* Release */,
+				ABC6AC7A3199D095BD8D7D18719462F8 /* Debug */,
+				CE68ABC6A62BD523CBE6E1DF572BF635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9ABCE58E927A729F9E7424CBC398CFE2 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+		7F8CE4DC18DBEA01587212F09727DB3D /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				501455B922CF983AA819AD605D308FD9 /* Debug */,
-				048B28C0A00A84A0878B249169F0102D /* Release */,
+				3EDB59372EEC5C4A15A0A4671F090A7E /* Debug */,
+				F8E2727D3336CF336135F8BD261C1C2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0641EE756AD1479F9824966BC0B1757 /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton-iOS8.3" */ = {
+		9DF3DA953911779A88D3AD9649FCC73F /* Build configuration list for PBXNativeTarget "LiquidFloatingActionButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				68CCD939C3C9C77395C06F348452E7AC /* Debug */,
-				887CDA30F4D0DFEA7D1754D0D597A605 /* Release */,
+				9B03F698077AAC698423D56E7A79058B /* Debug */,
+				294BBEDE72DC061BF4895EA447C0B6A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C36239B1FC84C5F9A54EF45B278CCBE5 /* Build configuration list for PBXNativeTarget "Pods-LiquidFloatingActionButton_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B47C49E91C55DA37990396D308E883 /* Debug */,
+				A87A4F9C29BD853EF3A4277F9396E13C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

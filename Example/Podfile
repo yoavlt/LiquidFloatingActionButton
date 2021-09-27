@@ -1,9 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '12.0'
 use_frameworks!
 
 target 'LiquidFloatingActionButton_Example' do
   pod "LiquidFloatingActionButton", :path => "../"
-  pod 'SnapKit', '~> 4.0'
+  pod 'SnapKit', '~> 5.0'
 end
 
 target 'LiquidFloatingActionButton_Tests' do
@@ -11,3 +12,4 @@ target 'LiquidFloatingActionButton_Tests' do
 
   
 end
+637078807 Blanca
