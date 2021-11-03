@@ -129,6 +129,32 @@ public final class Constraint {
                         default:
                             fatalError()
                         }
+                    } else if self.from.attributes == .directionalEdges && self.to.attributes == .directionalMargins {
+                      switch layoutFromAttribute {
+                      case .leading:
+                        layoutToAttribute = .leadingMargin
+                      case .trailing:
+                        layoutToAttribute = .trailingMargin
+                      case .top:
+                        layoutToAttribute = .topMargin
+                      case .bottom:
+                        layoutToAttribute = .bottomMargin
+                      default:
+                        fatalError()
+                      }
+                    } else if self.from.attributes == .directionalMargins && self.to.attributes == .directionalEdges {
+                      switch layoutFromAttribute {
+                      case .leadingMargin:
+                        layoutToAttribute = .leading
+                      case .trailingMargin:
+                        layoutToAttribute = .trailing
+                      case .topMargin:
+                        layoutToAttribute = .top
+                      case .bottomMargin:
+                        layoutToAttribute = .bottom
+                      default:
+                        fatalError()
+                      }
                     } else if self.from.attributes == self.to.attributes {
                         layoutToAttribute = layoutFromAttribute
                     } else {
@@ -189,12 +215,12 @@ public final class Constraint {
 
     // MARK: Public
 
-    @available(*, deprecated:3.0, message:"Use activate().")
+    @available(*, deprecated, message:"Use activate().")
     public func install() {
         self.activate()
     }
 
-    @available(*, deprecated:3.0, message:"Use deactivate().")
+    @available(*, deprecated, message:"Use deactivate().")
     public func uninstall() {
         self.deactivate()
     }
@@ -219,6 +245,15 @@ public final class Constraint {
         return self
     }
 
+    #if os(iOS) || os(tvOS)
+    @discardableResult
+    @available(iOS 11.0, tvOS 11.0, *)
+    public func update(inset: ConstraintDirectionalInsetTarget) -> Constraint {
+      self.constant = inset.constraintDirectionalInsetTargetValue
+      return self
+    }
+    #endif
+
     @discardableResult
     public func update(priority: ConstraintPriorityTarget) -> Constraint {
         self.priority = priority.constraintPriorityTargetValue
@@ -231,25 +266,25 @@ public final class Constraint {
         return self
     }
 
-    @available(*, deprecated:3.0, message:"Use update(offset: ConstraintOffsetTarget) instead.")
+    @available(*, deprecated, message:"Use update(offset: ConstraintOffsetTarget) instead.")
     public func updateOffset(amount: ConstraintOffsetTarget) -> Void { self.update(offset: amount) }
 
-    @available(*, deprecated:3.0, message:"Use update(inset: ConstraintInsetTarget) instead.")
+    @available(*, deprecated, message:"Use update(inset: ConstraintInsetTarget) instead.")
     public func updateInsets(amount: ConstraintInsetTarget) -> Void { self.update(inset: amount) }
 
-    @available(*, deprecated:3.0, message:"Use update(priority: ConstraintPriorityTarget) instead.")
+    @available(*, deprecated, message:"Use update(priority: ConstraintPriorityTarget) instead.")
     public func updatePriority(amount: ConstraintPriorityTarget) -> Void { self.update(priority: amount) }
 
-    @available(*, obsoleted:3.0, message:"Use update(priority: ConstraintPriorityTarget) instead.")
+    @available(*, deprecated, message:"Use update(priority: ConstraintPriorityTarget) instead.")
     public func updatePriorityRequired() -> Void {}
 
-    @available(*, obsoleted:3.0, message:"Use update(priority: ConstraintPriorityTarget) instead.")
+    @available(*, deprecated, message:"Use update(priority: ConstraintPriorityTarget) instead.")
     public func updatePriorityHigh() -> Void { fatalError("Must be implemented by Concrete subclass.") }
 
-    @available(*, obsoleted:3.0, message:"Use update(priority: ConstraintPriorityTarget) instead.")
+    @available(*, deprecated, message:"Use update(priority: ConstraintPriorityTarget) instead.")
     public func updatePriorityMedium() -> Void { fatalError("Must be implemented by Concrete subclass.") }
 
-    @available(*, obsoleted:3.0, message:"Use update(priority: ConstraintPriorityTarget) instead.")
+    @available(*, deprecated, message:"Use update(priority: ConstraintPriorityTarget) instead.")
     public func updatePriorityLow() -> Void { fatalError("Must be implemented by Concrete subclass.") }
 
     // MARK: Internal
