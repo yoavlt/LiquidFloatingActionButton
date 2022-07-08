@@ -13,7 +13,7 @@ This is also [spinner loader](https://github.com/yoavlt/LiquidLoader) components
 ![Demo](https://github.com/yoavlt/LiquidFloatingActionButton/blob/master/Demo/top.gif?raw=true)
 
 ## Features
-- [x] liquid animation
+- [x] Liquid animation
 - [x] Easily customizable
 - [x] Objective-C compatible
 - [x] Swift 5.0
